@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Sample rows (offline preview only)</column_label>
+        <column_label>sampleRows</column_label>
         <comments/>
         <create_roles/>
         <default_value>{items=[{sys_id={value=a1, display_value=a1}, number={value=SUB-0001, display_value=SUB-0001, link=/api/now/table/x_acme_wum_submission/a1}, account={value=Acme Corp, display_value=Acme Corp}, line_of_business={value=Property, display_value=Property}, stage={value=Data Capture, display_value=Data Capture}, premium={value=42000, display_value=42000}}, {sys_id={value=a2, display_value=a2}, number={value=SUB-0002, display_value=SUB-0002, link=/api/now/table/x_acme_wum_submission/a2}, account={value=Globex, display_value=Globex}, line_of_business={value=Property, display_value=Property}, stage={value=Underwriting, display_value=Underwriting}, premium={value=88000, display_value=88000}}, {sys_id={value=a3, display_value=a3}, number={value=SUB-0003, display_value=SUB-0003, link=/api/now/table/x_acme_wum_submission/a3}, account={value=Initech, display_value=Initech}, line_of_business={value=Property, display_value=Property}, stage={value=Data Capture, display_value=Data Capture}, premium={value=15500, display_value=15500}}, {sys_id={value=a4, display_value=a4}, number={value=SUB-0004, display_value=SUB-0004, link=/api/now/table/x_acme_wum_submission/a4}, account={value=Umbrella, display_value=Umbrella}, line_of_business={value=Casualty, display_value=Casualty}, stage={value=Referral, display_value=Referral}, premium={value=63000, display_value=63000}}, {sys_id={value=a5, display_value=a5}, number={value=SUB-0005, display_value=SUB-0005, link=/api/now/table/x_acme_wum_submission/a5}, account={value=Soylent, display_value=Soylent}, line_of_business={value=Casualty, display_value=Casualty}, stage={value=Underwriting, display_value=Underwriting}, premium={value=27500, display_value=27500}}, {sys_id={value=a6, display_value=a6}, number={value=SUB-0006, display_value=SUB-0006, link=/api/now/table/x_acme_wum_submission/a6}, account={value=Stark Ind, display_value=Stark Ind}, line_of_business={value=Cyber, display_value=Cyber}, stage={value=Data Capture, display_value=Data Capture}, premium={value=120000, display_value=120000}}, {sys_id={value=a7, display_value=a7}, number={value=SUB-0007, display_value=SUB-0007, link=/api/now/table/x_acme_wum_submission/a7}, account={value=Wayne Ent, display_value=Wayne Ent}, line_of_business={value=Cyber, display_value=Cyber}, stage={value=Referral, display_value=Referral}, premium={value=54000, display_value=54000}}, {sys_id={value=a8, display_value=a8}, number={value=SUB-0008, display_value=SUB-0008, link=/api/now/table/x_acme_wum_submission/a8}, account={value=Tyrell, display_value=Tyrell}, line_of_business={value=Property, display_value=Property}, stage={value=Referral, display_value=Referral}, premium={value=33000, display_value=33000}}]}</default_value>
@@ -67,7 +67,7 @@
         <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
         <sys_update_name>sys_ux_lib_component_attr_8256ade0d68da9d55d6aa85b66c71aca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-23 12:54:54</sys_updated_on>
+        <sys_updated_on>2026-09-23 14:39:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

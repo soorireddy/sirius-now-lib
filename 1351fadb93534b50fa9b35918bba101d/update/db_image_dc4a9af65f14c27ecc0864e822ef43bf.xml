@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>feef23f473ab0f105da9f26e4ab8b7a1</image>
+        <name>sn_tile_icon/x-soori-library-section-header.svg</name>
+        <size_bytes/>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 14:15:43</sys_created_on>
+        <sys_id>dc4a9af65f14c27ecc0864e822ef43bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_tile_icon/x-soori-library-section-header.svg</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>db_image_dc4a9af65f14c27ecc0864e822ef43bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 14:15:43</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>sn_tile_icon/x-soori-library-section-header.svg</file_name>
+        <hash>09396ed35d8263a2a3cd78e5416d4f03765d7a340add611a3012950a9d92e3f3</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>444</size_bytes>
+        <size_compressed>244</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 14:15:43</sys_created_on>
+        <sys_id>feef23f473ab0f105da9f26e4ab8b7a1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-09-23 14:15:43</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>dc4a9af65f14c27ecc0864e822ef43bf</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="sn_tile_icon/x-soori-library-section-header.svg" sys_id="feef23f473ab0f105da9f26e4ab8b7a1">feef23f473ab0f105da9f26e4ab8b7a1</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 14:15:43</sys_created_on>
+        <sys_id>b2ef23f473ab0f105da9f26e4ab8b7a2</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>hZDBbsMgDIbvfQrPOycQQG01hR6qvsiUsASNQkRoyN6+pCxZL9vEwfYv9H2W63HqIOo29BLFEaFXuutD7iet4tnNEilQEEdYsg9tjETrrEKYr8aOEvsQhjdCYoxl5KXzHWGUUpLAeNoB1C9FAWdnWgg6GAVF8Ui9agIk9gHhS2LFcd2CPW2xR/DpD1+9r+KwPCQb+KLGxushaGfBaLvhH/1cZX4qLNWZJRRNM8vzGLz7VD/U76BYFynFFi245n2Q6N3Nts9+PelWefA386ubi+wWVXZz8a+7Kvd/uOvluKfdHfYtkea8AQAA</data>
+        <length>312</length>
+        <position>1</position>
+        <sys_attachment display_value="sn_tile_icon/x-soori-library-section-header.svg" sys_id="feef23f473ab0f105da9f26e4ab8b7a1">feef23f473ab0f105da9f26e4ab8b7a1</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 14:15:43</sys_created_on>
+        <sys_id>76ef23f473ab0f105da9f26e4ab8b7a2</sys_id>
+    </sys_attachment_doc>
+</record_update>

@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Pin action code</column_label>
+        <column_label>pinActionCode</column_label>
         <comments/>
         <create_roles/>
         <default_value>pin</default_value>
@@ -67,7 +67,7 @@
         <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
         <sys_update_name>sys_ux_lib_component_attr_5143dc452ffbef0375f154913a1a584c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-23 12:56:17</sys_updated_on>
+        <sys_updated_on>2026-09-23 14:40:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

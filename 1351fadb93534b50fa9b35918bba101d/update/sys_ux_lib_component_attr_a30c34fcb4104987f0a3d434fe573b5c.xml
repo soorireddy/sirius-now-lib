@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Font size</column_label>
+        <column_label>fontSize</column_label>
         <comments/>
         <create_roles/>
         <default_value>1rem</default_value>
@@ -67,7 +67,7 @@
         <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
         <sys_update_name>sys_ux_lib_component_attr_a30c34fcb4104987f0a3d434fe573b5c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-23 12:55:57</sys_updated_on>
+        <sys_updated_on>2026-09-23 14:39:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

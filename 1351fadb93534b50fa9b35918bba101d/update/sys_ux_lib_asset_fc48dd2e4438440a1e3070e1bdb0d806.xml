@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>component</category>
+        <checksum>ce50db202cc29d71bd9e1f309d9e67a0</checksum>
+        <config_option/>
+        <content>import*as e from"/uxasset/externals/@servicenow/ui-renderer-snabbdom/index.jsdbx";
+import*as t from"/uxasset/externals/@servicenow/ui-core/index.jsdbx";
+/*__ESM_BODY_START__*/
+var r={248:(e,t,r)=&gt;{r.r(t),r.d(t,{default:()=&gt;i});var a=r(634),o=r.n(a),n=r(563),l=r.n(n)()(o());l.push([e.id,':host{box-sizing:border-box;font-family:var(--now-font-family,"Source Sans Pro",sans-serif);line-height:var(--now-line-height,1.25)}:host([hidden]){display:none}*,:after,:before{box-sizing:border-box}:host{display:block;font-family:var(--now-font-family,Lato,Arial,sans-serif)}.sh-root{display:flex;flex-direction:column;gap:var(--now-space--xs,.25rem)}.sh-title-row{align-items:center;display:flex;flex-wrap:wrap;gap:var(--now-space--sm2,.75rem)}.sh-subtitle{color:rgb(var(--now-color_text--tertiary,69,77,91));font-size:var(--now-font-size--sm,.75rem);line-height:1.4;white-space:nowrap}.sh-description{color:rgb(var(--now-color_text--secondary,44,50,63));font-size:var(--now-font-size--md,.875rem);line-height:1.5;margin:0}.sh-divider{border:none;border-top:1px solid rgb(var(--now-color_divider--tertiary,211,214,220));margin:var(--now-space--sm,.5rem) 0 0}',""]);const i=l},563:e=&gt;{e.exports=function(e){var t=[];return t.toString=function(){return this.map(function(t){var r="",a=void 0!==t[5];return t[4]&amp;&amp;(r+="@supports (".concat(t[4],") {")),t[2]&amp;&amp;(r+="@media ".concat(t[2]," {")),a&amp;&amp;(r+="@layer".concat(t[5].length&gt;0?" ".concat(t[5]):""," {")),r+=e(t),a&amp;&amp;(r+="}"),t[2]&amp;&amp;(r+="}"),t[4]&amp;&amp;(r+="}"),r}).join("")},t.i=function(e,r,a,o,n){"string"==typeof e&amp;&amp;(e=[[null,e,void 0]]);var l={};if(a)for(var i=0;i&lt;this.length;i++){var s=this[i][0];null!=s&amp;&amp;(l[s]=!0)}for(var d=0;d&lt;e.length;d++){var u=[].concat(e[d]);a&amp;&amp;l[u[0]]||(void 0!==n&amp;&amp;(void 0===u[5]||(u[1]="@layer".concat(u[5].length&gt;0?" ".concat(u[5]):""," {").concat(u[1],"}")),u[5]=n),r&amp;&amp;(u[2]?(u[1]="@media ".concat(u[2]," {").concat(u[1],"}"),u[2]=r):u[2]=r),o&amp;&amp;(u[4]?(u[1]="@supports (".concat(u[4],") {").concat(u[1],"}"),u[4]=o):u[4]="".concat(o)),t.push(u))}},t}},634:e=&gt;{e.exports=function(e){return e[1]}},453:(e,t,r)=&gt;{var a=r(248);a&amp;&amp;a.__esModule&amp;&amp;(a=a.default),e.exports="string"==typeof a?a:a.toString()}},a={};function o(e){var t=a[e];if(void 0!==t)return t.exports;var n=a[e]={id:e,exports:{}};return r[e](n,n.exports,o),n.exports}o.n=e=&gt;{var t=e&amp;&amp;e.__esModule?()=&gt;e.default:()=&gt;e;return o.d(t,{a:t}),t},o.d=(e,t)=&gt;{for(var r in t)o.o(t,r)&amp;&amp;!o.o(e,r)&amp;&amp;Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},o.o=(e,t)=&gt;Object.prototype.hasOwnProperty.call(e,t),o.r=e=&gt;{"undefined"!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})};var n={};o.r(n);const l=(e=&gt;{var t={};return o.d(t,e),t})({createElement:()=&gt;{const t=e.default&amp;&amp;e.__esModule;return t?e.default.createElement:e.createElement||e.default&amp;&amp;e.default.createElement},default:()=&gt;{const t=e.default&amp;&amp;e.__esModule;return t?e.default&amp;&amp;e.default.default?e.default.default:e.default:t?e.default.default:e.default?e.default.default?e.default.default:e.default:e}});const i=(e=&gt;{var t={};return o.d(t,e),t})({createCustomElement:()=&gt;{const e=t.default&amp;&amp;t.__esModule;return e?t.default.createCustomElement:t.createCustomElement||t.default&amp;&amp;t.default.createCustomElement}});var s=o(453),d=o.n(s);const u={green:"positive",amber:"warning",red:"critical",gray:"gray"};(0,i.createCustomElement)("x-soori-library-section-header",{renderer:{type:l.default},view:e=&gt;{const t=e.properties,r=t.title,a=t.description,o=t.subtitle,n=t.status,i=t.statusColor,s=t.headingLevel,d=t.headingVariant,c=t.showDescription,f=t.showDivider;return(0,l.createElement)("div",{className:"sh-root"},(0,l.createElement)("div",{className:"sh-title-row"},(0,l.createElement)("now-heading",{label:r||"",level:Number(s)||2,variant:d||"header-secondary","has-no-margin":!0}),o?(0,l.createElement)("span",{className:"sh-subtitle"},o):null,n?(0,l.createElement)("now-highlighted-value",{className:"sh-status",label:n,color:u[i]||u.green,variant:"primary"}):null),c&amp;&amp;a?(0,l.createElement)("p",{className:"sh-description"},a):null,f?(0,l.createElement)("hr",{className:"sh-divider","aria-hidden":"true"}):null)},styles:d(),properties:{title:{default:"Selected Quote Option"},description:{default:"The current selected quote option is below"},subtitle:{default:""},status:{default:""},statusColor:{default:"green"},headingLevel:{default:"2"},headingVariant:{default:"header-secondary"},showDescription:{default:!0},showDivider:{default:!1}}}),window.__TECTONIC__$x_soori_library_section_header=n;
+/*__ESM_BODY_END__*/
+//# sourceMappingURL=/uxasset/externals/@x_soori_library/section-header/index.min.js.map.jsdbx</content>
+        <content_meta>{"tectonicVersion":"29.0.2","imports":[{"kind":"import-statement","path":"/uxasset/externals/@servicenow/ui-core/index.jsdbx"},{"kind":"import-statement","path":"/uxasset/externals/@servicenow/ui-renderer-snabbdom/index.jsdbx"}],"exports":[]}</content_meta>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>@x_soori_library/section-header/index</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 14:15:30</sys_created_on>
+        <sys_id>fc48dd2e4438440a1e3070e1bdb0d806</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@x_soori_library/section-header/index</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_fc48dd2e4438440a1e3070e1bdb0d806</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 14:15:30</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>

@@ -55,14 +55,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-23 12:56:33</sys_created_on>
         <sys_id>f1ca3c13e8ca4b22ae08b4e59c28d926</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Row pinned</sys_name>
         <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
         <sys_policy/>
         <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
         <sys_update_name>sys_ux_event_f1ca3c13e8ca4b22ae08b4e59c28d926</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-23 12:56:33</sys_updated_on>
+        <sys_updated_on>2026-09-23 14:40:16</sys_updated_on>
     </sys_ux_event>
     <sys_translated_text action="delete_multiple" query="documentkey=f1ca3c13e8ca4b22ae08b4e59c28d926"/>
 </record_update>

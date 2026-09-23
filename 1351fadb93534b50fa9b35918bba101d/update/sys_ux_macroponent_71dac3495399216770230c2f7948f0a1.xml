@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>primitives</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <keyboard_shortcuts>{}</keyboard_shortcuts>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Section Header</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "Selected Quote Option",
+        "description": "The bold heading text, e.g. \"Selected Quote Option\".",
+        "fieldType": "string",
+        "label": "Title",
+        "name": "title",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "The current selected quote option is below",
+        "description": "Optional muted line beneath the title, e.g. \"The current selected quote option is below\".",
+        "fieldType": "string",
+        "label": "Description",
+        "name": "description",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Optional muted inline note beside the title, e.g. \"Last refreshed 1m ago\". Plain gray text, no background. Leave blank to hide.",
+        "fieldType": "string",
+        "label": "Subtitle text",
+        "name": "subtitle",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Optional status label after the title, e.g. \"Broker Approved\" — a Horizon now-highlighted-value. Leave blank to hide.",
+        "fieldType": "string",
+        "label": "Status text",
+        "name": "status",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "green",
+        "description": "Colour of the status label, from the theme: green → positive (approved), amber → warning (pending), red → critical (rejected), gray → neutral.",
+        "fieldType": "choice",
+        "label": "Status color",
+        "name": "statusColor",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Green (approved)",
+                    "value": "green"
+                },
+                {
+                    "label": "Amber (pending)",
+                    "value": "amber"
+                },
+                {
+                    "label": "Red (rejected)",
+                    "value": "red"
+                },
+                {
+                    "label": "Gray (neutral)",
+                    "value": "gray"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "green",
+                    "amber",
+                    "red",
+                    "gray"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "2",
+        "description": "HTML heading element level (h1–h6). Controls document outline; style is set by Heading variant.",
+        "fieldType": "choice",
+        "label": "Heading level",
+        "name": "headingLevel",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "h1",
+                    "value": "1"
+                },
+                {
+                    "label": "h2",
+                    "value": "2"
+                },
+                {
+                    "label": "h3",
+                    "value": "3"
+                },
+                {
+                    "label": "h4",
+                    "value": "4"
+                },
+                {
+                    "label": "h5",
+                    "value": "5"
+                },
+                {
+                    "label": "h6",
+                    "value": "6"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "header-secondary",
+        "description": "Visual style of the title. \"header-secondary\" matches the default page-section look.",
+        "fieldType": "choice",
+        "label": "Heading variant",
+        "name": "headingVariant",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Header hero",
+                    "value": "header-hero"
+                },
+                {
+                    "label": "Header primary",
+                    "value": "header-primary"
+                },
+                {
+                    "label": "Header secondary",
+                    "value": "header-secondary"
+                },
+                {
+                    "label": "Header tertiary",
+                    "value": "header-tertiary"
+                },
+                {
+                    "label": "Title primary",
+                    "value": "title-primary"
+                },
+                {
+                    "label": "Title secondary",
+                    "value": "title-secondary"
+                },
+                {
+                    "label": "Title tertiary",
+                    "value": "title-tertiary"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "header-hero",
+                    "header-primary",
+                    "header-secondary",
+                    "header-tertiary",
+                    "title-primary",
+                    "title-secondary",
+                    "title-tertiary"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Toggle the muted description line on or off.",
+        "fieldType": "boolean",
+        "label": "Show description",
+        "name": "showDescription",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Render a thin horizontal rule beneath the header.",
+        "fieldType": "boolean",
+        "label": "Show bottom divider",
+        "name": "showDivider",
+        "valueType": "string"
+    }
+]</props>
+        <required_sys_props/>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-soori-library-section-header">4c3ffbbdd855760ace86e506f3a2806b</root_component>
+        <root_component_config>{"title":"@context/title","description":"@context/description","subtitle":"@context/subtitle","status":"@context/status","statusColor":"@context/statusColor","headingLevel":"@context/headingLevel","headingVariant":"@context/headingVariant","showDescription":"@context/showDescription","showDivider":"@context/showDivider"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 14:15:41</sys_created_on>
+        <sys_id>71dac3495399216770230c2f7948f0a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Section Header</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_macroponent_71dac3495399216770230c2f7948f0a1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 14:15:41</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=71dac3495399216770230c2f7948f0a1"/>
+</record_update>
