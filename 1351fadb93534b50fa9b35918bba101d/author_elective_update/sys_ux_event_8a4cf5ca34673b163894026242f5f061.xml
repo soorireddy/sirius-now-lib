@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>Fired when a row body is clicked (only when Enable row click is on). Payload: { rowId, sysId, record }.</description>
+        <event_name>RECORD_LIST_ROW_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Row clicked</label>
+        <props>[
+    {
+        "description": "The row's sys_id.",
+        "fieldType": "string",
+        "label": "Row id",
+        "name": "rowId",
+        "valueType": "string"
+    },
+    {
+        "description": "The row's sys_id.",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "The full row record.",
+        "fieldType": "string",
+        "label": "Record",
+        "name": "record",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:02</sys_created_on>
+        <sys_id>8a4cf5ca34673b163894026242f5f061</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Row clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_8a4cf5ca34673b163894026242f5f061</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:02</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=8a4cf5ca34673b163894026242f5f061"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_event_8a4cf5ca34673b163894026242f5f061</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fired when a row body is clicked (only when Enable row click is on). Payload: { rowId, sysId, record }.</description>
+        <event_name>RECORD_LIST_ROW_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Row clicked</label>
+        <props>[
+    {
+        "description": "The row's sys_id.",
+        "fieldType": "string",
+        "label": "Row id",
+        "name": "rowId",
+        "valueType": "string"
+    },
+    {
+        "description": "The row's sys_id.",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "The full row record.",
+        "fieldType": "string",
+        "label": "Record",
+        "name": "record",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:02</sys_created_on>
+        <sys_id>8a4cf5ca34673b163894026242f5f061</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Row clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_8a4cf5ca34673b163894026242f5f061</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:02</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=8a4cf5ca34673b163894026242f5f061"/>
+</record_update>]]></payload>
+        <payload_hash>1241189043</payload_hash>
+        <record_name>Row clicked</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:33</sys_created_on>
+        <sys_id>cad9eeb873230f105da9f26e4ab8b7c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8708040000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:33</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>06d9eeb8ee230f10d73e5e5d35ba9fc9</update_guid>
+        <update_guid_history>06d9eeb8ee230f10d73e5e5d35ba9fc9:0,11a81630f5afcb100f1d83d1a7c08d3a:1204451940,f18ace70ab2fcb10af4efdc8a8cef1a5:-1602542245,1cc9cebcf5ebcb10e28b3da30f56c1dd:-1332954543,d296caf4c4ebcb103ec113ccfcbc0c73:0,91af71b8ec6bcb10e107435dab6e2d7e:623548879,ee620713639703105e5464bec7b36a1c:-1602542245</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:38:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>0afd89189f7f4f92a42d9b9807f49781</sys_id>
+        <sys_metadata>8a4cf5ca34673b163894026242f5f061</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Row clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_event_8a4cf5ca34673b163894026242f5f061</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_8a4cf5ca34673b163894026242f5f061">cad9eeb873230f105da9f26e4ab8b7c9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:38:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

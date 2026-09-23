@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fires when the user navigates to a slot — by clicking a nav item, using the keyboard, or pressing Previous/Next. It does NOT fire on initial render (unless "Announce the starting slot" is on), and it does NOT fire when the highlighted item changes because the user scrolled in Show all mode. Bind it to a client state parameter to gate slot content with a Conditional Renderer, so unopened slots never load. Payload: { id, title, icon, group, parent, index, source, visited, visitedIds }.</description>
+        <event_name>X_SOORI_LIBRARY_SHELL_PAGE_SLOT_SELECTED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Slot selected</label>
+        <props>[
+    {
+        "description": "Id of the selected slot, as written in the Slots manifest.",
+        "fieldType": "string",
+        "label": "Slot id",
+        "name": "id",
+        "valueType": "string"
+    },
+    {
+        "description": "Display title of the selected slot.",
+        "fieldType": "string",
+        "label": "Title",
+        "name": "title",
+        "valueType": "string"
+    },
+    {
+        "description": "Resolved Horizon icon name of the selected slot.",
+        "fieldType": "string",
+        "label": "Icon",
+        "name": "icon",
+        "valueType": "string"
+    },
+    {
+        "description": "Group heading the slot belongs to, or blank.",
+        "fieldType": "string",
+        "label": "Group",
+        "name": "group",
+        "valueType": "string"
+    },
+    {
+        "description": "Id of the parent slot when this entry is nested, otherwise blank.",
+        "fieldType": "string",
+        "label": "Parent id",
+        "name": "parent",
+        "valueType": "string"
+    },
+    {
+        "description": "Zero-based position in the visible navigation order.",
+        "fieldType": "number",
+        "label": "Index",
+        "name": "index",
+        "valueType": "string"
+    },
+    {
+        "description": "How navigation happened: nav, keyboard, next, prev, or initial.",
+        "fieldType": "string",
+        "label": "Source",
+        "name": "source",
+        "valueType": "string"
+    },
+    {
+        "description": "Every slot id opened this session, in visit order, including the one just selected. Use it to render a slot's content on FIRST visit and keep it mounted afterwards — unopened slots then never load at all.",
+        "fieldType": "json",
+        "label": "Visited slot ids",
+        "name": "visited",
+        "valueType": "string"
+    },
+    {
+        "description": "The same visit list as a comma-delimited string with leading and trailing commas, e.g. \",1,4,\". Built for simple condition checks: test \"contains ,4,\" to know slot 4 has been visited without an array formula (the delimiters stop id 1 matching id 10).",
+        "fieldType": "string",
+        "label": "Visited ids (delimited)",
+        "name": "visitedIds",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 10:26:06</sys_created_on>
+        <sys_id>6d1ea16063b1cbe519d142c19b6ac417</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Slot selected</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_6d1ea16063b1cbe519d142c19b6ac417</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:13:43</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=6d1ea16063b1cbe519d142c19b6ac417"/>
+</record_update>

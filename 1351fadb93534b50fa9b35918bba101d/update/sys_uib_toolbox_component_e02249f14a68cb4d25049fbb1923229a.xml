@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>Record header + configurable action bar in one component. Fetches the record from Table + Record Sys ID (display values, so choice/reference fields read as their labels), shows the primary value, tags, subheading and up-to-seven secondary label/value pairs (plain, highlighted status, or reference link), and renders an action bar of text / iconic / split / menu buttons with per-action conditional hide and disable, an automatic overflow menu, and whole-bar hide/disable. Emits the full record as JSON so a page can store it. Optional background image (transparent PNG/SVG) with free-form horizontal and vertical positioning and size. Includes a pin toggle and a pinned-items drawer backed by a shared localStorage list, so pins made here appear in every component that reads the same key.</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-soori-library-workspace-header.svg">c2d3454c9b6f046f561aa0c5cc306af7</image_icon>
+        <internal_component>false</internal_component>
+        <label>Workspace Header</label>
+        <macroponent display_value="Workspace Header">4ca4441907066a7a0724c5bd4528b305</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:56:54</sys_created_on>
+        <sys_id>e02249f14a68cb4d25049fbb1923229a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workspace Header</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_e02249f14a68cb4d25049fbb1923229a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:56:54</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=e02249f14a68cb4d25049fbb1923229a"/>
+</record_update>

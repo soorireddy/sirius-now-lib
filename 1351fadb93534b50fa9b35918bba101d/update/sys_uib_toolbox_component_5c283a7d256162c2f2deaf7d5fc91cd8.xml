@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>Page shell: a side navigation built automatically from one Slots JSON manifest, plus a content area of independent named slots (slot-1 … slot-20 by default). Each slot entry supplies a title, icon, optional visibility condition, and a parent or group. The rail has two states — expanded and icon rail — switched only by the toggle, never by the window size.</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-soori-library-shell-page.svg">c56ba717429ef07aae93ac03c1afb295</image_icon>
+        <internal_component>false</internal_component>
+        <label>Shell Page</label>
+        <macroponent display_value="Shell Page">0f4d0bd6ce250ef8ba848de28c87a534</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 10:26:08</sys_created_on>
+        <sys_id>5c283a7d256162c2f2deaf7d5fc91cd8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Shell Page</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_5c283a7d256162c2f2deaf7d5fc91cd8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:13:44</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=5c283a7d256162c2f2deaf7d5fc91cd8"/>
+</record_update>

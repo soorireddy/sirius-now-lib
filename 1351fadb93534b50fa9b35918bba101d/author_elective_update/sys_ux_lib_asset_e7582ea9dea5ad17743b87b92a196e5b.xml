@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="DELETE">
+        <bundled_asset>false</bundled_asset>
+        <category>library</category>
+        <checksum>19b88c5189b5305bec051b3a73488a4e</checksum>
+        <config_option/>
+        <content>import*as e from"/uxasset/externals/@servicenow/library-enhanced-utils/19.8.2-ecd/index.jsdbx";
+import*as t from"/uxasset/externals/@servicenow/ui-core/index.jsdbx";
+/*__ESM_BODY_START__*/
+var o={410:(e,t,o)=&gt;{var n=o(430).Symbol;e.exports=n},179:(e,t,o)=&gt;{var n=o(410),r=o(174),a=o(933),s=n?n.toStringTag:void 0;e.exports=function(e){return null==e?void 0===e?"[object Undefined]":"[object Null]":s&amp;&amp;s in Object(e)?r(e):a(e)}},343:(e,t,o)=&gt;{var n="object"==typeof o.g&amp;&amp;o.g&amp;&amp;o.g.Object===Object&amp;&amp;o.g;e.exports=n},174:(e,t,o)=&gt;{var n=o(410),r=Object.prototype,a=r.hasOwnProperty,s=r.toString,i=n?n.toStringTag:void 0;e.exports=function(e){var t=a.call(e,i),o=e[i];try{e[i]=void 0;var n=!0}catch(e){}var r=s.call(e);return n&amp;&amp;(t?e[i]=o:delete e[i]),r}},933:e=&gt;{var t=Object.prototype.toString;e.exports=function(e){return t.call(e)}},430:(e,t,o)=&gt;{var n=o(343),r="object"==typeof self&amp;&amp;self&amp;&amp;self.Object===Object&amp;&amp;self,a=n||r||Function("return this")();e.exports=a},319:(e,t,o)=&gt;{var n=o(179),r=o(780);e.exports=function(e){if(!r(e))return!1;var t=n(e);return"[object Function]"==t||"[object GeneratorFunction]"==t||"[object AsyncFunction]"==t||"[object Proxy]"==t}},780:e=&gt;{e.exports=function(e){var t=typeof e;return null!=e&amp;&amp;("object"==t||"function"==t)}}},n={};function r(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return o[e](a,a.exports,r),a.exports}r.n=e=&gt;{var t=e&amp;&amp;e.__esModule?()=&gt;e.default:()=&gt;e;return r.d(t,{a:t}),t},r.d=(e,t)=&gt;{for(var o in t)r.o(t,o)&amp;&amp;!r.o(e,o)&amp;&amp;Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},r.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),r.o=(e,t)=&gt;Object.prototype.hasOwnProperty.call(e,t);var a={};r.d(a,{Ay:()=&gt;g,QK:()=&gt;d,T9:()=&gt;u,di:()=&gt;p});var s=r(319),i=r.n(s);const c=(e=&gt;{var t={};return r.d(t,e),t})({findTabbableNodes:()=&gt;{const t=e.default&amp;&amp;e.__esModule;return t?e.default.findTabbableNodes:e.findTabbableNodes||e.default&amp;&amp;e.default.findTabbableNodes},getActiveElement:()=&gt;{const t=e.default&amp;&amp;e.__esModule;return t?e.default.getActiveElement:e.getActiveElement||e.default&amp;&amp;e.default.getActiveElement}});const l=(e=&gt;{var t={};return r.d(t,e),t})({actionTypes:()=&gt;{const e=t.default&amp;&amp;t.__esModule;return e?t.default.actionTypes:t.actionTypes||t.default&amp;&amp;t.default.actionTypes}}),u=e=&gt;{let t=(0,c.findTabbableNodes)(e);if(t.length)return t[0].focus()},d=e=&gt;{const t=(0,c.findTabbableNodes)(e);return{tabbableNodes:t,firstFocusableElement:t[0],lastFocusableElement:t[t.length-1]}},p=e=&gt;{let t=e.action,o=e.host,n=e.properties;const r=t.payload,a=r.event;if(!r.options.trap||"Tab"!==a.key||!n.opened)return;const s=a.composedPath(),i=d(o),c=i.firstFocusableElement,l=i.lastFocusableElement;s[0]!==c&amp;&amp;s[0]!==l||(a.shiftKey?s[0]===c&amp;&amp;(l.focus(),t.preventDefault()):s[0]===l&amp;&amp;(c.focus(),t.preventDefault()))},f=l.actionTypes.COMPONENT_TREE_RENDERED,b=l.actionTypes.COMPONENT_DOM_TREE_READY,v=l.actionTypes.COMPONENT_DISCONNECTED,y=e=&gt;{e&amp;&amp;e.focus()},g={name:"focus",eventHandlers:[{events:["keydown"],effect:p}],actionHandlers:{[b]:e=&gt;{let t=e.action,o=e.dispatch,n=e.host;const r=t.payload.options;n.focus=()=&gt;i()(r.focus)?r.focus(n,o):u(n)},[f]:e=&gt;{let t=e.action,o=e.properties,n=e.host,r=e.state,a=e.updateState;const s=t.payload,i=s.previousRenderProperties;if(!s.options.trap)return;const l=o.opened;return l!==i.opened?l?((e,t)=&gt;{t({operation:"set",path:"triggerEl",value:(0,c.getActiveElement)(),shouldRender:!1}),u(e)})(n,a):y(r.triggerEl):void 0},[v]:e=&gt;{let t=e.action,o=e.state,n=e.properties.opened;t.payload.options.trap&amp;&amp;n&amp;&amp;y(o.triggerEl)}}};var T=a.Ay,E=a.QK,h=a.T9,j=a.di;
+/*__ESM_BODY_END__*/
+export{T as default,E as getFocusableNodes,h as handleFocusFirstNode,j as handleTabKeydown};
+//# sourceMappingURL=/uxasset/externals/@servicenow/behavior-focus/19.8.2-ecd/index.min.js.map.jsdbx</content>
+        <content_meta>{"tectonicVersion":"29.0.2","imports":[{"kind":"import-statement","path":"/uxasset/externals/@servicenow/library-enhanced-utils/19.8.2-ecd/index.jsdbx"},{"kind":"import-statement","path":"/uxasset/externals/@servicenow/ui-core/index.jsdbx"}],"exports":["default","getFocusableNodes","handleFocusFirstNode","handleTabKeydown"]}</content_meta>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>@servicenow/behavior-focus/19.8.2-ecd/index</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:37</sys_created_on>
+        <sys_id>e7582ea9dea5ad17743b87b92a196e5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/behavior-focus/19.8.2-ecd/index</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_e7582ea9dea5ad17743b87b92a196e5b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:37</sys_updated_on>
+    </sys_ux_lib_asset>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_lib_asset_e7582ea9dea5ad17743b87b92a196e5b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>library</category>
+        <checksum>19b88c5189b5305bec051b3a73488a4e</checksum>
+        <config_option/>
+        <content>import*as e from"/uxasset/externals/@servicenow/library-enhanced-utils/19.8.2-ecd/index.jsdbx";
+import*as t from"/uxasset/externals/@servicenow/ui-core/index.jsdbx";
+/*__ESM_BODY_START__*/
+var o={410:(e,t,o)=&gt;{var n=o(430).Symbol;e.exports=n},179:(e,t,o)=&gt;{var n=o(410),r=o(174),a=o(933),s=n?n.toStringTag:void 0;e.exports=function(e){return null==e?void 0===e?"[object Undefined]":"[object Null]":s&amp;&amp;s in Object(e)?r(e):a(e)}},343:(e,t,o)=&gt;{var n="object"==typeof o.g&amp;&amp;o.g&amp;&amp;o.g.Object===Object&amp;&amp;o.g;e.exports=n},174:(e,t,o)=&gt;{var n=o(410),r=Object.prototype,a=r.hasOwnProperty,s=r.toString,i=n?n.toStringTag:void 0;e.exports=function(e){var t=a.call(e,i),o=e[i];try{e[i]=void 0;var n=!0}catch(e){}var r=s.call(e);return n&amp;&amp;(t?e[i]=o:delete e[i]),r}},933:e=&gt;{var t=Object.prototype.toString;e.exports=function(e){return t.call(e)}},430:(e,t,o)=&gt;{var n=o(343),r="object"==typeof self&amp;&amp;self&amp;&amp;self.Object===Object&amp;&amp;self,a=n||r||Function("return this")();e.exports=a},319:(e,t,o)=&gt;{var n=o(179),r=o(780);e.exports=function(e){if(!r(e))return!1;var t=n(e);return"[object Function]"==t||"[object GeneratorFunction]"==t||"[object AsyncFunction]"==t||"[object Proxy]"==t}},780:e=&gt;{e.exports=function(e){var t=typeof e;return null!=e&amp;&amp;("object"==t||"function"==t)}}},n={};function r(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return o[e](a,a.exports,r),a.exports}r.n=e=&gt;{var t=e&amp;&amp;e.__esModule?()=&gt;e.default:()=&gt;e;return r.d(t,{a:t}),t},r.d=(e,t)=&gt;{for(var o in t)r.o(t,o)&amp;&amp;!r.o(e,o)&amp;&amp;Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},r.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),r.o=(e,t)=&gt;Object.prototype.hasOwnProperty.call(e,t);var a={};r.d(a,{Ay:()=&gt;g,QK:()=&gt;d,T9:()=&gt;u,di:()=&gt;p});var s=r(319),i=r.n(s);const c=(e=&gt;{var t={};return r.d(t,e),t})({findTabbableNodes:()=&gt;{const t=e.default&amp;&amp;e.__esModule;return t?e.default.findTabbableNodes:e.findTabbableNodes||e.default&amp;&amp;e.default.findTabbableNodes},getActiveElement:()=&gt;{const t=e.default&amp;&amp;e.__esModule;return t?e.default.getActiveElement:e.getActiveElement||e.default&amp;&amp;e.default.getActiveElement}});const l=(e=&gt;{var t={};return r.d(t,e),t})({actionTypes:()=&gt;{const e=t.default&amp;&amp;t.__esModule;return e?t.default.actionTypes:t.actionTypes||t.default&amp;&amp;t.default.actionTypes}}),u=e=&gt;{let t=(0,c.findTabbableNodes)(e);if(t.length)return t[0].focus()},d=e=&gt;{const t=(0,c.findTabbableNodes)(e);return{tabbableNodes:t,firstFocusableElement:t[0],lastFocusableElement:t[t.length-1]}},p=e=&gt;{let t=e.action,o=e.host,n=e.properties;const r=t.payload,a=r.event;if(!r.options.trap||"Tab"!==a.key||!n.opened)return;const s=a.composedPath(),i=d(o),c=i.firstFocusableElement,l=i.lastFocusableElement;s[0]!==c&amp;&amp;s[0]!==l||(a.shiftKey?s[0]===c&amp;&amp;(l.focus(),t.preventDefault()):s[0]===l&amp;&amp;(c.focus(),t.preventDefault()))},f=l.actionTypes.COMPONENT_TREE_RENDERED,b=l.actionTypes.COMPONENT_DOM_TREE_READY,v=l.actionTypes.COMPONENT_DISCONNECTED,y=e=&gt;{e&amp;&amp;e.focus()},g={name:"focus",eventHandlers:[{events:["keydown"],effect:p}],actionHandlers:{[b]:e=&gt;{let t=e.action,o=e.dispatch,n=e.host;const r=t.payload.options;n.focus=()=&gt;i()(r.focus)?r.focus(n,o):u(n)},[f]:e=&gt;{let t=e.action,o=e.properties,n=e.host,r=e.state,a=e.updateState;const s=t.payload,i=s.previousRenderProperties;if(!s.options.trap)return;const l=o.opened;return l!==i.opened?l?((e,t)=&gt;{t({operation:"set",path:"triggerEl",value:(0,c.getActiveElement)(),shouldRender:!1}),u(e)})(n,a):y(r.triggerEl):void 0},[v]:e=&gt;{let t=e.action,o=e.state,n=e.properties.opened;t.payload.options.trap&amp;&amp;n&amp;&amp;y(o.triggerEl)}}};var T=a.Ay,E=a.QK,h=a.T9,j=a.di;
+/*__ESM_BODY_END__*/
+export{T as default,E as getFocusableNodes,h as handleFocusFirstNode,j as handleTabKeydown};
+//# sourceMappingURL=/uxasset/externals/@servicenow/behavior-focus/19.8.2-ecd/index.min.js.map.jsdbx</content>
+        <content_meta>{"tectonicVersion":"29.0.2","imports":[{"kind":"import-statement","path":"/uxasset/externals/@servicenow/library-enhanced-utils/19.8.2-ecd/index.jsdbx"},{"kind":"import-statement","path":"/uxasset/externals/@servicenow/ui-core/index.jsdbx"}],"exports":["default","getFocusableNodes","handleFocusFirstNode","handleTabKeydown"]}</content_meta>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>@servicenow/behavior-focus/19.8.2-ecd/index</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:37</sys_created_on>
+        <sys_id>e7582ea9dea5ad17743b87b92a196e5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/behavior-focus/19.8.2-ecd/index</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_e7582ea9dea5ad17743b87b92a196e5b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:37</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>]]></payload>
+        <payload_hash>1002142346</payload_hash>
+        <record_name>@servicenow/behavior-focus/19.8.2-ecd/index</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:36</sys_created_on>
+        <sys_id>6ed922f873230f105da9f26e4ab8b77e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8711860000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:36</sys_updated_on>
+        <type>UX Asset</type>
+        <update_guid>a6d922f8a8230f10329657451147c57e</update_guid>
+        <update_guid_history>a6d922f8a8230f10329657451147c57e:0,ad0a4efc70ebcb104485a6d5453361ad:-248396686,36960ef457ebcb108032669fd686df03:0,e9fff5f8eb6bcb104fa67da1ce14e1cf:894051520,e7cffa5b0d570310269dad2ff44cbc43:539837004</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_lib_asset">sys_ux_lib_asset</sys_db_object>
+        <sys_id>61f7f28824014c1285171a9caa6176c4</sys_id>
+        <sys_metadata>e7582ea9dea5ad17743b87b92a196e5b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/behavior-focus/19.8.2-ecd/index</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_lib_asset_e7582ea9dea5ad17743b87b92a196e5b</sys_update_name>
+        <sys_update_version display_value="sys_ux_lib_asset_e7582ea9dea5ad17743b87b92a196e5b">6ed922f873230f105da9f26e4ab8b77e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

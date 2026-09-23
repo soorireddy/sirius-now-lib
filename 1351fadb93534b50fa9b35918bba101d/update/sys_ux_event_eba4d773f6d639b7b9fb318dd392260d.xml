@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fires when any action bar button, split-button half or menu item is activated. Branch on `id` (and `itemId` for menu items) to run the right logic. Payload: { id, label, type, source, itemId, itemLabel, table, sysId, record, data }.</description>
+        <event_name>WORKSPACE_HEADER_ACTION_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Action clicked</label>
+        <props>[
+    {
+        "description": "The `id` of the clicked action, as configured in Actions.",
+        "fieldType": "string",
+        "label": "Action id",
+        "name": "id",
+        "valueType": "string"
+    },
+    {
+        "description": "Display label of the clicked action.",
+        "fieldType": "string",
+        "label": "Action label",
+        "name": "label",
+        "valueType": "string"
+    },
+    {
+        "description": "button, icon, split or menu.",
+        "fieldType": "string",
+        "label": "Action type",
+        "name": "type",
+        "valueType": "string"
+    },
+    {
+        "description": "Where the click came from: button, split-primary, menu-item or overflow.",
+        "fieldType": "string",
+        "label": "Source",
+        "name": "source",
+        "valueType": "string"
+    },
+    {
+        "description": "For a split-button or menu item, the `id` of that item; empty for a top-level action.",
+        "fieldType": "string",
+        "label": "Item id",
+        "name": "itemId",
+        "valueType": "string"
+    },
+    {
+        "description": "Label of the clicked sub-item, if any.",
+        "fieldType": "string",
+        "label": "Item label",
+        "name": "itemLabel",
+        "valueType": "string"
+    },
+    {
+        "description": "Table of the current record.",
+        "fieldType": "string",
+        "label": "Table",
+        "name": "table",
+        "valueType": "string"
+    },
+    {
+        "description": "sys_id of the current record.",
+        "fieldType": "string",
+        "label": "Record Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "The loaded record, so a handler has full context without re-querying.",
+        "fieldType": "json",
+        "label": "Record",
+        "name": "record",
+        "valueType": "string"
+    },
+    {
+        "description": "The action's optional `data` object, passed straight through from the Actions configuration.",
+        "fieldType": "json",
+        "label": "Custom data",
+        "name": "data",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:56:44</sys_created_on>
+        <sys_id>eba4d773f6d639b7b9fb318dd392260d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_eba4d773f6d639b7b9fb318dd392260d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:56:44</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=eba4d773f6d639b7b9fb318dd392260d"/>
+</record_update>

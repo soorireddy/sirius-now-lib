@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>component</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>6d1ea16063b1cbe519d142c19b6ac417,f37f5931e9c4b972bf9185a84a1a2b6b</dispatched_events>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <keyboard_shortcuts>{}</keyboard_shortcuts>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Shell Page</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "[{\"id\":\"1\",\"title\":\"Overview\",\"icon\":\"home-outline\",\"group\":\"My access\"},{\"id\":\"2\",\"title\":\"Access I hold\",\"icon\":\"key-fill\",\"group\":\"My access\",\"badge\":\"7\"},{\"id\":\"3\",\"title\":\"My requests\",\"icon\":\"list-fill\",\"group\":\"My access\",\"badge\":\"2\"},{\"id\":\"4\",\"title\":\"Confirm my access\",\"icon\":\"circle-check-outline\",\"group\":\"My access\",\"badge\":\"1\"},{\"id\":\"5\",\"title\":\"My badge\",\"icon\":\"id-fill\",\"group\":\"My credentials\"},{\"id\":\"6\",\"title\":\"Phone &amp; watch\",\"icon\":\"phone-fill\",\"group\":\"My credentials\",\"badge\":\"2\"},{\"id\":\"7\",\"title\":\"Temporary badge\",\"icon\":\"clock-outline\",\"group\":\"My credentials\"},{\"id\":\"8\",\"title\":\"My visitors\",\"icon\":\"user-group-fill\",\"group\":\"People I bring in\",\"badge\":\"3\"},{\"id\":\"9\",\"title\":\"Request for someone\",\"icon\":\"user-plus-fill\",\"group\":\"People I bring in\"},{\"id\":\"10\",\"title\":\"Buildings &amp; opening hours\",\"icon\":\"building-fill\",\"group\":\"Help\"},{\"id\":\"11\",\"title\":\"Lost or stolen badge\",\"icon\":\"flag-fill\",\"group\":\"Help\"},{\"id\":\"12\",\"title\":\"Get help\",\"icon\":\"circle-question-outline\",\"group\":\"Help\"}]",
+        "description": "JSON array — the single source of truth for both the nav rail and the content slots. Each entry: { \"id\": \"1\", \"title\": \"Submission\", \"icon\": \"document-outline\", \"group\": \"Intake\", \"parent\": \"\", \"condition\": \"\", \"badge\": \"\", \"disabled\": false }. The slot name for an entry is slot-{id} (id \"1\" → slot \"slot-1\") — drop that slot's content onto the canvas. \"group\" adds a section heading; \"parent\" nests the entry under another entry's id (two levels max); \"condition\" is an expression against Context data; \"badge\" is a number shown as a now-badge. Icon names must be full Horizon names ending -outline or -fill.",
+        "fieldType": "json",
+        "label": "Slots",
+        "name": "slots",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 20,
+        "description": "How many slot entries the shell will honour, and how many drop zones \"Show all slots\" reveals. 20 by default. The droppable slots themselves are declared at deploy time, so raising this above 20 also needs the extra names adding to the \"slots\" list in now-ui.json and the component redeploying.",
+        "fieldType": "number",
+        "label": "Slot capacity",
+        "name": "slotCapacity",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "The slot to show. Bind it to a page value to drive navigation from elsewhere, or type an id to preview that slot while designing. Blank → the first navigable slot.",
+        "fieldType": "string",
+        "label": "Active slot",
+        "name": "activeSlotId",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Per-slot navigation lock the page pushes in — e.g. while a slot's form is invalid. JSON map keyed by slot id: {\"2\":{\"next\":true}} blocks moving forward off slot 2 (Next greyed and forward nav jumps blocked); {\"2\":true} locks both directions; array shorthand [\"2\"] does the same. Blank → nothing locked. Bind it to your validity flag and clear the entry when validation passes.",
+        "fieldType": "json",
+        "label": "Locked slots (guarded navigation)",
+        "name": "lockedSlots",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Turn the nav rail off entirely. The jump-to trigger in each slot's section header then becomes the whole navigation — worth doing in \"Grow with content\" mode, where a rail on a page-scrolling shell cannot be guaranteed to stay on screen inside every page layout. In \"Fill available space\" mode the rail is always on screen, so leave this on.",
+        "fieldType": "boolean",
+        "label": "Show side navigation",
+        "name": "showNav",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "left",
+        "description": "Which edge the navigation sits on. Top and bottom render it as a horizontal bar from the same Slots manifest.",
+        "fieldType": "choice",
+        "label": "Nav position",
+        "name": "navPosition",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Left",
+                    "value": "left"
+                },
+                {
+                    "label": "Right",
+                    "value": "right"
+                },
+                {
+                    "label": "Top",
+                    "value": "top"
+                },
+                {
+                    "label": "Bottom",
+                    "value": "bottom"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "left",
+                    "right",
+                    "top",
+                    "bottom"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "256px",
+        "description": "CSS width of the rail when labels are showing, e.g. \"256px\" or \"18rem\". Also the width the collapsed rail peeks open to on hover.",
+        "fieldType": "string",
+        "label": "Nav width (expanded)",
+        "name": "navWidth",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "56px",
+        "description": "CSS width of the collapsed icon rail. The default 56px fits Horizon's 24px navigation icon with standard gutters.",
+        "fieldType": "string",
+        "label": "Nav width (icon rail)",
+        "name": "navCollapsedWidth",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Show the collapse/expand control in the nav header. It is the ONLY thing that switches the rail between its two states. In the collapsed rail it is the only header content and centres itself.",
+        "fieldType": "boolean",
+        "label": "Show nav toggle",
+        "name": "showNavToggle",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Which of the rail's two states it opens in: expanded (labels) or the icon rail. From then on ONLY the toggle changes it — the rail never reacts to the window size, so it can never undo the user's choice.",
+        "fieldType": "boolean",
+        "label": "Start collapsed",
+        "name": "startCollapsed",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Hovering the collapsed icon rail widens it to show every slot's label, floating above the content so nothing reflows. OFF by default — a rail that opens and shuts as the pointer crosses it is distracting, and the toggle already opens it on click. Turn on when a quick look at the labels is worth it.",
+        "fieldType": "boolean",
+        "label": "Peek open on hover",
+        "name": "expandOnHover",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Turn each group heading into a toggle that folds its section away. Off by default — headings are plain labels.",
+        "fieldType": "boolean",
+        "label": "Collapsible groups",
+        "name": "groupsCollapsible",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "expanded",
+        "description": "Whether collapsible groups begin expanded or collapsed. Only applies when Collapsible groups is on.",
+        "fieldType": "choice",
+        "label": "Groups start",
+        "name": "defaultGroupState",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Expanded",
+                    "value": "expanded"
+                },
+                {
+                    "label": "Collapsed",
+                    "value": "collapsed"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "expanded",
+                    "collapsed"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "none",
+        "description": "Where to show Previous/Next stepper buttons inside the selected slot's content. They walk the visible slots in nav order, skipping hidden and disabled ones. No effect in Show all mode.",
+        "fieldType": "choice",
+        "label": "Prev/Next buttons",
+        "name": "navButtonPosition",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Hidden",
+                    "value": "none"
+                },
+                {
+                    "label": "Top only",
+                    "value": "top"
+                },
+                {
+                    "label": "Bottom only",
+                    "value": "bottom"
+                },
+                {
+                    "label": "Top and bottom",
+                    "value": "both"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "none",
+                    "top",
+                    "bottom",
+                    "both"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Show the Previous stepper button. Turn off for a Next-only wizard.",
+        "fieldType": "boolean",
+        "label": "Show Previous button",
+        "name": "showPrevButton",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Previous",
+        "description": "Text on the Previous stepper button.",
+        "fieldType": "string",
+        "label": "Previous button text",
+        "name": "prevLabel",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Show the Next stepper button.",
+        "fieldType": "boolean",
+        "label": "Show Next button",
+        "name": "showNextButton",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Next",
+        "description": "Text on the Next stepper button.",
+        "fieldType": "string",
+        "label": "Next button text",
+        "name": "nextLabel",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "The jump-to trigger on the left of each slot's sticky section header, which opens the full slot list in place. The header is a real row in flow, so the slot's content starts below it. Off by default. Forced on when the side navigation is hidden, since it is then the only way to navigate.",
+        "fieldType": "boolean",
+        "label": "Show jump-to button on slots",
+        "name": "showSlotJumpButton",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "JSON object that slot conditions are evaluated against. Bind it to a data resource, client state, or a script output — e.g. { \"record\": { \"state\": 3 }, \"user\": { \"role\": \"underwriter\" } } lets a slot use the condition \"record.state &gt;= 3\".",
+        "fieldType": "json",
+        "label": "Context data",
+        "name": "contextData",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "hide",
+        "description": "Hide — the slot disappears from the nav entirely. Disable — the slot stays visible but greyed and unclickable, and clicking it fires the Slot blocked event so the page can explain why.",
+        "fieldType": "choice",
+        "label": "When a condition is false",
+        "name": "conditionMode",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Hide the slot",
+                    "value": "hide"
+                },
+                {
+                    "label": "Disable the slot",
+                    "value": "disable"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "hide",
+                    "disable"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Priya Raghunathan",
+        "description": "Heading shown at the top of the nav rail — static text, or bind it (e.g. to the logged-in user's name for a profile header). Also the rail's accessible name, and the source of the avatar initials when Header media is Avatar.",
+        "fieldType": "string",
+        "label": "Nav title",
+        "name": "panelTitle",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Toggle the heading above the nav items. It is hidden automatically whenever the rail is collapsed to icons.",
+        "fieldType": "boolean",
+        "label": "Show nav title",
+        "name": "showTitle",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "theme",
+        "description": "Where the rail's colours come from — always the theme, never hard-coded. Theme (default): the theme's vertical-navigation tokens (--now-navigation-tabs-vertical*: page background, nav text, selection bar). Chrome: the theme's dark app-shell navigation, the same tokens as the platform's All menu (--now-unified-nav_menu*). The explicit colour overrides below still win when set.",
+        "fieldType": "choice",
+        "label": "Rail style",
+        "name": "railStyle",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Theme (vertical navigation)",
+                    "value": "theme"
+                },
+                {
+                    "label": "Chrome (dark app-shell navigation)",
+                    "value": "chrome"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "theme",
+                    "chrome"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Engineering · Tower One L12",
+        "description": "Secondary line under the nav title — e.g. bind the user's department and location (\"Engineering · Tower One L12\"). Blank = no second line. Setting it (or Header media) switches the header to the profile layout.",
+        "fieldType": "string",
+        "label": "Nav subtitle",
+        "name": "headerSubtitle",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "avatar",
+        "description": "Avatar or icon shown beside the nav title, and on its own when the rail is collapsed. None (default) keeps the plain title. Avatar: Header image if set, otherwise initials from the nav title (bind the title to the user's name). Icon: Header icon inside the avatar circle. Rendered with now-avatar, so it follows the theme.",
+        "fieldType": "choice",
+        "label": "Header media",
+        "name": "headerMedia",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "None",
+                    "value": "none"
+                },
+                {
+                    "label": "Avatar (image or initials)",
+                    "value": "avatar"
+                },
+                {
+                    "label": "Icon",
+                    "value": "icon"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "none",
+                    "avatar",
+                    "icon"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Image URL for the avatar when Header media is Avatar — e.g. bind the logged-in user's photo. Blank = initials from the nav title.",
+        "fieldType": "string",
+        "label": "Header image",
+        "name": "headerImage",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Icon shown in the avatar circle when Header media is Icon. Blank = user-fill.",
+        "fieldType": "icon",
+        "label": "Header icon",
+        "name": "headerIcon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "CSS background of the nav header band (any colour or var()). Blank (default) = the theme: the header shares the rail's background.",
+        "fieldType": "string",
+        "label": "Header background",
+        "name": "headerBgColor",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "CSS colour for the nav title and subtitle — set it with a dark Header background. Blank (default) = the theme's text tokens (neutral-18 title, neutral-12 subtitle).",
+        "fieldType": "string",
+        "label": "Header text colour",
+        "name": "headerTextColor",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Render each slot's title in its sticky section header, beside the jump-to trigger. Applies in BOTH display modes. Off, the title is hidden and the header keeps just the trigger — with the trigger hidden too, the header collapses away entirely.",
+        "fieldType": "boolean",
+        "label": "Show section headings",
+        "name": "showSectionHeadings",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "selected-only",
+        "description": "Only selected — one slot at a time, like tabs. Show all — every visible slot is stacked in one scrolling column; clicking a nav item smooth-scrolls to it and the highlighted item follows the scroll position.",
+        "fieldType": "choice",
+        "label": "Content display",
+        "name": "contentDisplay",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Only selected",
+                    "value": "selected-only"
+                },
+                {
+                    "label": "Show all (scroll)",
+                    "value": "show-all"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "selected-only",
+                    "show-all"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "16px",
+        "description": "CSS padding inside the content area, e.g. \"16px\" or \"24px 32px\". Set \"0px\" when the slotted components manage their own spacing.",
+        "fieldType": "string",
+        "label": "Content padding",
+        "name": "contentPadding",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "fill",
+        "description": "Fill available space — the shell takes the height it is given and owns the scrollbar: the 'page-header' slot scrolls away and the rail stays on screen by itself, which no surrounding page layout can break. Use when the shell can own its region. Grow with content — the shell is as tall as its content and the PAGE around it scrolls; the rail travels with the page and then pins to the top of the visible area. Use on a record page, where the record header, KPI strip and tab strip sit above the shell and are meant to scroll away.",
+        "fieldType": "choice",
+        "label": "Shell height",
+        "name": "shellHeight",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Fill available space",
+                    "value": "fill"
+                },
+                {
+                    "label": "Grow with content",
+                    "value": "auto"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "fill",
+                    "auto"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "0px",
+        "description": "CSS length reserved above the rail. In Fill mode the shell owns the scrollbar and the scrollport's own top edge is already below the page chrome, so 0px is correct unless the 'page-header' slot is set to stay on screen — then set this to the header's height. In Grow mode it is how far below the top of the visible area the rail sits as it follows the page scroll.",
+        "fieldType": "string",
+        "label": "Sticky top offset",
+        "name": "stickyTop",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "scroll",
+        "description": "What the content of the 'page-header' slot does when the user scrolls. Scroll away (default) — the header scrolls up out of the way and gives its space back to the content, while the navigation rail stays on screen. Stay on screen — the header is pinned above the content too; set Sticky top offset to its height so the rail sits below it rather than behind it. Only meaningful when Shell height is 'Fill available space', where the shell owns the scrollbar.",
+        "fieldType": "choice",
+        "label": "Page header behaviour",
+        "name": "pageHeaderBehavior",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Scroll away with the content",
+                    "value": "scroll"
+                },
+                {
+                    "label": "Stay on screen",
+                    "value": "sticky"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "scroll",
+                    "sticky"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "CSS colour for the active nav item's text and icon. Leave blank to use the Horizon brand token.",
+        "fieldType": "string",
+        "label": "Active item colour",
+        "name": "activeColor",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "CSS colour for the active nav item's highlight. Leave blank to use the tinted brand token.",
+        "fieldType": "string",
+        "label": "Active item background",
+        "name": "activeBgColor",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "CSS colour for inactive nav item labels. Leave blank to inherit the Horizon text token.",
+        "fieldType": "string",
+        "label": "Item text colour",
+        "name": "itemColor",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "CSS font size for nav item labels, e.g. \"0.875rem\". Leave blank for the standard size.",
+        "fieldType": "string",
+        "label": "Item font size",
+        "name": "itemFontSize",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "CSS background colour of the nav rail. Leave blank to inherit the Horizon surface token.",
+        "fieldType": "string",
+        "label": "Nav background",
+        "name": "railBgColor",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "CSS background colour of the content area. Leave blank to inherit the Horizon surface token.",
+        "fieldType": "string",
+        "label": "Content background",
+        "name": "contentBgColor",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Persist the selected slot in the browser so a reload returns the user to where they were. Stored per Storage key.",
+        "fieldType": "boolean",
+        "label": "Remember active slot",
+        "name": "rememberActiveSlot",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Names the stored selection so two shells on one page do not overwrite each other. Blank → derived from the Nav title. Only used when Remember active slot is on.",
+        "fieldType": "string",
+        "label": "Storage key",
+        "name": "storageKey",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Fire the Slot selected event once on first render, with source \"initial\". Off by default so a page bound to \"navigate on select\" does not act just because the shell rendered. Turn it ON when the slot content is gated on the active slot — e.g. a Conditional Renderer or a manually-invoked Data Resource that needs to know the starting slot before the user clicks anything.",
+        "fieldType": "boolean",
+        "label": "Announce the starting slot",
+        "name": "emitInitialSelection",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Reveal a drop zone for every unmapped slot up to Slot capacity, so content can be placed before the nav entry exists. Turn this OFF before the page goes live — the placeholders are visible to users.",
+        "fieldType": "boolean",
+        "label": "Show all slots (design time)",
+        "name": "showAllSlotsDesignTime",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Overlay a diagnostics panel: manifest problems plus the LIVE navigation-rail state — pinned or travelling, the computed visible box, the rail's current top and pin line, the shell height mode, how many scroll listeners are attached, whether the browser top layer is available, and what (if anything) disables CSS sticky. Turn this on first when the rail behaves unexpectedly on an instance. Turn it off before go-live — end users can see it.",
+        "fieldType": "boolean",
+        "label": "Show diagnostics (design time)",
+        "name": "showDiagnostics",
+        "valueType": "string"
+    }
+]</props>
+        <required_sys_props/>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-soori-library-shell-page">27e6fca13969e17d7dfe8d8648df30bc</root_component>
+        <root_component_config>{"slots":"@context/slots","slotCapacity":"@context/slotCapacity","activeSlotId":"@context/activeSlotId","lockedSlots":"@context/lockedSlots","showNav":"@context/showNav","navPosition":"@context/navPosition","navWidth":"@context/navWidth","navCollapsedWidth":"@context/navCollapsedWidth","showNavToggle":"@context/showNavToggle","startCollapsed":"@context/startCollapsed","expandOnHover":"@context/expandOnHover","groupsCollapsible":"@context/groupsCollapsible","defaultGroupState":"@context/defaultGroupState","navButtonPosition":"@context/navButtonPosition","showPrevButton":"@context/showPrevButton","prevLabel":"@context/prevLabel","showNextButton":"@context/showNextButton","nextLabel":"@context/nextLabel","showSlotJumpButton":"@context/showSlotJumpButton","contextData":"@context/contextData","conditionMode":"@context/conditionMode","panelTitle":"@context/panelTitle","showTitle":"@context/showTitle","railStyle":"@context/railStyle","headerSubtitle":"@context/headerSubtitle","headerMedia":"@context/headerMedia","headerImage":"@context/headerImage","headerIcon":"@context/headerIcon","headerBgColor":"@context/headerBgColor","headerTextColor":"@context/headerTextColor","showSectionHeadings":"@context/showSectionHeadings","contentDisplay":"@context/contentDisplay","contentPadding":"@context/contentPadding","shellHeight":"@context/shellHeight","stickyTop":"@context/stickyTop","pageHeaderBehavior":"@context/pageHeaderBehavior","activeColor":"@context/activeColor","activeBgColor":"@context/activeBgColor","itemColor":"@context/itemColor","itemFontSize":"@context/itemFontSize","railBgColor":"@context/railBgColor","contentBgColor":"@context/contentBgColor","rememberActiveSlot":"@context/rememberActiveSlot","storageKey":"@context/storageKey","emitInitialSelection":"@context/emitInitialSelection","showAllSlotsDesignTime":"@context/showAllSlotsDesignTime","showDiagnostics":"@context/showDiagnostics"}</root_component_config>
+        <root_component_definition>{"availableSlots":["page-header","slot-1","slot-2","slot-3","slot-4","slot-5","slot-6","slot-7","slot-8","slot-9","slot-10","slot-11","slot-12","slot-13","slot-14","slot-15","slot-16","slot-17","slot-18","slot-19","slot-20"]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 10:26:07</sys_created_on>
+        <sys_id>0f4d0bd6ce250ef8ba848de28c87a534</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Shell Page</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_macroponent_0f4d0bd6ce250ef8ba848de28c87a534</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:13:44</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=0f4d0bd6ce250ef8ba848de28c87a534"/>
+</record_update>

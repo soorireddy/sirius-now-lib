@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="DELETE">
+        <bundled_asset>false</bundled_asset>
+        <category>library</category>
+        <checksum>51672da2f5c2b8cc1c0caba0b724a853</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/
+var e={d:(r,t)=&gt;{for(var o in t)e.o(t,o)&amp;&amp;!e.o(r,o)&amp;&amp;Object.defineProperty(r,o,{enumerable:!0,get:t[o]})},o:(e,r)=&gt;Object.prototype.hasOwnProperty.call(e,r)},r={};e.d(r,{A:()=&gt;t});const t={name:"rtl",properties:{dir:{get default(){return document.dir||"ltr"},reflect:!0,schema:{type:"string"}}}};var o=r.A;
+/*__ESM_BODY_END__*/
+export{o as default};
+//# sourceMappingURL=/uxasset/externals/@servicenow/behavior-rtl/19.8.2-ecd/index.min.js.map.jsdbx</content>
+        <content_meta>{"tectonicVersion":"29.0.2","imports":[],"exports":["default"]}</content_meta>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>@servicenow/behavior-rtl/19.8.2-ecd/index</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:38</sys_created_on>
+        <sys_id>a88c01bc45ec28e3e0a11a2d9aa73f89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/behavior-rtl/19.8.2-ecd/index</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_a88c01bc45ec28e3e0a11a2d9aa73f89</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:38</sys_updated_on>
+    </sys_ux_lib_asset>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_lib_asset_a88c01bc45ec28e3e0a11a2d9aa73f89</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>library</category>
+        <checksum>51672da2f5c2b8cc1c0caba0b724a853</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/
+var e={d:(r,t)=&gt;{for(var o in t)e.o(t,o)&amp;&amp;!e.o(r,o)&amp;&amp;Object.defineProperty(r,o,{enumerable:!0,get:t[o]})},o:(e,r)=&gt;Object.prototype.hasOwnProperty.call(e,r)},r={};e.d(r,{A:()=&gt;t});const t={name:"rtl",properties:{dir:{get default(){return document.dir||"ltr"},reflect:!0,schema:{type:"string"}}}};var o=r.A;
+/*__ESM_BODY_END__*/
+export{o as default};
+//# sourceMappingURL=/uxasset/externals/@servicenow/behavior-rtl/19.8.2-ecd/index.min.js.map.jsdbx</content>
+        <content_meta>{"tectonicVersion":"29.0.2","imports":[],"exports":["default"]}</content_meta>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>@servicenow/behavior-rtl/19.8.2-ecd/index</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:38</sys_created_on>
+        <sys_id>a88c01bc45ec28e3e0a11a2d9aa73f89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/behavior-rtl/19.8.2-ecd/index</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_a88c01bc45ec28e3e0a11a2d9aa73f89</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:38</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>]]></payload>
+        <payload_hash>489855391</payload_hash>
+        <record_name>@servicenow/behavior-rtl/19.8.2-ecd/index</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:35</sys_created_on>
+        <sys_id>6ed922f873230f105da9f26e4ab8b750</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd870efe0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:35</sys_updated_on>
+        <type>UX Asset</type>
+        <update_guid>a6d922f83f230f105e24c77b7b9b6550</update_guid>
+        <update_guid_history>a6d922f83f230f105e24c77b7b9b6550:0,28d9c2fc23ebcb10e2eeda36b8a7ae85:-2047425463,a296caf4d4ebcb10f18b65569fee08ee:0,93cf3db8cc6bcb10333a2af3f232c08b:-649151659,7bcf3e5ba5570310114d755a2e071504:520385353</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_lib_asset">sys_ux_lib_asset</sys_db_object>
+        <sys_id>5695bcdf9b294e1ba432448632dd5129</sys_id>
+        <sys_metadata>a88c01bc45ec28e3e0a11a2d9aa73f89</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/behavior-rtl/19.8.2-ecd/index</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_lib_asset_a88c01bc45ec28e3e0a11a2d9aa73f89</sys_update_name>
+        <sys_update_version display_value="sys_ux_lib_asset_a88c01bc45ec28e3e0a11a2d9aa73f89">6ed922f873230f105da9f26e4ab8b750</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

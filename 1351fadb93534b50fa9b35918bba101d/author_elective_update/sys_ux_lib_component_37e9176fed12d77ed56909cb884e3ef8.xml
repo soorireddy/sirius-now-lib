@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component">
+    <sys_ux_lib_component action="DELETE">
+        <default_children/>
+        <default_layout/>
+        <deprecated>false</deprecated>
+        <inner_components>c3862573533989fad02fd8aec92609ef</inner_components>
+        <overrides/>
+        <required_sys_props/>
+        <required_translation_keys>[]</required_translation_keys>
+        <required_user_prefs/>
+        <source_script/>
+        <source_script_name>@x_soori_library/metric-card</source_script_name>
+        <suspend_on_view_change>false</suspend_on_view_change>
+        <sys_class_name>sys_ux_lib_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:41</sys_created_on>
+        <sys_id>37e9176fed12d77ed56909cb884e3ef8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x-soori-library-metric-card</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_component_37e9176fed12d77ed56909cb884e3ef8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:41</sys_updated_on>
+        <tag>x-soori-library-metric-card</tag>
+    </sys_ux_lib_component>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_lib_component_37e9176fed12d77ed56909cb884e3ef8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component">
+    <sys_ux_lib_component action="INSERT_OR_UPDATE">
+        <default_children/>
+        <default_layout/>
+        <deprecated>false</deprecated>
+        <inner_components>c3862573533989fad02fd8aec92609ef</inner_components>
+        <overrides/>
+        <required_sys_props/>
+        <required_translation_keys>[]</required_translation_keys>
+        <required_user_prefs/>
+        <source_script/>
+        <source_script_name>@x_soori_library/metric-card</source_script_name>
+        <suspend_on_view_change>false</suspend_on_view_change>
+        <sys_class_name>sys_ux_lib_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:41</sys_created_on>
+        <sys_id>37e9176fed12d77ed56909cb884e3ef8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x-soori-library-metric-card</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_component_37e9176fed12d77ed56909cb884e3ef8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:41</sys_updated_on>
+        <tag>x-soori-library-metric-card</tag>
+    </sys_ux_lib_component>
+</record_update>]]></payload>
+        <payload_hash>265813725</payload_hash>
+        <record_name>x-soori-library-metric-card</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:36</sys_created_on>
+        <sys_id>6ad922f873230f105da9f26e4ab8b7ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd87128d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:36</sys_updated_on>
+        <type>UX Component Definition</type>
+        <update_guid>a2d922f8b0230f10e3705d227f1243ac</update_guid>
+        <update_guid_history>a2d922f8b0230f10e3705d227f1243ac:0,a67942bc80ebcb10f5402b5ee4fccd0b:311615145,3a960ef4f9ebcb104644d946017b933d:0,285f3d38596bcb106ff572b6cd0089cb:-1676150665,1cdf3e5ba75703109315f27f8b48855f:1780290051</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:37:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_lib_component">sys_ux_lib_component</sys_db_object>
+        <sys_id>19db770ab32a4e8885755fb83629db90</sys_id>
+        <sys_metadata>37e9176fed12d77ed56909cb884e3ef8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x-soori-library-metric-card</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_lib_component_37e9176fed12d77ed56909cb884e3ef8</sys_update_name>
+        <sys_update_version display_value="sys_ux_lib_component_37e9176fed12d77ed56909cb884e3ef8">6ad922f873230f105da9f26e4ab8b7ac</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:37:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

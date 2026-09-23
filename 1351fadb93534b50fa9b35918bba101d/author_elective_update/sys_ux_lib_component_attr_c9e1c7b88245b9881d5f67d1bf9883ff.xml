@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component_attr">
+    <sys_ux_lib_component_attr action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Show "Last refreshed"</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>showLastRefreshed</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Show "Last refreshed"</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model/>
+        <model_id>a552f8b883be605ce3090e657e0f45f1</model_id>
+        <model_table/>
+        <name>var__m_sys_ux_lib_component_attr_a552f8b883be605ce3090e657e0f45f1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_ux_lib_component_attr</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:05:28</sys_created_on>
+        <sys_id>c9e1c7b88245b9881d5f67d1bf9883ff</sys_id>
+        <sys_name>Show "Last refreshed"</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_component_attr_c9e1c7b88245b9881d5f67d1bf9883ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:05:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_ux_lib_component_attr>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_lib_component_attr_c9e1c7b88245b9881d5f67d1bf9883ff</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_lib_component_attr"&gt;&lt;sys_ux_lib_component_attr action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Show "Last refreshed"&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;showLastRefreshed&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Show "Last refreshed"&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;255&lt;/max_length&gt;&lt;model/&gt;&lt;model_id&gt;a552f8b883be605ce3090e657e0f45f1&lt;/model_id&gt;&lt;model_table/&gt;&lt;name&gt;var__m_sys_ux_lib_component_attr_a552f8b883be605ce3090e657e0f45f1&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_ux_lib_component_attr&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-18 19:05:28&lt;/sys_created_on&gt;&lt;sys_id&gt;c9e1c7b88245b9881d5f67d1bf9883ff&lt;/sys_id&gt;&lt;sys_name&gt;Show "Last refreshed"&lt;/sys_name&gt;&lt;sys_package display_value="@Sirius/Components" source="x_soori_library"&gt;1351fadb93534b50fa9b35918bba101d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="@Sirius/Components"&gt;1351fadb93534b50fa9b35918bba101d&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_lib_component_attr_c9e1c7b88245b9881d5f67d1bf9883ff&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-18 19:05:28&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_ux_lib_component_attr&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1696391753</payload_hash>
+        <record_name>Show "Last refreshed"</record_name>
+        <reverted_from/>
+        <source>0b2c26b073630f105da9f26e4ab8b7dc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:38:59</sys_created_on>
+        <sys_id>c190fa3c73630f105da9f26e4ab8b7e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cda1fa510000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:38:59</sys_updated_on>
+        <type>Component Attribute</type>
+        <update_guid>0d90fa3c74630f1068db4c8300ec2fe7</update_guid>
+        <update_guid_history>0d90fa3c74630f1068db4c8300ec2fe7:0,40e9e2f88b230f1036a27b3d8bbd325b:0,58e8927096afcb10837b11476417263b:-2104246394,20e9c6fc85ebcb10138ff9b0e0bafca6:2144643344,e05a4270fe2fcb10cf963d5dbdab3314:1622084517,645a4270d12fcb1088e902c4471a7308:1723390449,20e9c6fc85ebcb10138ff9b0e0bafca6:2144643344,90a6cef432ebcb101a2231a8b12ba421:0,e6df31f8cf6bcb1076f8a597f6d712a9:175343421,4acfb9b8656bcb10d73dfafc3810e9cd:0,2642c7dfe5570310928ac0ed230791c2:1622084517,6642c7dfed5703104af3095b66b35ebb:1723390449,6642c7dff75703104ba79769ffa5eba5:1622084517</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_lib_component_attr">sys_ux_lib_component_attr</sys_db_object>
+        <sys_id>6f89a7f7556e4e13beeab5c469a0c8d1</sys_id>
+        <sys_metadata>c9e1c7b88245b9881d5f67d1bf9883ff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Show "Last refreshed"</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_lib_component_attr_c9e1c7b88245b9881d5f67d1bf9883ff</sys_update_name>
+        <sys_update_version display_value="sys_ux_lib_component_attr_c9e1c7b88245b9881d5f67d1bf9883ff">c190fa3c73630f105da9f26e4ab8b7e8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

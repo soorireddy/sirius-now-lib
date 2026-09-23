@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>Auto-dispatched after a refresh so the page can react. Payload: {}.</description>
+        <event_name>RECORD_LIST_REFRESH</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Refresh</label>
+        <props>[]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:06</sys_created_on>
+        <sys_id>d11b535330251df17fe111eb85de8345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refresh</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_d11b535330251df17fe111eb85de8345</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:06</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=d11b535330251df17fe111eb85de8345"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_event_d11b535330251df17fe111eb85de8345</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Auto-dispatched after a refresh so the page can react. Payload: {}.</description>
+        <event_name>RECORD_LIST_REFRESH</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Refresh</label>
+        <props>[]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:06</sys_created_on>
+        <sys_id>d11b535330251df17fe111eb85de8345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refresh</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_d11b535330251df17fe111eb85de8345</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:06</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=d11b535330251df17fe111eb85de8345"/>
+</record_update>]]></payload>
+        <payload_hash>-838410206</payload_hash>
+        <record_name>Refresh</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:33</sys_created_on>
+        <sys_id>cad9eeb873230f105da9f26e4ab8b7db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8708a20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:33</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>06d9eeb8a8230f1098d518682ee620db</update_guid>
+        <update_guid_history>06d9eeb8a8230f1098d518682ee620db:0,45f8167053afcb1055348d9a4f56045a:2019996828,3b8a42b01a2fcb10b620bd662f8574a2:-1360341418,80f94afc41ebcb101925e592b45a47d3:147510994,d296caf40eebcb1048f014f7b17ce485:0,0cefb1f8e86bcb103a5bbd0c0ba6572f:2090733514,636207139e9703109d702e7bb5d682d7:-1360341418</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>668a6bd84e914595958e82b156101829</sys_id>
+        <sys_metadata>d11b535330251df17fe111eb85de8345</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refresh</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_event_d11b535330251df17fe111eb85de8345</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_d11b535330251df17fe111eb85de8345">cad9eeb873230f105da9f26e4ab8b7db</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

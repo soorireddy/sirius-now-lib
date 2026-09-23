@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>Fired when a clickable card is activated by click or keyboard. Payload: { heading, value }.</description>
+        <event_name>METRIC_CARD_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Metric card clicked</label>
+        <props>[
+    {
+        "description": "The card heading.",
+        "fieldType": "string",
+        "label": "Heading",
+        "name": "heading",
+        "valueType": "string"
+    },
+    {
+        "description": "The formatted value shown.",
+        "fieldType": "string",
+        "label": "Value",
+        "name": "value",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:52</sys_created_on>
+        <sys_id>99df75c2cb80466021a2c7634338e574</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Metric card clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_99df75c2cb80466021a2c7634338e574</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:52</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=99df75c2cb80466021a2c7634338e574"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_event_99df75c2cb80466021a2c7634338e574</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fired when a clickable card is activated by click or keyboard. Payload: { heading, value }.</description>
+        <event_name>METRIC_CARD_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Metric card clicked</label>
+        <props>[
+    {
+        "description": "The card heading.",
+        "fieldType": "string",
+        "label": "Heading",
+        "name": "heading",
+        "valueType": "string"
+    },
+    {
+        "description": "The formatted value shown.",
+        "fieldType": "string",
+        "label": "Value",
+        "name": "value",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:52</sys_created_on>
+        <sys_id>99df75c2cb80466021a2c7634338e574</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Metric card clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_99df75c2cb80466021a2c7634338e574</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:52</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=99df75c2cb80466021a2c7634338e574"/>
+</record_update>]]></payload>
+        <payload_hash>-875589871</payload_hash>
+        <record_name>Metric card clicked</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:33</sys_created_on>
+        <sys_id>42d9eeb873230f105da9f26e4ab8b7ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd87082e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:33</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>8ad9eeb805230f10081e2ead16b48acd</update_guid>
+        <update_guid_history>8ad9eeb805230f10081e2ead16b48acd:0,dfc942fc06ebcb1001d0ac772968f3ed:-697311735,5e96caf4beebcb10f240e7fd493d8777:0,61bf75b8256bcb10b788c25157186fdc:4245755,d7df329bee57031019c4b37f06802f28:-939861777</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:38:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>333774d6e6da4112931474c74ec40944</sys_id>
+        <sys_metadata>99df75c2cb80466021a2c7634338e574</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Metric card clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_event_99df75c2cb80466021a2c7634338e574</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_99df75c2cb80466021a2c7634338e574">42d9eeb873230f105da9f26e4ab8b7ce</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:38:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

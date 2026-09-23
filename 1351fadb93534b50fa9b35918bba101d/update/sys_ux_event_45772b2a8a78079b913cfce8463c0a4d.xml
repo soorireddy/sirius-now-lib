@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fires whenever the shared pinned list changes — including changes made by ANOTHER component or another browser tab. Bind it to Set client state value to keep a page-level copy of the list. Payload: { count, items }.</description>
+        <event_name>WORKSPACE_HEADER_PINNED_ITEMS_CHANGED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Pinned items changed</label>
+        <props>[
+    {
+        "description": "Number of pinned items.",
+        "fieldType": "number",
+        "label": "Pinned count",
+        "name": "count",
+        "valueType": "string"
+    },
+    {
+        "description": "The full list: [{ table, sysId, label, sublabel, url, pinnedAt, data }].",
+        "fieldType": "json",
+        "label": "Pinned items",
+        "name": "items",
+        "valueType": "string"
+    },
+    {
+        "description": "The per-user localStorage key the list lives under, e.g. x_soori_library.pinned_items.&lt;userSysId&gt;.",
+        "fieldType": "string",
+        "label": "Storage key",
+        "name": "storeKey",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:56:48</sys_created_on>
+        <sys_id>45772b2a8a78079b913cfce8463c0a4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pinned items changed</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_45772b2a8a78079b913cfce8463c0a4d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:56:48</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=45772b2a8a78079b913cfce8463c0a4d"/>
+</record_update>

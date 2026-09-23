@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>Fired when the row PIN icon unpins a record. Payload: { table, sysId, label, item, count, record }.</description>
+        <event_name>RECORD_LIST_ROW_UNPINNED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Row unpinned</label>
+        <props>[
+    {
+        "description": "The list table.",
+        "fieldType": "string",
+        "label": "Table",
+        "name": "table",
+        "valueType": "string"
+    },
+    {
+        "description": "The unpinned row's sys_id.",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "Title of the removed item.",
+        "fieldType": "string",
+        "label": "Label",
+        "name": "label",
+        "valueType": "string"
+    },
+    {
+        "description": "Always null on unpin.",
+        "fieldType": "string",
+        "label": "Pinned item",
+        "name": "item",
+        "valueType": "string"
+    },
+    {
+        "description": "How many items remain pinned.",
+        "fieldType": "number",
+        "label": "Pinned count",
+        "name": "count",
+        "valueType": "string"
+    },
+    {
+        "description": "The full row record.",
+        "fieldType": "string",
+        "label": "Record",
+        "name": "record",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:05</sys_created_on>
+        <sys_id>69cd918514310e2f3f75b0a8ceef260c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Row unpinned</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_69cd918514310e2f3f75b0a8ceef260c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:05</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=69cd918514310e2f3f75b0a8ceef260c"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_event_69cd918514310e2f3f75b0a8ceef260c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fired when the row PIN icon unpins a record. Payload: { table, sysId, label, item, count, record }.</description>
+        <event_name>RECORD_LIST_ROW_UNPINNED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Row unpinned</label>
+        <props>[
+    {
+        "description": "The list table.",
+        "fieldType": "string",
+        "label": "Table",
+        "name": "table",
+        "valueType": "string"
+    },
+    {
+        "description": "The unpinned row's sys_id.",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "Title of the removed item.",
+        "fieldType": "string",
+        "label": "Label",
+        "name": "label",
+        "valueType": "string"
+    },
+    {
+        "description": "Always null on unpin.",
+        "fieldType": "string",
+        "label": "Pinned item",
+        "name": "item",
+        "valueType": "string"
+    },
+    {
+        "description": "How many items remain pinned.",
+        "fieldType": "number",
+        "label": "Pinned count",
+        "name": "count",
+        "valueType": "string"
+    },
+    {
+        "description": "The full row record.",
+        "fieldType": "string",
+        "label": "Record",
+        "name": "record",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:05</sys_created_on>
+        <sys_id>69cd918514310e2f3f75b0a8ceef260c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Row unpinned</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_69cd918514310e2f3f75b0a8ceef260c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:05</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=69cd918514310e2f3f75b0a8ceef260c"/>
+</record_update>]]></payload>
+        <payload_hash>-310451154</payload_hash>
+        <record_name>Row unpinned</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:33</sys_created_on>
+        <sys_id>06d9eeb873230f105da9f26e4ab8b7b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8707a10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:33</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>4ed9eeb8ef230f10f11085ff226078b3</update_guid>
+        <update_guid_history>4ed9eeb8ef230f10f11085ff226078b3:0,20885efcf96fcb10d40cccb2dadc9d2a:36823910,df8a42b04f2fcb101ae3fbafe069873b:162013888,fda98abc20ebcb1028b8299e9ad741c1:1188763837,1e96caf4e5ebcb102543b913a214a95d:0,ed8f79783d6bcb10a9b1630630cd3367:-1987238196,5f6207134e9703107088608272e7fdc3:162013888</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:38:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>0005069f5feb419c8303da947e671824</sys_id>
+        <sys_metadata>69cd918514310e2f3f75b0a8ceef260c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Row unpinned</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_event_69cd918514310e2f3f75b0a8ceef260c</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_69cd918514310e2f3f75b0a8ceef260c">06d9eeb873230f105da9f26e4ab8b7b4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:38:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

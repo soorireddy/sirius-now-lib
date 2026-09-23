@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>Fired when the row PIN icon pins a record (Enable pinned items on). It is already written to the shared localStorage list — bind this only to persist server-side. Payload: { table, sysId, label, item, count, record }.</description>
+        <event_name>RECORD_LIST_ROW_PINNED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Row pinned</label>
+        <props>[
+    {
+        "description": "The list table.",
+        "fieldType": "string",
+        "label": "Table",
+        "name": "table",
+        "valueType": "string"
+    },
+    {
+        "description": "The pinned row's sys_id.",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "Title stored with the pinned item.",
+        "fieldType": "string",
+        "label": "Label",
+        "name": "label",
+        "valueType": "string"
+    },
+    {
+        "description": "The stored item: { table, sysId, label, sublabel, url, pinnedAt, data }.",
+        "fieldType": "string",
+        "label": "Pinned item",
+        "name": "item",
+        "valueType": "string"
+    },
+    {
+        "description": "How many items are pinned after the change.",
+        "fieldType": "number",
+        "label": "Pinned count",
+        "name": "count",
+        "valueType": "string"
+    },
+    {
+        "description": "The full row record.",
+        "fieldType": "string",
+        "label": "Record",
+        "name": "record",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:04</sys_created_on>
+        <sys_id>f1ca3c13e8ca4b22ae08b4e59c28d926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Row pinned</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_f1ca3c13e8ca4b22ae08b4e59c28d926</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:04</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=f1ca3c13e8ca4b22ae08b4e59c28d926"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_event_f1ca3c13e8ca4b22ae08b4e59c28d926</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fired when the row PIN icon pins a record (Enable pinned items on). It is already written to the shared localStorage list — bind this only to persist server-side. Payload: { table, sysId, label, item, count, record }.</description>
+        <event_name>RECORD_LIST_ROW_PINNED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Row pinned</label>
+        <props>[
+    {
+        "description": "The list table.",
+        "fieldType": "string",
+        "label": "Table",
+        "name": "table",
+        "valueType": "string"
+    },
+    {
+        "description": "The pinned row's sys_id.",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "Title stored with the pinned item.",
+        "fieldType": "string",
+        "label": "Label",
+        "name": "label",
+        "valueType": "string"
+    },
+    {
+        "description": "The stored item: { table, sysId, label, sublabel, url, pinnedAt, data }.",
+        "fieldType": "string",
+        "label": "Pinned item",
+        "name": "item",
+        "valueType": "string"
+    },
+    {
+        "description": "How many items are pinned after the change.",
+        "fieldType": "number",
+        "label": "Pinned count",
+        "name": "count",
+        "valueType": "string"
+    },
+    {
+        "description": "The full row record.",
+        "fieldType": "string",
+        "label": "Record",
+        "name": "record",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:04</sys_created_on>
+        <sys_id>f1ca3c13e8ca4b22ae08b4e59c28d926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Row pinned</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_f1ca3c13e8ca4b22ae08b4e59c28d926</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:04</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=f1ca3c13e8ca4b22ae08b4e59c28d926"/>
+</record_update>]]></payload>
+        <payload_hash>-872057379</payload_hash>
+        <record_name>Row pinned</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:34</sys_created_on>
+        <sys_id>42d9eeb873230f105da9f26e4ab8b7e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd870a5c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:34</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>8ad9eeb83d230f10b8e8ea6b8e419fe8</update_guid>
+        <update_guid_history>8ad9eeb83d230f10b8e8ea6b8e419fe8:0,35191e70fcafcb106bddd1d5c675b050:783487184,db8a42b03b2fcb10b5d87ea608780d15:-1761197557,041acefc75ebcb1060708739a2e9f1c1:566272765,5e96caf438ebcb105ed3697fb390de92:0,6bff79f81e6bcb101179b526ad0bbac9:1878876287,1f62071350970310c998c07374448aad:-1761197557</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>286ceed938b945c88ac5f0502e5b9510</sys_id>
+        <sys_metadata>f1ca3c13e8ca4b22ae08b4e59c28d926</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Row pinned</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_event_f1ca3c13e8ca4b22ae08b4e59c28d926</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_f1ca3c13e8ca4b22ae08b4e59c28d926">42d9eeb873230f105da9f26e4ab8b7e9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

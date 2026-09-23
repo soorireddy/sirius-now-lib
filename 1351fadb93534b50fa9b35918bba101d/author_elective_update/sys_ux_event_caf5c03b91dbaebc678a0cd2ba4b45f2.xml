@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>Fired whenever the shared pinned list changes — including changes made by ANOTHER component (Workspace Header, Pinned Rail) or another browser tab. Payload: { count, items, storeKey }.</description>
+        <event_name>RECORD_LIST_PINNED_ITEMS_CHANGED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Pinned items changed</label>
+        <props>[
+    {
+        "description": "Number of pinned items.",
+        "fieldType": "number",
+        "label": "Pinned count",
+        "name": "count",
+        "valueType": "string"
+    },
+    {
+        "description": "The full list: [{ table, sysId, label, sublabel, url, pinnedAt, data }].",
+        "fieldType": "string",
+        "label": "Pinned items",
+        "name": "items",
+        "valueType": "string"
+    },
+    {
+        "description": "The per-user localStorage key the list lives under.",
+        "fieldType": "string",
+        "label": "Storage key",
+        "name": "storeKey",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:05</sys_created_on>
+        <sys_id>caf5c03b91dbaebc678a0cd2ba4b45f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pinned items changed</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_caf5c03b91dbaebc678a0cd2ba4b45f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:05</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=caf5c03b91dbaebc678a0cd2ba4b45f2"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_event_caf5c03b91dbaebc678a0cd2ba4b45f2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fired whenever the shared pinned list changes — including changes made by ANOTHER component (Workspace Header, Pinned Rail) or another browser tab. Payload: { count, items, storeKey }.</description>
+        <event_name>RECORD_LIST_PINNED_ITEMS_CHANGED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Pinned items changed</label>
+        <props>[
+    {
+        "description": "Number of pinned items.",
+        "fieldType": "number",
+        "label": "Pinned count",
+        "name": "count",
+        "valueType": "string"
+    },
+    {
+        "description": "The full list: [{ table, sysId, label, sublabel, url, pinnedAt, data }].",
+        "fieldType": "string",
+        "label": "Pinned items",
+        "name": "items",
+        "valueType": "string"
+    },
+    {
+        "description": "The per-user localStorage key the list lives under.",
+        "fieldType": "string",
+        "label": "Storage key",
+        "name": "storeKey",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:05</sys_created_on>
+        <sys_id>caf5c03b91dbaebc678a0cd2ba4b45f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pinned items changed</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_caf5c03b91dbaebc678a0cd2ba4b45f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:05</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=caf5c03b91dbaebc678a0cd2ba4b45f2"/>
+</record_update>]]></payload>
+        <payload_hash>-91258544</payload_hash>
+        <record_name>Pinned items changed</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:33</sys_created_on>
+        <sys_id>42d9eeb873230f105da9f26e4ab8b7d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8708820000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:33</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>8ad9eeb844230f10c62e2a11d7e976d6</update_guid>
+        <update_guid_history>8ad9eeb844230f10c62e2a11d7e976d6:0,3de8927046afcb10e745056baefeedec:-468447673,2b8a42b00d2fcb10e33d812ffc48134a:1698077578,cee90afc93ebcb100b0e7aaebd862259:-1614861466,5e96caf46debcb100675dc5d47859f80:0,b6df31f8416bcb105262c99159fce1b2:1398464150,e7620713ca970310b1b2785970f114cd:1698077578</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>4b017de15f334ec0b14d542fce807c90</sys_id>
+        <sys_metadata>caf5c03b91dbaebc678a0cd2ba4b45f2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pinned items changed</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_event_caf5c03b91dbaebc678a0cd2ba4b45f2</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_caf5c03b91dbaebc678a0cd2ba4b45f2">42d9eeb873230f105da9f26e4ab8b7d7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

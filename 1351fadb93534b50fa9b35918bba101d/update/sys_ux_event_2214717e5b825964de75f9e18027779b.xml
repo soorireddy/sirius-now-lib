@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fires when the user confirms the share panel for a pinned item. The component only COLLECTS recipients — persisting or notifying is the page's job (there is no sharing table yet). Payload: { table, sysId, label, url, item, recipients, userSysIds, groupSysIds }.</description>
+        <event_name>WORKSPACE_HEADER_PINNED_ITEM_SHARED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Pinned item shared</label>
+        <props>[
+    {
+        "description": "Table of the shared record.",
+        "fieldType": "string",
+        "label": "Table",
+        "name": "table",
+        "valueType": "string"
+    },
+    {
+        "description": "sys_id of the shared record.",
+        "fieldType": "string",
+        "label": "Record Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "Title of the shared pinned item.",
+        "fieldType": "string",
+        "label": "Label",
+        "name": "label",
+        "valueType": "string"
+    },
+    {
+        "description": "Resolved record URL, ready to drop into a notification.",
+        "fieldType": "string",
+        "label": "URL",
+        "name": "url",
+        "valueType": "string"
+    },
+    {
+        "description": "The full stored item: { table, sysId, label, sublabel, url, pinnedAt, data }.",
+        "fieldType": "json",
+        "label": "Pinned item",
+        "name": "item",
+        "valueType": "string"
+    },
+    {
+        "description": "[{ type: 'user'|'group', sysId, name }] in the order they were picked.",
+        "fieldType": "json",
+        "label": "Recipients",
+        "name": "recipients",
+        "valueType": "string"
+    },
+    {
+        "description": "Just the user sys_ids — convenient for a notification or an m2m insert.",
+        "fieldType": "json",
+        "label": "User Sys IDs",
+        "name": "userSysIds",
+        "valueType": "string"
+    },
+    {
+        "description": "Just the group sys_ids.",
+        "fieldType": "json",
+        "label": "Group Sys IDs",
+        "name": "groupSysIds",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:56:50</sys_created_on>
+        <sys_id>2214717e5b825964de75f9e18027779b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pinned item shared</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_2214717e5b825964de75f9e18027779b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:56:50</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=2214717e5b825964de75f9e18027779b"/>
+</record_update>

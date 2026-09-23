@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component_m2m_asset">
+    <sys_ux_lib_component_m2m_asset action="DELETE">
+        <asset/>
+        <component/>
+        <sys_class_name>sys_ux_lib_component_m2m_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:11</sys_created_on>
+        <sys_id>f471a1c77281fa0f98f7b117edcfc9d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_component_m2m_asset_f471a1c77281fa0f98f7b117edcfc9d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:11</sys_updated_on>
+    </sys_ux_lib_component_m2m_asset>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_lib_component_m2m_asset_f471a1c77281fa0f98f7b117edcfc9d0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component_m2m_asset"><sys_ux_lib_component_m2m_asset action="INSERT_OR_UPDATE"><asset/><component/><sys_class_name>sys_ux_lib_component_m2m_asset</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-18 19:06:11</sys_created_on><sys_id>f471a1c77281fa0f98f7b117edcfc9d0</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package><sys_policy>read</sys_policy><sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope><sys_update_name>sys_ux_lib_component_m2m_asset_f471a1c77281fa0f98f7b117edcfc9d0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-18 19:06:11</sys_updated_on></sys_ux_lib_component_m2m_asset></record_update>]]></payload>
+        <payload_hash>680761050</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0b2c26b073630f105da9f26e4ab8b7dc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:01</sys_created_on>
+        <sys_id>e1903e3c73630f105da9f26e4ab8b746</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cda201b10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:01</sys_updated_on>
+        <type>UX Component Assets</type>
+        <update_guid>2d903e3c3c630f10666a9a046cb82e45</update_guid>
+        <update_guid_history>2d903e3c3c630f10666a9a046cb82e45:0,4780ba3cea630f107af74bc9e875b479:0,20e926f8fd230f10e54d6090d89c9a21:0,af195e7021afcb10b1b1cf636bf421c9:643612654,1c1acefcebebcb10c754f71bec309fec:1219237667,1c1acefcebebcb10c754f71bec309fec:1219237667,699ac2b07c2fcb10c376c76722caec03:153597741,1c1acefcebebcb10c754f71bec309fec:1219237667,78a6cef40debcb10bce0d3ebc280badc:0,40008af85f6bcb10d8dabdf85020d958:837259238,becf3db8bc6bcb101ce0c2229d0af217:0,fbbf39b8bf6bcb10ce7dfc389a51a616:0,89724713d89703100b518e18402ab9b9:153597741</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_lib_component_m2m_asset">sys_ux_lib_component_m2m_asset</sys_db_object>
+        <sys_id>3a163633455f42099361e3c0e741d601</sys_id>
+        <sys_metadata>f471a1c77281fa0f98f7b117edcfc9d0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_lib_component_m2m_asset_f471a1c77281fa0f98f7b117edcfc9d0</sys_update_name>
+        <sys_update_version display_value="sys_ux_lib_component_m2m_asset_f471a1c77281fa0f98f7b117edcfc9d0">e1903e3c73630f105da9f26e4ab8b746</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

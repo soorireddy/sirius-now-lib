@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>Dispatch from anywhere on the page to make this list re-fetch. Payload: {}.</description>
+        <event_name>X_ACME_LIBRARY_RECORD_LIST_REFRESH</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Refresh (inbound)</label>
+        <props>[]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:06</sys_created_on>
+        <sys_id>2447f8f9097d7b5d8a3edc9c35c454e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refresh (inbound)</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_2447f8f9097d7b5d8a3edc9c35c454e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:06</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=2447f8f9097d7b5d8a3edc9c35c454e1"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_event_2447f8f9097d7b5d8a3edc9c35c454e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Dispatch from anywhere on the page to make this list re-fetch. Payload: {}.</description>
+        <event_name>X_ACME_LIBRARY_RECORD_LIST_REFRESH</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Refresh (inbound)</label>
+        <props>[]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:06</sys_created_on>
+        <sys_id>2447f8f9097d7b5d8a3edc9c35c454e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refresh (inbound)</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_2447f8f9097d7b5d8a3edc9c35c454e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:06</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=2447f8f9097d7b5d8a3edc9c35c454e1"/>
+</record_update>]]></payload>
+        <payload_hash>-43630833</payload_hash>
+        <record_name>Refresh (inbound)</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:33</sys_created_on>
+        <sys_id>06d9eeb873230f105da9f26e4ab8b7a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8707070000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:33</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>4ed9eeb833230f108aa7a6ff211a39a1</update_guid>
+        <update_guid_history>4ed9eeb833230f108aa7a6ff211a39a1:0,5f698e7c30ebcb10e2ecdc7f05405653:45465646,0e96caf466ebcb1000bc3b427c5ae94b:0,d73f39385b6bcb101a353f77525af42f:-1582897761,b3620713d59703109c4de8ead4a464ed:-358350957</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:37:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>1394f88bd189434681c98e834a3ad164</sys_id>
+        <sys_metadata>2447f8f9097d7b5d8a3edc9c35c454e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refresh (inbound)</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_event_2447f8f9097d7b5d8a3edc9c35c454e1</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_2447f8f9097d7b5d8a3edc9c35c454e1">06d9eeb873230f105da9f26e4ab8b7a2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:37:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

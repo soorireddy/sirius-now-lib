@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="DELETE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>A self-fetching List: reads a table with a header (count/search/filter/refresh/export), configurable action buttons, single/multi selection, quick client-side search + a data-type-aware per-column filter row (string/number/date/boolean) that runs SERVER-SIDE over the whole table, column config + resize + personalization, reference-link navigation, row-action icons (PIN default), pagination — and unlimited nested group-by with per-group aggregation (sum/avg/count/min/max) + grand total.</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-soori-library-record-list.svg">bd085d6623879109c815309a93e169d4</image_icon>
+        <internal_component>false</internal_component>
+        <label>Record List</label>
+        <macroponent display_value="Record List">c7ae944c242811780b892f5a30c4934c</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:11</sys_created_on>
+        <sys_id>6b52e8b912c41cfaa9d4840e676b2fa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record List</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_6b52e8b912c41cfaa9d4840e676b2fa8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:11</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="DELETE" query="documentkey=6b52e8b912c41cfaa9d4840e676b2fa8"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_uib_toolbox_component_6b52e8b912c41cfaa9d4840e676b2fa8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>A self-fetching List: reads a table with a header (count/search/filter/refresh/export), configurable action buttons, single/multi selection, quick client-side search + a data-type-aware per-column filter row (string/number/date/boolean) that runs SERVER-SIDE over the whole table, column config + resize + personalization, reference-link navigation, row-action icons (PIN default), pagination — and unlimited nested group-by with per-group aggregation (sum/avg/count/min/max) + grand total.</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-soori-library-record-list.svg">bd085d6623879109c815309a93e169d4</image_icon>
+        <internal_component>false</internal_component>
+        <label>Record List</label>
+        <macroponent display_value="Record List">c7ae944c242811780b892f5a30c4934c</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:11</sys_created_on>
+        <sys_id>6b52e8b912c41cfaa9d4840e676b2fa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record List</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_6b52e8b912c41cfaa9d4840e676b2fa8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:11</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=6b52e8b912c41cfaa9d4840e676b2fa8"/>
+</record_update>]]></payload>
+        <payload_hash>-856557750</payload_hash>
+        <record_name>Record List</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:33</sys_created_on>
+        <sys_id>4ad9eeb873230f105da9f26e4ab8b78c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8706b90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:33</sys_updated_on>
+        <type>Builder Component</type>
+        <update_guid>82d9eeb884230f10b7857ac68e02958c</update_guid>
+        <update_guid_history>82d9eeb884230f10b7857ac68e02958c:0,e8885efc5b6fcb10575eef2b334c71d6:-1662922001,959a82b0e02fcb10fba1c209d292e7c4:-1685510317,82a98abc0eebcb1025d4b4abf84155d1:-1210732200,4a96caf44febcb10fb2a208688ffe333:0,a68fb978946bcb107f19743f37a5ee85:-1283158812,3c724713899703100bd199f1b8c1ffb0:-1685510317</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:38:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_uib_toolbox_component">sys_uib_toolbox_component</sys_db_object>
+        <sys_id>2664898d98704794b19a6f584692c384</sys_id>
+        <sys_metadata>6b52e8b912c41cfaa9d4840e676b2fa8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record List</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_uib_toolbox_component_6b52e8b912c41cfaa9d4840e676b2fa8</sys_update_name>
+        <sys_update_version display_value="sys_uib_toolbox_component_6b52e8b912c41cfaa9d4840e676b2fa8">4ad9eeb873230f105da9f26e4ab8b78c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:38:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

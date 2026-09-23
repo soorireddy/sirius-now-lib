@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fires when the pinned-items drawer opens or closes. Payload: { opened, count }.</description>
+        <event_name>WORKSPACE_HEADER_PINNED_DRAWER_TOGGLED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Pinned drawer toggled</label>
+        <props>[
+    {
+        "description": "True when the drawer opened, false when it closed.",
+        "fieldType": "boolean",
+        "label": "Opened",
+        "name": "opened",
+        "valueType": "string"
+    },
+    {
+        "description": "Number of pinned items at that moment.",
+        "fieldType": "number",
+        "label": "Pinned count",
+        "name": "count",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:56:49</sys_created_on>
+        <sys_id>84477eea83bd731b767d8bd3cd6c4a9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pinned drawer toggled</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_84477eea83bd731b767d8bd3cd6c4a9d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:56:49</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=84477eea83bd731b767d8bd3cd6c4a9d"/>
+</record_update>

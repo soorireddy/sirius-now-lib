@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fires when a row in the pinned drawer is activated (click or Enter/Space). The component then navigates to the Record URL template unless Navigate on pinned click is off. Payload: { table, sysId, label, url, data }.</description>
+        <event_name>WORKSPACE_HEADER_PINNED_ITEM_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Pinned item clicked</label>
+        <props>[
+    {
+        "description": "Table of the clicked pinned record.",
+        "fieldType": "string",
+        "label": "Table",
+        "name": "table",
+        "valueType": "string"
+    },
+    {
+        "description": "sys_id of the clicked pinned record.",
+        "fieldType": "string",
+        "label": "Record Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "Title of the clicked item.",
+        "fieldType": "string",
+        "label": "Label",
+        "name": "label",
+        "valueType": "string"
+    },
+    {
+        "description": "Resolved record URL from the template.",
+        "fieldType": "string",
+        "label": "URL",
+        "name": "url",
+        "valueType": "string"
+    },
+    {
+        "description": "The optional object stored with the item when it was pinned.",
+        "fieldType": "json",
+        "label": "Extra data",
+        "name": "data",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:56:48</sys_created_on>
+        <sys_id>d88e9bb51feef9919078af6f3f3cbbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pinned item clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_d88e9bb51feef9919078af6f3f3cbbbf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:56:48</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=d88e9bb51feef9919078af6f3f3cbbbf"/>
+</record_update>

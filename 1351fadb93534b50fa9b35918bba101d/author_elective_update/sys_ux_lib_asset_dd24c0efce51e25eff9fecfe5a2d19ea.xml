@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="DELETE">
+        <bundled_asset>false</bundled_asset>
+        <category>library</category>
+        <checksum>e61193dcdaf7aa74d35f4be97f94b689</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/
+var a={d:(t,r)=&gt;{for(var e in r)a.o(r,e)&amp;&amp;!a.o(t,e)&amp;&amp;Object.defineProperty(t,e,{enumerable:!0,get:r[e]})},o:(a,t)=&gt;Object.prototype.hasOwnProperty.call(a,t)},t={};a.d(t,{T:()=&gt;r,h:()=&gt;e});const r={"aria-braillelabel":{type:"string",translatable:!0},"aria-brailleroledescription":{type:"string",translatable:!0},"aria-colindextext":{type:"string",translatable:!0},"aria-description":{type:"string",translatable:!0},"aria-label":{type:"string",translatable:!0},"aria-placeholder":{type:"string",translatable:!0},"aria-roledescription":{type:"string",translatable:!0},"aria-rowindextext":{type:"string",translatable:!0},"aria-valuetext":{type:"string",translatable:!0}},e={type:"object",properties:r,patternProperties:{"^aria-":{type:"string"}},additionalProperties:!1};var i=t.T,l=t.h;
+/*__ESM_BODY_END__*/
+export{i as ariaTranslatableProps,l as configAriaSchema};
+//# sourceMappingURL=/uxasset/externals/@servicenow/library-schemas/19.8.2-ecd/index.min.js.map.jsdbx</content>
+        <content_meta>{"tectonicVersion":"29.0.2","imports":[],"exports":["ariaTranslatableProps","configAriaSchema"]}</content_meta>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>@servicenow/library-schemas/19.8.2-ecd/index</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:36</sys_created_on>
+        <sys_id>dd24c0efce51e25eff9fecfe5a2d19ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/library-schemas/19.8.2-ecd/index</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_dd24c0efce51e25eff9fecfe5a2d19ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:36</sys_updated_on>
+    </sys_ux_lib_asset>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_lib_asset_dd24c0efce51e25eff9fecfe5a2d19ea</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>library</category>
+        <checksum>e61193dcdaf7aa74d35f4be97f94b689</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/
+var a={d:(t,r)=&gt;{for(var e in r)a.o(r,e)&amp;&amp;!a.o(t,e)&amp;&amp;Object.defineProperty(t,e,{enumerable:!0,get:r[e]})},o:(a,t)=&gt;Object.prototype.hasOwnProperty.call(a,t)},t={};a.d(t,{T:()=&gt;r,h:()=&gt;e});const r={"aria-braillelabel":{type:"string",translatable:!0},"aria-brailleroledescription":{type:"string",translatable:!0},"aria-colindextext":{type:"string",translatable:!0},"aria-description":{type:"string",translatable:!0},"aria-label":{type:"string",translatable:!0},"aria-placeholder":{type:"string",translatable:!0},"aria-roledescription":{type:"string",translatable:!0},"aria-rowindextext":{type:"string",translatable:!0},"aria-valuetext":{type:"string",translatable:!0}},e={type:"object",properties:r,patternProperties:{"^aria-":{type:"string"}},additionalProperties:!1};var i=t.T,l=t.h;
+/*__ESM_BODY_END__*/
+export{i as ariaTranslatableProps,l as configAriaSchema};
+//# sourceMappingURL=/uxasset/externals/@servicenow/library-schemas/19.8.2-ecd/index.min.js.map.jsdbx</content>
+        <content_meta>{"tectonicVersion":"29.0.2","imports":[],"exports":["ariaTranslatableProps","configAriaSchema"]}</content_meta>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>@servicenow/library-schemas/19.8.2-ecd/index</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:36</sys_created_on>
+        <sys_id>dd24c0efce51e25eff9fecfe5a2d19ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/library-schemas/19.8.2-ecd/index</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_dd24c0efce51e25eff9fecfe5a2d19ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:36</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>]]></payload>
+        <payload_hash>-141624220</payload_hash>
+        <record_name>@servicenow/library-schemas/19.8.2-ecd/index</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:35</sys_created_on>
+        <sys_id>eed922f873230f105da9f26e4ab8b755</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd870f2c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:35</sys_updated_on>
+        <type>UX Asset</type>
+        <update_guid>2ad922f86e230f1024e103f4d37b1555</update_guid>
+        <update_guid_history>2ad922f86e230f1024e103f4d37b1555:0,0ff9cafc0debcb1097145caad74f4cd4:-2016177446,2696caf4e5ebcb10405190a8fa9bd2f3:0,e3ef75f8b36bcb10e146a843e31b3dd6:-1595056546,5bcffa5ba45703106ea07f97866c8b2e:1352289106</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_lib_asset">sys_ux_lib_asset</sys_db_object>
+        <sys_id>278e96024ed743ebbcc60fa45b4f1b51</sys_id>
+        <sys_metadata>dd24c0efce51e25eff9fecfe5a2d19ea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/library-schemas/19.8.2-ecd/index</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_lib_asset_dd24c0efce51e25eff9fecfe5a2d19ea</sys_update_name>
+        <sys_update_version display_value="sys_ux_lib_asset_dd24c0efce51e25eff9fecfe5a2d19ea">eed922f873230f105da9f26e4ab8b755</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

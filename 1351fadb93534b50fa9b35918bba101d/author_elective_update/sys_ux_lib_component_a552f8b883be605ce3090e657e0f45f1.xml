@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component">
+    <sys_ux_lib_component action="DELETE">
+        <default_children/>
+        <default_layout/>
+        <deprecated>false</deprecated>
+        <inner_components>cd5582042d08270f1b197ce1513137e0</inner_components>
+        <overrides/>
+        <required_sys_props/>
+        <required_translation_keys>[]</required_translation_keys>
+        <required_user_prefs/>
+        <source_script/>
+        <source_script_name>@x_soori_library/record-list</source_script_name>
+        <suspend_on_view_change>false</suspend_on_view_change>
+        <sys_class_name>sys_ux_lib_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:04:57</sys_created_on>
+        <sys_id>a552f8b883be605ce3090e657e0f45f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x-soori-library-record-list</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_component_a552f8b883be605ce3090e657e0f45f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:04:57</sys_updated_on>
+        <tag>x-soori-library-record-list</tag>
+    </sys_ux_lib_component>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_lib_component_a552f8b883be605ce3090e657e0f45f1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component">
+    <sys_ux_lib_component action="INSERT_OR_UPDATE">
+        <default_children/>
+        <default_layout/>
+        <deprecated>false</deprecated>
+        <inner_components>cd5582042d08270f1b197ce1513137e0</inner_components>
+        <overrides/>
+        <required_sys_props/>
+        <required_translation_keys>[]</required_translation_keys>
+        <required_user_prefs/>
+        <source_script/>
+        <source_script_name>@x_soori_library/record-list</source_script_name>
+        <suspend_on_view_change>false</suspend_on_view_change>
+        <sys_class_name>sys_ux_lib_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:04:57</sys_created_on>
+        <sys_id>a552f8b883be605ce3090e657e0f45f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x-soori-library-record-list</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_component_a552f8b883be605ce3090e657e0f45f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:04:57</sys_updated_on>
+        <tag>x-soori-library-record-list</tag>
+    </sys_ux_lib_component>
+</record_update>]]></payload>
+        <payload_hash>909732005</payload_hash>
+        <record_name>x-soori-library-record-list</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:36</sys_created_on>
+        <sys_id>f6d922f873230f105da9f26e4ab8b7b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8712ad0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:36</sys_updated_on>
+        <type>UX Component Definition</type>
+        <update_guid>32d922f8c8230f105c90c139b58c71b1</update_guid>
+        <update_guid_history>32d922f8c8230f105c90c139b58c71b1:0,e8c8da307cafcb10abce6dbb80159eb5:785490850,ae2a0630972fcb10e52d12a83ccdfec9:1311690356,b6960ef434ebcb106e36c53a9cb96b42:0,cfcf3db83d6bcb1030f34c60a63a151c:-424690555,3622cb9f3157031046a5574cb59e00e0:-1263217135</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_lib_component">sys_ux_lib_component</sys_db_object>
+        <sys_id>89e28112699d41008f651e0a2bacaac4</sys_id>
+        <sys_metadata>a552f8b883be605ce3090e657e0f45f1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x-soori-library-record-list</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_lib_component_a552f8b883be605ce3090e657e0f45f1</sys_update_name>
+        <sys_update_version display_value="sys_ux_lib_component_a552f8b883be605ce3090e657e0f45f1">f6d922f873230f105da9f26e4ab8b7b1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

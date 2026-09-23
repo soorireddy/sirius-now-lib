@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>primitives</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>a1b514aa43d265fe94400869955d8ffe,eba4d773f6d639b7b9fb318dd392260d,3486a59e2127a65f225f7225414dd28e,18c8503b58d18169fbe422492bb3e639,6bad59de8c27c091d12ce636252d932d,973ded205443c1debe28c4a4b24f2d74,0b1e81ab64a2ddaa7c38943fad7a4e3d,8e0f98a46da863a67e342575db4887e5,d88e9bb51feef9919078af6f3f3cbbbf,45772b2a8a78079b913cfce8463c0a4d,84477eea83bd731b767d8bd3cd6c4a9d,2214717e5b825964de75f9e18027779b</dispatched_events>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <keyboard_shortcuts>{}</keyboard_shortcuts>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Workspace Header</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "task",
+        "description": "Table of the record to display. Defaults to `task` — the base table of incident / change / problem / sc_task and every custom task-extended table, so the shipped defaults work as-is. With Record Sys ID set, the component fetches the record and every {field} reference resolves against it. Leave blank to use static values only.",
+        "fieldType": "table_name",
+        "label": "Table",
+        "name": "table",
+        "typeMetadata": {},
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "sys_id of the record to display. Bind this to the page's record sys_id parameter.",
+        "fieldType": "string",
+        "label": "Record Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Optional comma-separated field list to limit the fetch (e.g. number,short_description,state,assigned_to). Leave blank to fetch all fields — required if you reference arbitrary fields in templates or conditions.",
+        "fieldType": "string",
+        "label": "Fields to fetch",
+        "name": "fields",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Change this value (any string — a timestamp, a counter) to force the component to re-fetch the record. Useful after a save elsewhere on the page.",
+        "fieldType": "string",
+        "label": "Reload token",
+        "name": "reloadToken",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "{number}",
+        "description": "The record title. Supports {field} templating against the fetched record, e.g. \"{number} — {short_description}\". Use {field.value} for the raw value instead of the display value. This value only seeds the config panel; the runtime default is empty, so clearing it renders nothing.",
+        "fieldType": "string",
+        "label": "Primary value",
+        "name": "primaryValue",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "{short_description}",
+        "description": "Muted line under the primary value. Supports {field} templating. CLEAR IT AND IT STAYS CLEARED — nothing is rendered, no placeholder. This value only seeds the config panel; the runtime default is empty.",
+        "fieldType": "string",
+        "label": "Subheading",
+        "name": "subHeadingValue",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "2",
+        "description": "HTML heading element (h1–h6) used for the primary value. Controls the document outline for screen readers; the visual size comes from Heading style.",
+        "fieldType": "choice",
+        "label": "Heading level",
+        "name": "headingLevel",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "1",
+                    "value": "1"
+                },
+                {
+                    "label": "2",
+                    "value": "2"
+                },
+                {
+                    "label": "3",
+                    "value": "3"
+                },
+                {
+                    "label": "4",
+                    "value": "4"
+                },
+                {
+                    "label": "5",
+                    "value": "5"
+                },
+                {
+                    "label": "6",
+                    "value": "6"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "header-primary",
+        "description": "now-heading visual variant for the primary value.",
+        "fieldType": "choice",
+        "label": "Heading style",
+        "name": "headingVariant",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Header hero",
+                    "value": "header-hero"
+                },
+                {
+                    "label": "Header primary (default)",
+                    "value": "header-primary"
+                },
+                {
+                    "label": "Header secondary",
+                    "value": "header-secondary"
+                },
+                {
+                    "label": "Header tertiary",
+                    "value": "header-tertiary"
+                },
+                {
+                    "label": "Title primary",
+                    "value": "title-primary"
+                },
+                {
+                    "label": "Title secondary",
+                    "value": "title-secondary"
+                },
+                {
+                    "label": "Title tertiary",
+                    "value": "title-tertiary"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "When on, the primary value stays on one line and truncates with an ellipsis (full text in a tooltip) instead of wrapping.",
+        "fieldType": "boolean",
+        "label": "Truncate title",
+        "name": "truncateTitle",
+        "valueType": "string"
+    },
+    {
+        "description": "JSON array of label/value pairs shown under the subheading (Horizon recommends at most seven). Each item: { \"label\", \"field\", \"value\", \"type\": \"simple|highlighted|reference\", \"color\", \"colorMap\", \"variant\", \"showIcon\", \"icon\", \"href\", \"showWhen\", \"hideWhen\" }. `field` reads the record's DISPLAY value (so state shows \"Closed\", not \"3\"); `value` is a literal fallback used until the record loads, and it also supports {field} templating. For type \"highlighted\", `colorMap` maps the RAW value to a status colour, e.g. {\"1\":\"critical\",\"2\":\"high\",\"3\":\"positive\",\"*\":\"low\"}. For type \"reference\", the target table and sys_id come from the field's own reference link. Ships configured for the task table: State, Priority, Assigned to, Opened.",
+        "fieldType": "json",
+        "label": "Secondary values",
+        "name": "secondaryItems",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "horizontal",
+        "description": "How the label/value pairs are arranged: side-by-side (the record-header look), one per line, or side-by-side filling the width equally.",
+        "fieldType": "choice",
+        "label": "Secondary values layout",
+        "name": "secondaryAlign",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Side by side (default)",
+                    "value": "horizontal"
+                },
+                {
+                    "label": "Stacked vertically",
+                    "value": "vertical"
+                },
+                {
+                    "label": "Side by side, equal widths",
+                    "value": "horizontal-equal"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "sm",
+        "description": "Label and value text size for the secondary pairs.",
+        "fieldType": "choice",
+        "label": "Secondary values size",
+        "name": "secondarySize",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Small (default)",
+                    "value": "sm"
+                },
+                {
+                    "label": "Medium",
+                    "value": "md"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Optional minimum width per label/value pair, with units (e.g. 120px). Blank uses the platform default of 50px.",
+        "fieldType": "string",
+        "label": "Secondary item min width",
+        "name": "secondaryMinWidth",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "When on, labels and values that do not fit on one line truncate with an ellipsis and show the full text in a tooltip.",
+        "fieldType": "boolean",
+        "label": "Truncate secondary values",
+        "name": "truncateSecondary",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Hides the tag icon and all record tag pills.",
+        "fieldType": "boolean",
+        "label": "Hide tags",
+        "name": "hideTags",
+        "valueType": "string"
+    },
+    {
+        "description": "JSON array of tag labels rendered as now-pill next to the title, e.g. [\"Escalated\",\"VIP\"]. Ignored when Tags field is set.",
+        "fieldType": "json",
+        "label": "Record tags",
+        "name": "recordTags",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Field on the record whose comma-separated display value supplies the tags (e.g. a Tags / labels field). Takes precedence over Record tags.",
+        "fieldType": "string",
+        "label": "Tags field",
+        "name": "tagsField",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "tag-fill",
+        "description": "Icon shown before the tag pills.",
+        "fieldType": "icon",
+        "label": "Tags icon",
+        "name": "tagsIcon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "sm",
+        "description": "now-pill size for the tag pills.",
+        "fieldType": "choice",
+        "label": "Tags size",
+        "name": "tagsSize",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "XS",
+                    "value": "xs"
+                },
+                {
+                    "label": "SM (default)",
+                    "value": "sm"
+                },
+                {
+                    "label": "MD",
+                    "value": "md"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "When on, each tag pill gets a remove (x) button and firing it emits Tag dismissed (the tag is also hidden locally). When off, clicking a tag emits Tag clicked instead.",
+        "fieldType": "boolean",
+        "label": "Tags dismissible",
+        "name": "tagsDismissible",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Master switch for the whole action bar. Turn off to render the header alone.",
+        "fieldType": "boolean",
+        "label": "Show action bar",
+        "name": "showActionBar",
+        "valueType": "string"
+    },
+    {
+        "description": "JSON array defining the action bar, left to right. Each action: { \"id\", \"label\", \"type\": \"button|icon|split|menu\", \"variant\", \"icon\", \"bare\", \"tooltip\", \"pin\", \"overflow\", \"items\": [...], \"showWhen\", \"hideWhen\", \"disableWhen\", \"enableWhen\", \"data\" }. `variant` accepts the now-button variants (primary, secondary, tertiary, primary-negative, secondary-negative, primary-positive, secondary-positive). `type: icon` renders now-button-iconic, `split` renders now-split-button with `items` as its related actions, `menu` renders a now-dropdown menu. `overflow: true` forces the action into the … menu; `pin: true` keeps it visible when actions overflow. Conditions are encoded queries against the record's RAW values, e.g. \"state=3\" or \"active=true^priority&lt;3\".",
+        "fieldType": "json",
+        "label": "Actions",
+        "name": "actions",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "md",
+        "description": "Button size used across the action bar. Horizon's action bar guidance is medium.",
+        "fieldType": "choice",
+        "label": "Action size",
+        "name": "actionSize",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "label": "Medium (default)",
+                    "value": "md"
+                },
+                {
+                    "label": "Large",
+                    "value": "lg"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 3,
+        "description": "How many actions stay as buttons; the rest collapse into the overflow (…) menu. Pinned and primary-variant actions keep their slot first. Set to -1 to never overflow.",
+        "fieldType": "number",
+        "label": "Max visible actions",
+        "name": "maxVisibleActions",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "inline-end",
+        "description": "Where the action bar sits relative to the header block.",
+        "fieldType": "choice",
+        "label": "Action bar position",
+        "name": "actionBarPosition",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Right of the header (default)",
+                    "value": "inline-end"
+                },
+                {
+                    "label": "Below the header, right-aligned",
+                    "value": "block-end"
+                },
+                {
+                    "label": "Below the header, left-aligned",
+                    "value": "block-start"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Record actions",
+        "description": "Accessible name for the action bar toolbar, announced by screen readers.",
+        "fieldType": "string",
+        "label": "Action bar ARIA label",
+        "name": "actionBarLabel",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Encoded query on the record's raw values; when it matches, the entire action bar is hidden (e.g. state=7 to hide actions on closed records). Evaluated only once a record is loaded.",
+        "fieldType": "condition_string",
+        "label": "Hide action bar when",
+        "name": "actionBarHideWhen",
+        "typeMetadata": {},
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "When on, every action renders disabled (visible but not clickable) — use for read-only modes.",
+        "fieldType": "boolean",
+        "label": "Disable action bar",
+        "name": "disableActionBar",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Encoded query on the record's raw values; when it matches, every action is disabled (e.g. active=false).",
+        "fieldType": "condition_string",
+        "label": "Disable action bar when",
+        "name": "actionBarDisableWhen",
+        "typeMetadata": {},
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "ellipsis-v-outline",
+        "description": "Icon for the overflow (…) menu trigger.",
+        "fieldType": "icon",
+        "label": "Overflow icon",
+        "name": "overflowIcon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "More actions",
+        "description": "Tooltip and accessible name for the overflow menu trigger.",
+        "fieldType": "string",
+        "label": "Overflow tooltip",
+        "name": "overflowTooltip",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "URL template for \"reference\" secondary values, e.g. /{table}.do?sys_id={sysId} or /now/workspace/agent/record/{table}/{sysId}. {table} and {sysId} resolve to the referenced record. Leave blank to make reference values event-only: the click is cancelled and only Reference clicked fires, so the page decides where to navigate.",
+        "fieldType": "string",
+        "label": "Reference link URL",
+        "name": "referenceHref",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "When on (and Reference link URL is set), reference links open in a new tab or window.",
+        "fieldType": "boolean",
+        "label": "Reference opens new window",
+        "name": "referenceOpensWindow",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Shows the pin (thumbtack) toggle that adds/removes THIS record in the shared pinned list. It is always visible so the affordance never disappears: without Table + Record Sys ID, or while the record is still loading, it renders disabled with a tooltip explaining why. Usable even when the action bar is disabled — pinning is the user's own list, not a record action.",
+        "fieldType": "boolean",
+        "label": "Show pin toggle",
+        "name": "showPinToggle",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "title",
+        "description": "Where the pin toggle sits. Next to the title (default) puts it beside the record name and tags, which is where users look for a favourite/pin. In the action bar puts it next to the pinned-items star instead.",
+        "fieldType": "choice",
+        "label": "Pin toggle position",
+        "name": "pinTogglePosition",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Next to the title (default)",
+                    "value": "title"
+                },
+                {
+                    "label": "In the action bar",
+                    "value": "actionbar"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Pin this record",
+        "description": "Tooltip and accessible name of the pin toggle when the record is NOT pinned.",
+        "fieldType": "string",
+        "label": "Pin tooltip",
+        "name": "pinTooltip",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Unpin this record",
+        "description": "Tooltip and accessible name of the pin toggle when the record IS pinned.",
+        "fieldType": "string",
+        "label": "Unpin tooltip",
+        "name": "unpinTooltip",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Shows a star button (with a count badge) beside the pin toggle. Clicking it opens a right-side drawer listing every pinned record; clicking a row opens that record.",
+        "fieldType": "boolean",
+        "label": "Show pinned items button",
+        "name": "showPinnedList",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Pinned items",
+        "description": "Tooltip and accessible name of the pinned-items (star) button. The pinned count is appended automatically.",
+        "fieldType": "string",
+        "label": "Pinned items tooltip",
+        "name": "pinnedListTooltip",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Pinned items",
+        "description": "Heading of the right-side pinned-items drawer, and its dialog accessible name.",
+        "fieldType": "string",
+        "label": "Pinned drawer title",
+        "name": "pinnedDrawerTitle",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Nothing pinned yet. Use the pin icon in a record header to add one.",
+        "description": "Message shown in the drawer when nothing is pinned.",
+        "fieldType": "string",
+        "label": "Pinned drawer empty text",
+        "name": "pinnedEmptyText",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "When on (default), clicking a pinned row navigates to the Record URL template. Turn it off to handle routing yourself — Pinned item clicked still fires either way.",
+        "fieldType": "boolean",
+        "label": "Navigate on pinned click",
+        "name": "navigateOnPinnedClick",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "/record/{table}/{sysId}",
+        "description": "URL a pinned row opens. {table} and {sysId} are replaced. Default /record/{table}/{sysId} — matches the Pinned Rail component. Inside a workspace, prefix it with your experience path (e.g. /now/workspace/agent/record/{table}/{sysId}) so the click stays in the workspace.",
+        "fieldType": "string",
+        "label": "Record URL template",
+        "name": "recordUrlTemplate",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Adds a share button to each row of the pinned drawer. It opens a picker that searches users and groups, and firing it emits Pinned item shared with the chosen recipients. There is no sharing TABLE yet, so the component does not persist anything — bind the event to a notification or REST step.",
+        "fieldType": "boolean",
+        "label": "Allow sharing pinned items",
+        "name": "showPinnedShare",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "both",
+        "description": "Which directories the recipient picker searches.",
+        "fieldType": "choice",
+        "label": "Share with",
+        "name": "shareWith",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Users and groups (default)",
+                    "value": "both"
+                },
+                {
+                    "label": "Users only",
+                    "value": "users"
+                },
+                {
+                    "label": "Groups only",
+                    "value": "groups"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Share with",
+        "description": "Label above the recipient picker.",
+        "fieldType": "string",
+        "label": "Share panel label",
+        "name": "shareLabel",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Search users or groups…",
+        "description": "Placeholder text in the recipient search box.",
+        "fieldType": "string",
+        "label": "Share placeholder",
+        "name": "sharePlaceholder",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Share",
+        "description": "Label of the confirm button in the share panel.",
+        "fieldType": "string",
+        "label": "Share button label",
+        "name": "shareSendLabel",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Share with users or groups",
+        "description": "Tooltip and accessible name of the per-row share button.",
+        "fieldType": "string",
+        "label": "Share tooltip",
+        "name": "shareTooltip",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "sys_user",
+        "description": "Table searched for user recipients. Query: active=true and name/user_name CONTAINS the typed text.",
+        "fieldType": "table_name",
+        "label": "Share user table",
+        "name": "shareUserTable",
+        "typeMetadata": {},
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "sys_user_group",
+        "description": "Table searched for group recipients. Query: active=true and name CONTAINS the typed text.",
+        "fieldType": "table_name",
+        "label": "Share group table",
+        "name": "shareGroupTable",
+        "typeMetadata": {},
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 10,
+        "description": "Maximum results per directory (users and groups are queried separately, so the list can hold up to twice this).",
+        "fieldType": "number",
+        "label": "Share search limit",
+        "name": "shareSearchLimit",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "none",
+        "description": "Visual shown left of the title, rendered with now-avatar: an icon tile, a user avatar (initials or photo), or an image.",
+        "fieldType": "choice",
+        "label": "Header image",
+        "name": "headerImageType",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "None (default)",
+                    "value": "none"
+                },
+                {
+                    "label": "Icon",
+                    "value": "icon"
+                },
+                {
+                    "label": "Avatar (user)",
+                    "value": "avatar"
+                },
+                {
+                    "label": "Image",
+                    "value": "image"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "document-outline",
+        "description": "Icon shown when Header image is \"Icon\".",
+        "fieldType": "icon",
+        "label": "Header icon",
+        "name": "headerImageIcon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Image URL used when Header image is \"Image\" (or as the avatar photo). Supports {field} templating.",
+        "fieldType": "string",
+        "label": "Header image source",
+        "name": "headerImageSrc",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "User name for the avatar — initials are derived from it and it is announced to screen readers. Supports {field} templating, e.g. \"{assigned_to}\".",
+        "fieldType": "string",
+        "label": "Header avatar name",
+        "name": "headerImageUserName",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Optional presence indicator on the avatar.",
+        "fieldType": "choice",
+        "label": "Header avatar presence",
+        "name": "headerImagePresence",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "None",
+                    "value": ""
+                },
+                {
+                    "label": "Available",
+                    "value": "available"
+                },
+                {
+                    "label": "Away",
+                    "value": "away"
+                },
+                {
+                    "label": "Busy",
+                    "value": "busy"
+                },
+                {
+                    "label": "Offline",
+                    "value": "offline"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "lg",
+        "description": "now-avatar size for the header image.",
+        "fieldType": "choice",
+        "label": "Header image size",
+        "name": "headerImageSize",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "XS",
+                    "value": "xs"
+                },
+                {
+                    "label": "SM",
+                    "value": "sm"
+                },
+                {
+                    "label": "MD",
+                    "value": "md"
+                },
+                {
+                    "label": "LG (default)",
+                    "value": "lg"
+                },
+                {
+                    "label": "XL",
+                    "value": "xl"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "filled",
+        "description": "Filled (default) renders the image inside now-avatar, which always paints its own circular container — a white disc. Transparent drops that container and renders the glyph (or the image) on its own, so a tinted header surface shows through; use it for a transparent PNG/SVG or a bare icon. Ignored for the Avatar (user) type, where the circle is the point.",
+        "fieldType": "choice",
+        "label": "Header image background",
+        "name": "headerImageBackground",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Filled — avatar container (default)",
+                    "value": "filled"
+                },
+                {
+                    "label": "Transparent — no container",
+                    "value": "transparent"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Tooltip text for the header image. Supports {field} templating.",
+        "fieldType": "string",
+        "label": "Header image tooltip",
+        "name": "headerImageTooltip",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "URL of a background image drawn behind the header — a transparent PNG or SVG works best. Use an instance asset (e.g. /&lt;my_image&gt;.pngx, or a sys_attachment / db_image URL) or any absolute URL. Supports {field} templating, so the artwork can vary by record. Leave blank for no background.",
+        "fieldType": "string",
+        "label": "Background image URL",
+        "name": "backgroundImage",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "right",
+        "description": "Where the image sits across the header. Any CSS horizontal position: left, center, right, a percentage (0% = flush left, 100% = flush right), or a length (24px, 3rem). Default right.",
+        "fieldType": "string",
+        "label": "Background position — horizontal",
+        "name": "backgroundPositionX",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "center",
+        "description": "Where the image sits down the header. Any CSS vertical position: top, center, bottom, a percentage (0% = flush top, 100% = flush bottom), or a length (12px, -20px to bleed off the edge). Default center.",
+        "fieldType": "string",
+        "label": "Background position — vertical",
+        "name": "backgroundPositionY",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "contain",
+        "description": "Any CSS background-size: contain (default — fit inside the header, keep the aspect ratio), cover (fill and crop), auto (the image's own pixels), a single value (180px, 40%) or two values for width and height (220px auto).",
+        "fieldType": "string",
+        "label": "Background size",
+        "name": "backgroundSize",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Renders a thin rule under the header — useful when the header sits directly above a form or list.",
+        "fieldType": "boolean",
+        "label": "Show bottom divider",
+        "name": "showDivider",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "x_soori_library.pinned_items",
+        "description": "localStorage key holding the shared pinned list. Every component that uses the same key reads and writes the same list, so a pin made here shows up in the pinned rail and vice versa. Change it only to keep separate lists per experience.",
+        "fieldType": "string",
+        "label": "Pinned items storage key",
+        "name": "pinStorageKey",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "When on (default), the localStorage key gets the current user's sys_id appended (`&lt;key&gt;.&lt;userSysId&gt;`) so a shared browser — or an admin impersonating someone — never inherits another person's pins. Turn off only for a deliberately shared list.",
+        "fieldType": "boolean",
+        "label": "Pin list is per user",
+        "name": "pinPerUser",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Whose pin list to use. Leave blank to detect the logged-in user automatically (the platform's own globals first, then one cached call to /api/now/ui/user/current_user). Bind it only to force a specific user, e.g. on an admin screen.",
+        "fieldType": "string",
+        "label": "User Sys ID",
+        "name": "userSysId",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Loading record…",
+        "description": "Text shown beside the loader while the record is being fetched.",
+        "fieldType": "string",
+        "label": "Loading label",
+        "name": "loadingLabel",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Prints the raw failure (e.g. \"HTTP 401 — /api/now/table/…\") in the header. OFF by default: a header with no record is normally a NEW record, and the fallback heading already covers it. The message reaches the Record load error event either way, so leave this off in production.",
+        "fieldType": "boolean",
+        "label": "Show load errors (debug)",
+        "name": "showErrors",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "New record",
+        "description": "Heading used when there is nothing to template against — the sys_id is -1 (a NEW record; on a scoped table it answers 401), the record was deleted, you have no access, OR the configured Primary value resolved to nothing (e.g. \"{number}\" on a record with no number yet). Set it to what the page is really showing, e.g. \"New product configuration\". Supports {field} templating. Clear it to render no heading at all.",
+        "fieldType": "string",
+        "label": "Fallback heading",
+        "name": "fallbackPrimaryValue",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Subheading used in the same situations as the Fallback heading, e.g. \"Fill in the details below to create it.\" Empty by default, so only the heading shows. Supports {field} templating.",
+        "fieldType": "string",
+        "label": "Fallback subheading",
+        "name": "fallbackSubHeadingValue",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "On by default. Secondary values carry literal fallbacks so the design canvas looks real before a record loads — with NO record those same literals would read as this record's actual State / Priority / Assigned to. Turn this off only if your items are static by design.",
+        "fieldType": "boolean",
+        "label": "Hide secondary values when no record",
+        "name": "hideSecondaryOnFallback",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "On by default — configured tags would otherwise appear beside a record that does not exist yet.",
+        "fieldType": "boolean",
+        "label": "Hide tags when no record",
+        "name": "hideTagsOnFallback",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "On by default. An action bar with no record behind it would fire Save / Delete against nothing. Turn it OFF on a create page whose actions are meant for the new record. The pin toggle stays visible (disabled) either way.",
+        "fieldType": "boolean",
+        "label": "Hide actions when no record",
+        "name": "hideActionsOnFallback",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Renders NOTHING when there is no record — not even the fallback heading. Use it when the page shows its own empty/new state. Record load error still fires.",
+        "fieldType": "boolean",
+        "label": "Hide the whole header when no record",
+        "name": "hideOnFallback",
+        "valueType": "string"
+    }
+]</props>
+        <required_sys_props/>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-soori-library-workspace-header">6a22be2831c9edacdb770adf8d63e8f9</root_component>
+        <root_component_config>{"table":"@context/table","sysId":"@context/sysId","fields":"@context/fields","reloadToken":"@context/reloadToken","primaryValue":"@context/primaryValue","subHeadingValue":"@context/subHeadingValue","headingLevel":"@context/headingLevel","headingVariant":"@context/headingVariant","truncateTitle":"@context/truncateTitle","secondaryItems":"@context/secondaryItems","secondaryAlign":"@context/secondaryAlign","secondarySize":"@context/secondarySize","secondaryMinWidth":"@context/secondaryMinWidth","truncateSecondary":"@context/truncateSecondary","hideTags":"@context/hideTags","recordTags":"@context/recordTags","tagsField":"@context/tagsField","tagsIcon":"@context/tagsIcon","tagsSize":"@context/tagsSize","tagsDismissible":"@context/tagsDismissible","showActionBar":"@context/showActionBar","actions":"@context/actions","actionSize":"@context/actionSize","maxVisibleActions":"@context/maxVisibleActions","actionBarPosition":"@context/actionBarPosition","actionBarLabel":"@context/actionBarLabel","actionBarHideWhen":"@context/actionBarHideWhen","disableActionBar":"@context/disableActionBar","actionBarDisableWhen":"@context/actionBarDisableWhen","overflowIcon":"@context/overflowIcon","overflowTooltip":"@context/overflowTooltip","referenceHref":"@context/referenceHref","referenceOpensWindow":"@context/referenceOpensWindow","showPinToggle":"@context/showPinToggle","pinTogglePosition":"@context/pinTogglePosition","pinTooltip":"@context/pinTooltip","unpinTooltip":"@context/unpinTooltip","showPinnedList":"@context/showPinnedList","pinnedListTooltip":"@context/pinnedListTooltip","pinnedDrawerTitle":"@context/pinnedDrawerTitle","pinnedEmptyText":"@context/pinnedEmptyText","navigateOnPinnedClick":"@context/navigateOnPinnedClick","recordUrlTemplate":"@context/recordUrlTemplate","showPinnedShare":"@context/showPinnedShare","shareWith":"@context/shareWith","shareLabel":"@context/shareLabel","sharePlaceholder":"@context/sharePlaceholder","shareSendLabel":"@context/shareSendLabel","shareTooltip":"@context/shareTooltip","shareUserTable":"@context/shareUserTable","shareGroupTable":"@context/shareGroupTable","shareSearchLimit":"@context/shareSearchLimit","headerImageType":"@context/headerImageType","headerImageIcon":"@context/headerImageIcon","headerImageSrc":"@context/headerImageSrc","headerImageUserName":"@context/headerImageUserName","headerImagePresence":"@context/headerImagePresence","headerImageSize":"@context/headerImageSize","headerImageBackground":"@context/headerImageBackground","headerImageTooltip":"@context/headerImageTooltip","backgroundImage":"@context/backgroundImage","backgroundPositionX":"@context/backgroundPositionX","backgroundPositionY":"@context/backgroundPositionY","backgroundSize":"@context/backgroundSize","showDivider":"@context/showDivider","pinStorageKey":"@context/pinStorageKey","pinPerUser":"@context/pinPerUser","userSysId":"@context/userSysId","loadingLabel":"@context/loadingLabel","showErrors":"@context/showErrors","fallbackPrimaryValue":"@context/fallbackPrimaryValue","fallbackSubHeadingValue":"@context/fallbackSubHeadingValue","hideSecondaryOnFallback":"@context/hideSecondaryOnFallback","hideTagsOnFallback":"@context/hideTagsOnFallback","hideActionsOnFallback":"@context/hideActionsOnFallback","hideOnFallback":"@context/hideOnFallback"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:56:50</sys_created_on>
+        <sys_id>4ca4441907066a7a0724c5bd4528b305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workspace Header</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_macroponent_4ca4441907066a7a0724c5bd4528b305</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:56:50</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ca4441907066a7a0724c5bd4528b305"/>
+</record_update>

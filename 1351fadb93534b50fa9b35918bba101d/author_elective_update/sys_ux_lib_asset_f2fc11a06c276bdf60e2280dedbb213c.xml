@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="DELETE">
+        <bundled_asset>false</bundled_asset>
+        <category>source_map</category>
+        <checksum>ab80fcf3cb03d7ba31d5fa0c37a6c045</checksum>
+        <config_option/>
+        <content>{"version":3,"file":"externals/@servicenow/behavior-rtl/19.8.2-ecd/index.min.js","mappings":"AACA;AAAA,IAAIA,EAAsB,CCA1BA,EAAwB,CAACC,EAASC,KACjC,IAAI,IAAIC,KAAOD,EACXF,EAAoBI,EAAEF,EAAYC,KAASH,EAAoBI,EAAEH,EAASE,IAC5EE,OAAOC,eAAeL,EAASE,EAAK,CAAEI,YAAY,EAAMC,IAAKN,EAAWC,MCJ3EH,EAAwB,CAACS,EAAKC,IAAUL,OAAOM,UAAUC,eAAeC,KAAKJ,EAAKC,I,sBCAlF,MA0BA,GACCI,KA3BqB,MA4BrBC,WAAY,CACXC,IAAK,CACJ,WAAIC,GACH,OAAOC,SAASF,KAAO,KACxB,EACAG,SAAS,EACTC,OAAQ,CAACC,KAAM,a","sources":["webpack:///webpack/bootstrap","webpack:///webpack/runtime/define property getters","webpack:///webpack/runtime/hasOwnProperty shorthand","webpack:///@servicenow/behavior-rtl/19.8.2-ecd/src/rtl.js"],"sourcesContent":["// The require scope\nvar __webpack_require__ = {};\n\n","// define getter functions for harmony exports\n__webpack_require__.d = (exports, definition) =&gt; {\n\tfor(var key in definition) {\n\t\tif(__webpack_require__.o(definition, key) &amp;&amp; !__webpack_require__.o(exports, key)) {\n\t\t\tObject.defineProperty(exports, key, { enumerable: true, get: definition[key] });\n\t\t}\n\t}\n};","__webpack_require__.o = (obj, prop) =&gt; (Object.prototype.hasOwnProperty.call(obj, prop))","const BEHAVIOR_NAME = 'rtl';\n\n/**\n * This behavior helps style Now Design System components in right-to-left (RTL) layouts.\n * It sets the component host's `dir` attribute based on the `document.dir` of\n * its parent application. If `document.dir` is not explicitly defined, it will\n * set the component host's `dir` attribute to `'ltr'` by default.\n *\n * After installation import the behavior at the top of your component JS file\n * and register it in your component behaviors list:\n *\n * ```js\n * import rtlBehavior from '@servicenow/behavior-rtl';\n *\n * createCustomElement('sn-example', {\n *   // ...\n *   behaviors: [{behavior: rtlBehavior}]\n * });\n * ```\n *\n * For more information about styling RTL components, see the\n * [Design System internationalization guide](https://emotive.servicenow.com/develop/resources/i18n).\n *\n * @seismicBehavior rtlBehavior\n * @summary Sets the component host's `dir` attribute to support right-to-left layouts\n */\nexport default {\n\tname: BEHAVIOR_NAME,\n\tproperties: {\n\t\tdir: {\n\t\t\tget default() {\n\t\t\t\treturn document.dir || 'ltr';\n\t\t\t},\n\t\t\treflect: true,\n\t\t\tschema: {type: 'string'}\n\t\t}\n\t}\n};\n"],"names":["__webpack_require__","exports","definition","key","o","Object","defineProperty","enumerable","get","obj","prop","prototype","hasOwnProperty","call","name","properties","dir","default","document","reflect","schema","type"]}</content>
+        <content_meta>{"tectonicVersion":"29.0.2","imports":[],"exports":[]}</content_meta>
+        <dependencies/>
+        <device_type/>
+        <es_module>false</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/json</mime_type>
+        <name>@servicenow/behavior-rtl/19.8.2-ecd/index.min.js.map</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:38</sys_created_on>
+        <sys_id>f2fc11a06c276bdf60e2280dedbb213c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/behavior-rtl/19.8.2-ecd/index.min.js.map</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_f2fc11a06c276bdf60e2280dedbb213c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:38</sys_updated_on>
+    </sys_ux_lib_asset>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_lib_asset_f2fc11a06c276bdf60e2280dedbb213c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>source_map</category>
+        <checksum>ab80fcf3cb03d7ba31d5fa0c37a6c045</checksum>
+        <config_option/>
+        <content>{"version":3,"file":"externals/@servicenow/behavior-rtl/19.8.2-ecd/index.min.js","mappings":"AACA;AAAA,IAAIA,EAAsB,CCA1BA,EAAwB,CAACC,EAASC,KACjC,IAAI,IAAIC,KAAOD,EACXF,EAAoBI,EAAEF,EAAYC,KAASH,EAAoBI,EAAEH,EAASE,IAC5EE,OAAOC,eAAeL,EAASE,EAAK,CAAEI,YAAY,EAAMC,IAAKN,EAAWC,MCJ3EH,EAAwB,CAACS,EAAKC,IAAUL,OAAOM,UAAUC,eAAeC,KAAKJ,EAAKC,I,sBCAlF,MA0BA,GACCI,KA3BqB,MA4BrBC,WAAY,CACXC,IAAK,CACJ,WAAIC,GACH,OAAOC,SAASF,KAAO,KACxB,EACAG,SAAS,EACTC,OAAQ,CAACC,KAAM,a","sources":["webpack:///webpack/bootstrap","webpack:///webpack/runtime/define property getters","webpack:///webpack/runtime/hasOwnProperty shorthand","webpack:///@servicenow/behavior-rtl/19.8.2-ecd/src/rtl.js"],"sourcesContent":["// The require scope\nvar __webpack_require__ = {};\n\n","// define getter functions for harmony exports\n__webpack_require__.d = (exports, definition) =&gt; {\n\tfor(var key in definition) {\n\t\tif(__webpack_require__.o(definition, key) &amp;&amp; !__webpack_require__.o(exports, key)) {\n\t\t\tObject.defineProperty(exports, key, { enumerable: true, get: definition[key] });\n\t\t}\n\t}\n};","__webpack_require__.o = (obj, prop) =&gt; (Object.prototype.hasOwnProperty.call(obj, prop))","const BEHAVIOR_NAME = 'rtl';\n\n/**\n * This behavior helps style Now Design System components in right-to-left (RTL) layouts.\n * It sets the component host's `dir` attribute based on the `document.dir` of\n * its parent application. If `document.dir` is not explicitly defined, it will\n * set the component host's `dir` attribute to `'ltr'` by default.\n *\n * After installation import the behavior at the top of your component JS file\n * and register it in your component behaviors list:\n *\n * ```js\n * import rtlBehavior from '@servicenow/behavior-rtl';\n *\n * createCustomElement('sn-example', {\n *   // ...\n *   behaviors: [{behavior: rtlBehavior}]\n * });\n * ```\n *\n * For more information about styling RTL components, see the\n * [Design System internationalization guide](https://emotive.servicenow.com/develop/resources/i18n).\n *\n * @seismicBehavior rtlBehavior\n * @summary Sets the component host's `dir` attribute to support right-to-left layouts\n */\nexport default {\n\tname: BEHAVIOR_NAME,\n\tproperties: {\n\t\tdir: {\n\t\t\tget default() {\n\t\t\t\treturn document.dir || 'ltr';\n\t\t\t},\n\t\t\treflect: true,\n\t\t\tschema: {type: 'string'}\n\t\t}\n\t}\n};\n"],"names":["__webpack_require__","exports","definition","key","o","Object","defineProperty","enumerable","get","obj","prop","prototype","hasOwnProperty","call","name","properties","dir","default","document","reflect","schema","type"]}</content>
+        <content_meta>{"tectonicVersion":"29.0.2","imports":[],"exports":[]}</content_meta>
+        <dependencies/>
+        <device_type/>
+        <es_module>false</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/json</mime_type>
+        <name>@servicenow/behavior-rtl/19.8.2-ecd/index.min.js.map</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 18:54:38</sys_created_on>
+        <sys_id>f2fc11a06c276bdf60e2280dedbb213c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/behavior-rtl/19.8.2-ecd/index.min.js.map</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_f2fc11a06c276bdf60e2280dedbb213c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 18:54:38</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>]]></payload>
+        <payload_hash>54875654</payload_hash>
+        <record_name>@servicenow/behavior-rtl/19.8.2-ecd/index.min.js.map</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:36</sys_created_on>
+        <sys_id>26d922f873230f105da9f26e4ab8b7a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8712330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:36</sys_updated_on>
+        <type>UX Asset</type>
+        <update_guid>6ed922f815230f10859d38d3bbc6c4a1</update_guid>
+        <update_guid_history>6ed922f815230f10859d38d3bbc6c4a1:0,981acefc86ebcb10253876dda3ad44de:121463734,b2960ef441ebcb10833e9d1836149233:0,f3ff79f8f56bcb100de55462fa28eff9:1025133090,33cf3e5bc25703100d6c5d920b20a30f:1266643374</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:39:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_lib_asset">sys_ux_lib_asset</sys_db_object>
+        <sys_id>7add7218043f415ea356721e0fb953d9</sys_id>
+        <sys_metadata>f2fc11a06c276bdf60e2280dedbb213c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>@servicenow/behavior-rtl/19.8.2-ecd/index.min.js.map</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_lib_asset_f2fc11a06c276bdf60e2280dedbb213c</sys_update_name>
+        <sys_update_version display_value="sys_ux_lib_asset_f2fc11a06c276bdf60e2280dedbb213c">26d922f873230f105da9f26e4ab8b7a2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:39:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

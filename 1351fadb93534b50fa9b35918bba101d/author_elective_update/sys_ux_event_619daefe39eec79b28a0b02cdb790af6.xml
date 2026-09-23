@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>Fired when the Filter button is clicked (open your own filter UI). Payload: { tableName, query }.</description>
+        <event_name>RECORD_LIST_FILTER_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Filter clicked</label>
+        <props>[
+    {
+        "description": "The list table.",
+        "fieldType": "string",
+        "label": "Table name",
+        "name": "tableName",
+        "valueType": "string"
+    },
+    {
+        "description": "The current fixed query.",
+        "fieldType": "string",
+        "label": "Query",
+        "name": "query",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:02</sys_created_on>
+        <sys_id>619daefe39eec79b28a0b02cdb790af6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Filter clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_619daefe39eec79b28a0b02cdb790af6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:02</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=619daefe39eec79b28a0b02cdb790af6"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_event_619daefe39eec79b28a0b02cdb790af6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fired when the Filter button is clicked (open your own filter UI). Payload: { tableName, query }.</description>
+        <event_name>RECORD_LIST_FILTER_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Filter clicked</label>
+        <props>[
+    {
+        "description": "The list table.",
+        "fieldType": "string",
+        "label": "Table name",
+        "name": "tableName",
+        "valueType": "string"
+    },
+    {
+        "description": "The current fixed query.",
+        "fieldType": "string",
+        "label": "Query",
+        "name": "query",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:02</sys_created_on>
+        <sys_id>619daefe39eec79b28a0b02cdb790af6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Filter clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_619daefe39eec79b28a0b02cdb790af6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:02</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=619daefe39eec79b28a0b02cdb790af6"/>
+</record_update>]]></payload>
+        <payload_hash>1078776631</payload_hash>
+        <record_name>Filter clicked</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:33</sys_created_on>
+        <sys_id>8ad9eeb873230f105da9f26e4ab8b7af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8707820000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:33</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>c2d9eeb8d8230f10aa28482fbe8d23af</update_guid>
+        <update_guid_history>c2d9eeb8d8230f10aa28482fbe8d23af:0,da78dafccb6fcb101295eba04108c060:-543856409,0a8ace70ec2fcb109d0779dcb0f914e5:-852278013,7b990abca0ebcb10c7cbceab18512332:-1975255769,9696caf49eebcb10b7ef6a2ccfa45559:0,048f3978366bcb10d329857e71bad41f:-1851109617,7a620713e89703109422945a906aca26:-852278013</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:38:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>b9193d3abc294f36b47fb749e4c7f9a4</sys_id>
+        <sys_metadata>619daefe39eec79b28a0b02cdb790af6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Filter clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_event_619daefe39eec79b28a0b02cdb790af6</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_619daefe39eec79b28a0b02cdb790af6">8ad9eeb873230f105da9f26e4ab8b7af</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:38:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

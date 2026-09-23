@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>Fired (client mode) when the grouping scan hits Max group rows, so totals are partial. Payload: { shown, total }.</description>
+        <event_name>RECORD_LIST_AGGREGATES_CAPPED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Aggregates capped</label>
+        <props>[
+    {
+        "description": "Rows actually scanned.",
+        "fieldType": "number",
+        "label": "Shown",
+        "name": "shown",
+        "valueType": "string"
+    },
+    {
+        "description": "Total matching rows.",
+        "fieldType": "number",
+        "label": "Total",
+        "name": "total",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:03</sys_created_on>
+        <sys_id>4420e945f8c5a8386e50b1feaeea0ad8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Aggregates capped</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_4420e945f8c5a8386e50b1feaeea0ad8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:03</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=4420e945f8c5a8386e50b1feaeea0ad8"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_event_4420e945f8c5a8386e50b1feaeea0ad8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fired (client mode) when the grouping scan hits Max group rows, so totals are partial. Payload: { shown, total }.</description>
+        <event_name>RECORD_LIST_AGGREGATES_CAPPED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Aggregates capped</label>
+        <props>[
+    {
+        "description": "Rows actually scanned.",
+        "fieldType": "number",
+        "label": "Shown",
+        "name": "shown",
+        "valueType": "string"
+    },
+    {
+        "description": "Total matching rows.",
+        "fieldType": "number",
+        "label": "Total",
+        "name": "total",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:03</sys_created_on>
+        <sys_id>4420e945f8c5a8386e50b1feaeea0ad8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Aggregates capped</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_4420e945f8c5a8386e50b1feaeea0ad8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:03</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=4420e945f8c5a8386e50b1feaeea0ad8"/>
+</record_update>]]></payload>
+        <payload_hash>-1575979552</payload_hash>
+        <record_name>Aggregates capped</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:33</sys_created_on>
+        <sys_id>8ad9eeb873230f105da9f26e4ab8b7a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd87072d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:33</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>c2d9eeb839230f10fed73c0ad76250a6</update_guid>
+        <update_guid_history>c2d9eeb839230f10fed73c0ad76250a6:0,4b5856fc046fcb10facf93b98b035b81:2004750141,a68a02b0722fcb10c3528616be7c0762:135722834,918982bcf1ebcb10eb9771781b21b1cd:1311543828,8696caf4cfebcb1085a9c06788437f50:0,135f3178de6bcb10eff6749fa625061d:-1741309498,03620713839703100fc75ac97f87cb78:135722834</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:37:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>2eb3e2123cf2416da206511ebe4593a9</sys_id>
+        <sys_metadata>4420e945f8c5a8386e50b1feaeea0ad8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Aggregates capped</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_event_4420e945f8c5a8386e50b1feaeea0ad8</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_4420e945f8c5a8386e50b1feaeea0ad8">8ad9eeb873230f105da9f26e4ab8b7a6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:37:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

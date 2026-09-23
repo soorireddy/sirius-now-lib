@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>Fired when a reference cell is clicked (before navigation). Payload: { rowId, sysId, field, refTable, refSysId, value, openIn, url }.</description>
+        <event_name>RECORD_LIST_REFERENCE_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Reference clicked</label>
+        <props>[
+    {
+        "description": "The row's sys_id.",
+        "fieldType": "string",
+        "label": "Row id",
+        "name": "rowId",
+        "valueType": "string"
+    },
+    {
+        "description": "The row's sys_id.",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "The reference column field.",
+        "fieldType": "string",
+        "label": "Field",
+        "name": "field",
+        "valueType": "string"
+    },
+    {
+        "description": "The referenced record table.",
+        "fieldType": "string",
+        "label": "Reference table",
+        "name": "refTable",
+        "valueType": "string"
+    },
+    {
+        "description": "The referenced record sys_id.",
+        "fieldType": "string",
+        "label": "Reference sys_id",
+        "name": "refSysId",
+        "valueType": "string"
+    },
+    {
+        "description": "The display value clicked.",
+        "fieldType": "string",
+        "label": "Value",
+        "name": "value",
+        "valueType": "string"
+    },
+    {
+        "description": "same | newTab | workspace.",
+        "fieldType": "string",
+        "label": "Open in",
+        "name": "openIn",
+        "valueType": "string"
+    },
+    {
+        "description": "The built record URL (bind this to override navigation).",
+        "fieldType": "string",
+        "label": "URL",
+        "name": "url",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:01</sys_created_on>
+        <sys_id>152a3a5d2efba13694fff589c91682f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reference clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_152a3a5d2efba13694fff589c91682f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:01</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=152a3a5d2efba13694fff589c91682f9"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</application>
+        <file_path/>
+        <instance_id>2a18ef73eb310f90e9bbfddacad0cd32</instance_id>
+        <instance_name>dev426980</instance_name>
+        <name>sys_ux_event_152a3a5d2efba13694fff589c91682f9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fired when a reference cell is clicked (before navigation). Payload: { rowId, sysId, field, refTable, refSysId, value, openIn, url }.</description>
+        <event_name>RECORD_LIST_REFERENCE_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Reference clicked</label>
+        <props>[
+    {
+        "description": "The row's sys_id.",
+        "fieldType": "string",
+        "label": "Row id",
+        "name": "rowId",
+        "valueType": "string"
+    },
+    {
+        "description": "The row's sys_id.",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "The reference column field.",
+        "fieldType": "string",
+        "label": "Field",
+        "name": "field",
+        "valueType": "string"
+    },
+    {
+        "description": "The referenced record table.",
+        "fieldType": "string",
+        "label": "Reference table",
+        "name": "refTable",
+        "valueType": "string"
+    },
+    {
+        "description": "The referenced record sys_id.",
+        "fieldType": "string",
+        "label": "Reference sys_id",
+        "name": "refSysId",
+        "valueType": "string"
+    },
+    {
+        "description": "The display value clicked.",
+        "fieldType": "string",
+        "label": "Value",
+        "name": "value",
+        "valueType": "string"
+    },
+    {
+        "description": "same | newTab | workspace.",
+        "fieldType": "string",
+        "label": "Open in",
+        "name": "openIn",
+        "valueType": "string"
+    },
+    {
+        "description": "The built record URL (bind this to override navigation).",
+        "fieldType": "string",
+        "label": "URL",
+        "name": "url",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 19:06:01</sys_created_on>
+        <sys_id>152a3a5d2efba13694fff589c91682f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reference clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_152a3a5d2efba13694fff589c91682f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 19:06:01</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=152a3a5d2efba13694fff589c91682f9"/>
+</record_update>]]></payload>
+        <payload_hash>1894686000</payload_hash>
+        <record_name>Reference clicked</record_name>
+        <reverted_from/>
+        <source>61996a7873230f105da9f26e4ab8b740</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:09:33</sys_created_on>
+        <sys_id>8ad9eeb873230f105da9f26e4ab8b79d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0cd8706e20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:09:33</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>c2d9eeb833230f1098dbf9d1b6b4e49d</update_guid>
+        <update_guid_history>c2d9eeb833230f1098dbf9d1b6b4e49d:0,d6389ebc996fcb10aa7fe7174cbaf415:2146863998,658ace70822fcb10b2584a2d9ecc2f71:-1599635244,a469ca7cb0ebcb100608b7724787f7c9:881436283,8696caf416ebcb1056ed18a8e91f6f47:0,f22ff138b36bcb10e439c00bdc4172c7:-1763395768,ae620713cc9703106aad6f27c4aade06:-1599635244</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 09:37:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>22ba2b63fbe04ba09049cf845ccc1329</sys_id>
+        <sys_metadata>152a3a5d2efba13694fff589c91682f9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reference clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_scope_delete display_value="">88a67219b22d4b54b83afa08fce9d390</sys_scope_delete>
+        <sys_update_name>sys_ux_event_152a3a5d2efba13694fff589c91682f9</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_152a3a5d2efba13694fff589c91682f9">8ad9eeb873230f105da9f26e4ab8b79d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 09:37:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
