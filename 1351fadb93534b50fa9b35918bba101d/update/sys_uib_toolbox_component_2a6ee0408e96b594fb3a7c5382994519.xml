@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>A KPI card on the Horizon theme: a Horizon icon tile, heading, formatted value and a trend pill (e.g. ↓ 4.2% MoM).</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-soori-library-metric-card.svg">75724b97dcbbc2f70a91e57f37ab7cdc</image_icon>
+        <internal_component>false</internal_component>
+        <label>Dashboard Metric Card</label>
+        <macroponent display_value="Dashboard Metric Card">e37c3e5aa825f39d2dedb220af4d78e7</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 12:30:40</sys_created_on>
+        <sys_id>2a6ee0408e96b594fb3a7c5382994519</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dashboard Metric Card</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_2a6ee0408e96b594fb3a7c5382994519</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:30:40</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=2a6ee0408e96b594fb3a7c5382994519"/>
+</record_update>

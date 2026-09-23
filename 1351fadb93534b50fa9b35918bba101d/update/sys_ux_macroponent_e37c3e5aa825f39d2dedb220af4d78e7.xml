@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>primitives</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>99df75c2cb80466021a2c7634338e574</dispatched_events>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <keyboard_shortcuts>{}</keyboard_shortcuts>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Dashboard Metric Card</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "Submissions to Quote Ratio",
+        "description": "Title shown above the value.",
+        "fieldType": "string",
+        "label": "Heading",
+        "name": "heading",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "clipboard-outline",
+        "description": "Horizon icon for the tile — a full now-icon name ending -outline or -fill (e.g. clipboard-outline, key-fill). Leave empty to hide the icon tile.",
+        "fieldType": "icon",
+        "label": "Icon",
+        "name": "icon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "info",
+        "description": "Theme colour of the icon tile, taken from the theme's alert palette (tint behind, strong colour for the icon). Follows light and dark themes.",
+        "fieldType": "choice",
+        "label": "Icon tone",
+        "name": "iconTone",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Info",
+                    "value": "info"
+                },
+                {
+                    "label": "Positive",
+                    "value": "positive"
+                },
+                {
+                    "label": "Warning",
+                    "value": "warning"
+                },
+                {
+                    "label": "High",
+                    "value": "high"
+                },
+                {
+                    "label": "Critical",
+                    "value": "critical"
+                },
+                {
+                    "label": "Moderate",
+                    "value": "moderate"
+                },
+                {
+                    "label": "Low",
+                    "value": "low"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "info",
+                    "positive",
+                    "warning",
+                    "high",
+                    "critical",
+                    "moderate",
+                    "low"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "25",
+        "description": "The headline metric. A number or numeric string; formatted per the Value format property.",
+        "fieldType": "string",
+        "label": "Value",
+        "name": "value",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "percent",
+        "description": "How the value is rendered.",
+        "fieldType": "choice",
+        "label": "Value format",
+        "name": "format",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Percent (25.00%)",
+                    "value": "percent"
+                },
+                {
+                    "label": "Currency ($25.00)",
+                    "value": "currency"
+                },
+                {
+                    "label": "Number (25.00)",
+                    "value": "number"
+                },
+                {
+                    "label": "None (as typed)",
+                    "value": "none"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "percent",
+                    "currency",
+                    "number",
+                    "none"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 2,
+        "description": "Decimal places for the value and trend magnitude.",
+        "fieldType": "number",
+        "label": "Decimal places",
+        "name": "decimals",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "$",
+        "description": "Prefix used when Value format is Currency.",
+        "fieldType": "string",
+        "label": "Currency symbol",
+        "name": "currencySymbol",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "-4.2",
+        "description": "Change vs the previous period. The sign sets the arrow direction (auto); the magnitude is shown in a Horizon highlighted value. Leave empty to hide the trend.",
+        "fieldType": "string",
+        "label": "Trend value",
+        "name": "trendValue",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "auto",
+        "description": "Arrow direction. Auto derives it from the sign of the trend value.",
+        "fieldType": "choice",
+        "label": "Trend direction",
+        "name": "trendDirection",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Auto (from sign)",
+                    "value": "auto"
+                },
+                {
+                    "label": "Up",
+                    "value": "up"
+                },
+                {
+                    "label": "Down",
+                    "value": "down"
+                },
+                {
+                    "label": "Flat",
+                    "value": "flat"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "auto",
+                    "up",
+                    "down",
+                    "flat"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "MoM",
+        "description": "Caption beside the pill, e.g. MoM, YoY, vs last week.",
+        "fieldType": "string",
+        "label": "Trend period",
+        "name": "trendPeriod",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "When on, an upward trend uses the positive colour and downward the critical colour. Turn off for lower-is-better metrics (cost, churn, latency).",
+        "fieldType": "boolean",
+        "label": "Increase is positive",
+        "name": "trendPositiveIsGood",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "center",
+        "description": "How the icon tile aligns vertically against the heading/value/trend block.",
+        "fieldType": "choice",
+        "label": "Icon vertical alignment",
+        "name": "iconAlign",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Top",
+                    "value": "top"
+                },
+                {
+                    "label": "Center",
+                    "value": "center"
+                },
+                {
+                    "label": "Bottom",
+                    "value": "bottom"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "top",
+                    "center",
+                    "bottom"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "When on, the card is focusable and emits a 'Metric card clicked' event.",
+        "fieldType": "boolean",
+        "label": "Clickable",
+        "name": "clickable",
+        "valueType": "string"
+    }
+]</props>
+        <required_sys_props/>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-soori-library-metric-card">37e9176fed12d77ed56909cb884e3ef8</root_component>
+        <root_component_config>{"heading":"@context/heading","icon":"@context/icon","iconTone":"@context/iconTone","value":"@context/value","format":"@context/format","decimals":"@context/decimals","currencySymbol":"@context/currencySymbol","trendValue":"@context/trendValue","trendDirection":"@context/trendDirection","trendPeriod":"@context/trendPeriod","trendPositiveIsGood":"@context/trendPositiveIsGood","iconAlign":"@context/iconAlign","clickable":"@context/clickable"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 12:30:39</sys_created_on>
+        <sys_id>e37c3e5aa825f39d2dedb220af4d78e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dashboard Metric Card</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_macroponent_e37c3e5aa825f39d2dedb220af4d78e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:30:39</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=e37c3e5aa825f39d2dedb220af4d78e7"/>
+</record_update>

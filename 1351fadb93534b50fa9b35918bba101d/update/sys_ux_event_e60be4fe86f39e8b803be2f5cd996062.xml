@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Fired when Export is clicked (fires for every export mode, so you can also handle it yourself). With mode "csv" the component downloads a CSV; "serverList" opens the ServiceNow list export; "event" does nothing else. Payload: { tableName, query, columns, selectedSysIds, mode }.</description>
+        <event_name>RECORD_LIST_EXPORT_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Export clicked</label>
+        <props>[
+    {
+        "description": "The list table.",
+        "fieldType": "string",
+        "label": "Table name",
+        "name": "tableName",
+        "valueType": "string"
+    },
+    {
+        "description": "The current query.",
+        "fieldType": "string",
+        "label": "Query",
+        "name": "query",
+        "valueType": "string"
+    },
+    {
+        "description": "Visible column fields.",
+        "fieldType": "string",
+        "label": "Columns",
+        "name": "columns",
+        "valueType": "string"
+    },
+    {
+        "description": "Currently selected sys_ids.",
+        "fieldType": "string",
+        "label": "Selected sys_ids",
+        "name": "selectedSysIds",
+        "valueType": "string"
+    },
+    {
+        "description": "The export mode: csv | serverList | event.",
+        "fieldType": "string",
+        "label": "Mode",
+        "name": "mode",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 12:56:29</sys_created_on>
+        <sys_id>e60be4fe86f39e8b803be2f5cd996062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Export clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_e60be4fe86f39e8b803be2f5cd996062</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:56:29</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=e60be4fe86f39e8b803be2f5cd996062"/>
+</record_update>

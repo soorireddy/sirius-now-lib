@@ -10,7 +10,7 @@
             <plural>Icon vertical alignment</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-09-18 18:54:50</sys_created_on>
+            <sys_created_on>2026-09-23 12:30:35</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Icon vertical alignment</sys_name>
             <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
@@ -18,7 +18,7 @@
             <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
             <sys_update_name>sys_documentation_var__m_sys_ux_lib_component_attr_37e9176fed12d77ed56909cb884e3ef8_iconAlign_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-18 18:54:50</sys_updated_on>
+            <sys_updated_on>2026-09-23 12:30:35</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
