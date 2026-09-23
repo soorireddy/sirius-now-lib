@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Changes that update immediately were saved (or, with Save direct changes off, are ready for the page to save). Payload: { table, sysId, changes: [{ field, label, from, to }], photoUpdated }.</description>
+        <event_name>PROFILE_CARD_SAVED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Profile saved</label>
+        <props>[
+    {
+        "description": "Table.",
+        "fieldType": "string",
+        "label": "Table",
+        "name": "table",
+        "valueType": "string"
+    },
+    {
+        "description": "Record.",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "description": "[{ field, label, from, to }] — direct fields.",
+        "fieldType": "json",
+        "label": "Changes",
+        "name": "changes",
+        "valueType": "string"
+    },
+    {
+        "description": "True when the photo was replaced.",
+        "fieldType": "boolean",
+        "label": "Photo updated",
+        "name": "photoUpdated",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 17:28:26</sys_created_on>
+        <sys_id>e8aa0a5888844f921060494c69cebcdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Profile saved</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_e8aa0a5888844f921060494c69cebcdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 17:28:26</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=e8aa0a5888844f921060494c69cebcdc"/>
+</record_update>

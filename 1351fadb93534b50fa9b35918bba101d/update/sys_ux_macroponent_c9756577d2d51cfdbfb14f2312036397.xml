@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>primitives</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>1c5bdb5d51ff0643057fe4728c950ea6,e8aa0a5888844f921060494c69cebcdc,27c9096dbefff2a37f574c35537a7174,358c93d83cf97e78fab3faa90ec7cf92,5d6cdd17b802ea7d6c52c08ece76967c</dispatched_events>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <keyboard_shortcuts>{}</keyboard_shortcuts>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Profile Card</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "sys_user",
+        "description": "Table of the person record. Default sys_user; any table works (e.g. a cardholder table).",
+        "fieldType": "table_name",
+        "label": "Table",
+        "name": "table",
+        "typeMetadata": {},
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "sys_id of the person to show. Bind it to page data. Blank → the Sample record is shown (design time / offline).",
+        "fieldType": "string",
+        "label": "Record Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "name",
+        "description": "Field shown as the large name, e.g. name.",
+        "fieldType": "string",
+        "label": "Name field",
+        "name": "nameField",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "{title} · {department} · {location}",
+        "description": "Line under the name. {field} placeholders take display values; separators left by an empty value are dropped.",
+        "fieldType": "string",
+        "label": "Subtitle",
+        "name": "subtitle",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": {
+            "items": [
+                {
+                    "edit": "none",
+                    "field": "manager",
+                    "label": "Manager"
+                },
+                {
+                    "edit": "none",
+                    "field": "employee_number",
+                    "label": "Employee ID"
+                },
+                {
+                    "edit": "approval",
+                    "field": "email",
+                    "inputType": "email",
+                    "label": "Email"
+                },
+                {
+                    "edit": "direct",
+                    "field": "mobile_phone",
+                    "inputType": "tel",
+                    "label": "Mobile phone"
+                },
+                {
+                    "edit": "direct",
+                    "field": "phone",
+                    "inputType": "tel",
+                    "label": "Business phone"
+                },
+                {
+                    "edit": "none",
+                    "field": "company",
+                    "label": "Company"
+                }
+            ]
+        },
+        "description": "Label/value grid: [{ field, label, edit, inputType? }]. edit = none (read-only, e.g. Employee ID) | direct (user may change it; saved straight to the record — green hint) | approval (user may change it; NOT written, sent for approval via Approval requested — amber/red hint). inputType = text | email | tel | number | url.",
+        "fieldType": "json",
+        "label": "Fields",
+        "name": "fields",
+        "typeMetadata": {
+            "schema": {
+                "additionalProperties": true,
+                "properties": {},
+                "type": "object"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "2",
+        "description": "How many label/value columns in the grid.",
+        "fieldType": "choice",
+        "label": "Field columns",
+        "name": "fieldColumns",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "1",
+                    "value": "1"
+                },
+                {
+                    "label": "2",
+                    "value": "2"
+                },
+                {
+                    "label": "3",
+                    "value": "3"
+                },
+                {
+                    "label": "4",
+                    "value": "4"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": {
+            "items": [
+                {
+                    "colorMap": {
+                        "false": "critical",
+                        "true": "positive"
+                    },
+                    "field": "active",
+                    "labelMap": {
+                        "false": "Inactive",
+                        "true": "Active"
+                    }
+                },
+                {
+                    "colorMap": {
+                        "true": "moderate"
+                    },
+                    "field": "vip",
+                    "labelMap": {
+                        "false": "",
+                        "true": "VIP"
+                    }
+                }
+            ]
+        },
+        "description": "Horizon highlighted values beside the name: [{ field, labelMap?, colorMap?, color? }]. labelMap turns a raw value into text (an empty label hides the pill); colorMap maps raw or display value → critical | high | warning | moderate | positive | info | low | gray | … (\"*\" = catch-all).",
+        "fieldType": "json",
+        "label": "Status pills",
+        "name": "pills",
+        "typeMetadata": {
+            "schema": {
+                "additionalProperties": true,
+                "properties": {},
+                "type": "object"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "photo",
+        "description": "The image field holding the photo (sys_user.photo). Read from its attachment on ZZ_YY&lt;table&gt;. Blank → initials only.",
+        "fieldType": "string",
+        "label": "Photo field",
+        "name": "photoField",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Optional image URL used instead of the photo field, e.g. from another system. {field} placeholders allowed.",
+        "fieldType": "string",
+        "label": "Photo URL (override)",
+        "name": "photoUrl",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "square",
+        "description": "square = rounded square (now-image, initials tile when there is no photo); circle = now-avatar.",
+        "fieldType": "choice",
+        "label": "Photo style",
+        "name": "photoStyle",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Square",
+                    "value": "square"
+                },
+                {
+                    "label": "Circle (avatar)",
+                    "value": "circle"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "square",
+                    "circle"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "md",
+        "description": "Size of the photo.",
+        "fieldType": "choice",
+        "label": "Photo size",
+        "name": "photoSize",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "label": "Medium",
+                    "value": "md"
+                },
+                {
+                    "label": "Large",
+                    "value": "lg"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "sm",
+                    "md",
+                    "lg"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "center",
+        "description": "Vertical position of the photo beside the details.",
+        "fieldType": "choice",
+        "label": "Photo position",
+        "name": "photoPosition",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Top",
+                    "value": "top"
+                },
+                {
+                    "label": "Center",
+                    "value": "center"
+                },
+                {
+                    "label": "Bottom",
+                    "value": "bottom"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "top",
+                    "center",
+                    "bottom"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "chrome",
+        "description": "Colour of the initials tile when there is no photo (square style): chrome = the theme's dark navigation brand; neutral = the avatar's light identifier colours.",
+        "fieldType": "choice",
+        "label": "Initials tile",
+        "name": "photoTone",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Chrome (dark)",
+                    "value": "chrome"
+                },
+                {
+                    "label": "Neutral (light)",
+                    "value": "neutral"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "chrome",
+                    "neutral"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Show the edit pencil (only when at least one field or the photo is editable).",
+        "fieldType": "boolean",
+        "label": "Allow editing",
+        "name": "editable",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Edit profile",
+        "description": "Title of the edit dialog and the pencil's tooltip.",
+        "fieldType": "string",
+        "label": "Edit dialog title",
+        "name": "editTitle",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "approval",
+        "description": "Whether the user may change their photo: none | direct (replaces the photo immediately) | approval (uploaded as a pending attachment and sent for approval).",
+        "fieldType": "choice",
+        "label": "Photo change",
+        "name": "photoEdit",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Not allowed",
+                    "value": "none"
+                },
+                {
+                    "label": "Updates immediately",
+                    "value": "direct"
+                },
+                {
+                    "label": "Needs approval",
+                    "value": "approval"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "none",
+                    "direct",
+                    "approval"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Show the coloured info icon beside editable field labels on the card (green = updates immediately, amber/red = needs approval).",
+        "fieldType": "boolean",
+        "label": "Show edit hints",
+        "name": "showEditHints",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Updates immediately",
+        "description": "Tooltip / note for fields that save immediately.",
+        "fieldType": "string",
+        "label": "Direct hint text",
+        "name": "directHint",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Needs approval",
+        "description": "Tooltip / note for fields that need approval.",
+        "fieldType": "string",
+        "label": "Approval hint text",
+        "name": "approvalHint",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "amber",
+        "description": "Colour of the needs-approval hint.",
+        "fieldType": "choice",
+        "label": "Approval hint colour",
+        "name": "approvalTone",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Amber",
+                    "value": "amber"
+                },
+                {
+                    "label": "Red",
+                    "value": "red"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "amber",
+                    "red"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "On: direct fields are PATCHed to the record by the component. Off: they are only emitted in Profile saved, for the page to write.",
+        "fieldType": "boolean",
+        "label": "Save direct changes",
+        "name": "writeDirectChanges",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Show the badge QR panel on the right.",
+        "fieldType": "boolean",
+        "label": "Show QR panel",
+        "name": "showQr",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "URL of the QR image (e.g. a generator endpoint); {field} placeholders allowed, e.g. /api/x_scope/qr?data={employee_number}. Blank → a PLACEHOLDER pattern (not a scannable code).",
+        "fieldType": "string",
+        "label": "QR image URL",
+        "name": "qrImageUrl",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "{employee_number}",
+        "description": "Text under the QR, e.g. the badge number. {field} placeholders allowed.",
+        "fieldType": "string",
+        "label": "QR caption",
+        "name": "qrCaption",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Add to wallet",
+        "description": "Label of the button under the QR (fires QR action clicked). Blank hides it.",
+        "fieldType": "string",
+        "label": "QR action label",
+        "name": "qrActionLabel",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": {
+            "active": {
+                "display_value": "true",
+                "value": "true"
+            },
+            "company": "Sirius Corp",
+            "department": "Engineering",
+            "email": "priya.raghunathan@sirius-corp.example",
+            "employee_number": "EMP-40182",
+            "location": "Tower One L12",
+            "manager": "Dana Okafor",
+            "mobile_phone": "+1 555-0142",
+            "name": "Priya Raghunathan",
+            "phone": "+1 555-0100",
+            "title": "Senior Engineer",
+            "vip": {
+                "display_value": "false",
+                "value": "false"
+            }
+        },
+        "description": "Shown when Record Sys ID is blank (design time / offline). Plain values or { value, display_value }.",
+        "fieldType": "json",
+        "label": "Sample record",
+        "name": "sampleRecord",
+        "typeMetadata": {
+            "schema": {
+                "additionalProperties": true,
+                "properties": {},
+                "type": "object"
+            }
+        },
+        "valueType": "string"
+    }
+]</props>
+        <required_sys_props/>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-soori-library-profile-card">43c00dd2e3df9f5294c05c6a70885b89</root_component>
+        <root_component_config>{"table":"@context/table","sysId":"@context/sysId","nameField":"@context/nameField","subtitle":"@context/subtitle","fields":"@context/fields","fieldColumns":"@context/fieldColumns","pills":"@context/pills","photoField":"@context/photoField","photoUrl":"@context/photoUrl","photoStyle":"@context/photoStyle","photoSize":"@context/photoSize","photoPosition":"@context/photoPosition","photoTone":"@context/photoTone","editable":"@context/editable","editTitle":"@context/editTitle","photoEdit":"@context/photoEdit","showEditHints":"@context/showEditHints","directHint":"@context/directHint","approvalHint":"@context/approvalHint","approvalTone":"@context/approvalTone","writeDirectChanges":"@context/writeDirectChanges","showQr":"@context/showQr","qrImageUrl":"@context/qrImageUrl","qrCaption":"@context/qrCaption","qrActionLabel":"@context/qrActionLabel","sampleRecord":"@context/sampleRecord"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 17:28:29</sys_created_on>
+        <sys_id>c9756577d2d51cfdbfb14f2312036397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Profile Card</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_macroponent_c9756577d2d51cfdbfb14f2312036397</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 17:28:29</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=c9756577d2d51cfdbfb14f2312036397"/>
+</record_update>

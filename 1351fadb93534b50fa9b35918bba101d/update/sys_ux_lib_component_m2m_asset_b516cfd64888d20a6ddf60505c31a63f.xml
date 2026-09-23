@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component_m2m_asset">
+    <sys_ux_lib_component_m2m_asset action="INSERT_OR_UPDATE">
+        <asset display_value="@x_soori_library/profile-card/index">3894b72bbfaad2da5ecf816b82d61bb0</asset>
+        <component display_value="x-soori-library-profile-card">43c00dd2e3df9f5294c05c6a70885b89</component>
+        <sys_class_name>sys_ux_lib_component_m2m_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 17:28:31</sys_created_on>
+        <sys_id>b516cfd64888d20a6ddf60505c31a63f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_component_m2m_asset_b516cfd64888d20a6ddf60505c31a63f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 17:28:31</sys_updated_on>
+    </sys_ux_lib_component_m2m_asset>
+</record_update>
