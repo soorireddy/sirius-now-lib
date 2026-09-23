@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component_attr">
+    <sys_ux_lib_component_attr action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Entries (JSON)</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value>{entries=[{id=evt-4, timestamp=15 Jan 2025, 10:14, actor=M. Chen (UW), description=Policy bound — Binder BND-2025-00312 issued. Policy POL-2025-00884 effective 01 Feb 2025., icon=check-circle-outline, status=success}, {id=evt-3, timestamp=14 Jan 2025, 09:41, actor=J. Harrington, description=Broker accepted quote and confirmed bind intent, icon=clock-outline, status=none}, {id=evt-2, timestamp=13 Jan 2025, 17:03, actor=M. Chen (UW), description=Quote presented to Lockton — final pricing confirmed, icon=clock-outline, status=none}, {id=evt-1, timestamp=10 Jan 2025, 11:22, actor=M. Chen (UW), description=Draft quote created — awaiting pricing sign-off, icon=clock-outline, status=none}]}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>entries</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Entries (JSON)</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="x-soori-library-activity-timeline">fc43479957c5d1d522f3179270637b84</model>
+        <model_id>fc43479957c5d1d522f3179270637b84</model_id>
+        <model_table/>
+        <name>var__m_sys_ux_lib_component_attr_fc43479957c5d1d522f3179270637b84</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_ux_lib_component_attr</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 18:07:53</sys_created_on>
+        <sys_id>050e85e6738cd6575e6e3a1c2cc3787d</sys_id>
+        <sys_name>Entries (JSON)</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_component_attr_050e85e6738cd6575e6e3a1c2cc3787d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 18:07:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_ux_lib_component_attr>
+</record_update>

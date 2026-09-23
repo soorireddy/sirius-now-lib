@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>Activity / journal feed: icon rail with a connector, avatar + "Actor verb Target" sentences, relative or absolute times, day groups, detail cards, notes and attachments. Data-driven — for user / badge journals and request / task timelines.</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-soori-library-activity-feed.svg">2c831bc1f0f2754d16a64d971776e1cc</image_icon>
+        <internal_component>false</internal_component>
+        <label>Activity Feed</label>
+        <macroponent display_value="Activity Feed">b25ca14619afadc69254bd22709dd38c</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 18:29:07</sys_created_on>
+        <sys_id>3ed884271523f2992e01a09e3d5b097e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Activity Feed</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_3ed884271523f2992e01a09e3d5b097e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 18:29:07</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=3ed884271523f2992e01a09e3d5b097e"/>
+</record_update>

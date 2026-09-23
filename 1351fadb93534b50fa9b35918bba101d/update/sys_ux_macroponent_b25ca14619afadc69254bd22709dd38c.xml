@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>primitives</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>dd370bc3a219cef7767fadf56b2cf319,2afa797abef9ae9a28d0b0be639d460a,5ad7fdcebb7f93a5436606220b5f35f4</dispatched_events>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <keyboard_shortcuts>{}</keyboard_shortcuts>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Activity Feed</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "Activity",
+        "description": "Header title. Blank + no close button hides the header.",
+        "fieldType": "string",
+        "label": "Title",
+        "name": "title",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Show the title row.",
+        "fieldType": "boolean",
+        "label": "Show header",
+        "name": "showHeader",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "A close button in the header (fires Close clicked) — for a side panel.",
+        "fieldType": "boolean",
+        "label": "Show close button",
+        "name": "showClose",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": {
+            "items": [
+                {
+                    "actor": "Priya Raghunathan",
+                    "details": [
+                        {
+                            "label": "Request",
+                            "value": "REQ0104893 · extend to 31 Dec"
+                        },
+                        {
+                            "label": "Pending approval",
+                            "value": "Ravi Shah · Network Services"
+                        }
+                    ],
+                    "id": "j9",
+                    "kind": "approval_requested",
+                    "target": "Comms Room L3 extension",
+                    "time": "2026-09-22 09:30:00",
+                    "verb": "requested"
+                },
+                {
+                    "actor": "Badging Office",
+                    "id": "j8",
+                    "kind": "badge_issued",
+                    "suffix": "(MC-88947)",
+                    "target": "Apple Watch credential",
+                    "time": "2026-09-22 16:40:00",
+                    "verb": "provisioned"
+                },
+                {
+                    "actor": "Marcus Chen",
+                    "id": "j7",
+                    "kind": "note",
+                    "note": "Priya still supports the B2 storage migration until December — keep the access, please complete Server Room Protocol by 30 Sep.",
+                    "target": "Server Room B2 review",
+                    "time": "2026-09-21 14:05:00",
+                    "verb": "added a note to"
+                },
+                {
+                    "actor": "DC Operations",
+                    "details": [
+                        {
+                            "label": "Reason",
+                            "value": "Data Centre Safety Induction expired on 20 Jun 2026"
+                        }
+                    ],
+                    "id": "j6",
+                    "kind": "rejected",
+                    "target": "Data Centre Hall A renewal",
+                    "time": "2026-09-11 09:02:00",
+                    "verb": "rejected"
+                },
+                {
+                    "actor": "Priya Raghunathan",
+                    "attachments": [
+                        {
+                            "name": "Lost badge report.pdf",
+                            "url": ""
+                        }
+                    ],
+                    "id": "j5",
+                    "kind": "badge_lost",
+                    "suffix": "as lost",
+                    "target": "badge B-002119",
+                    "time": "2026-09-10 11:20:00",
+                    "verb": "reported"
+                },
+                {
+                    "actor": "Access Control",
+                    "id": "j4",
+                    "kind": "access_revoked",
+                    "target": "badge B-002119",
+                    "time": "2026-09-10 11:21:00",
+                    "verb": "deactivated"
+                },
+                {
+                    "actor": "Priya Raghunathan",
+                    "id": "j3",
+                    "kind": "training",
+                    "target": "Privacy &amp; Data Handling",
+                    "time": "2026-05-11 15:05:00",
+                    "verb": "completed"
+                },
+                {
+                    "actor": "Lena Fischer",
+                    "id": "j2",
+                    "kind": "access_granted",
+                    "suffix": "access",
+                    "target": "L12 Engineering",
+                    "time": "2022-03-14 08:40:00",
+                    "verb": "approved"
+                },
+                {
+                    "actor": "Workday",
+                    "id": "j1",
+                    "kind": "created",
+                    "target": "Priya Raghunathan",
+                    "time": "2022-03-14 08:00:00",
+                    "verb": "created the cardholder"
+                }
+            ]
+        },
+        "description": "The events: an array, or { items: [...] } (also { entries } / { result }). Each item: { id, kind, actor, actor_image?, verb, target, suffix?, text?, time, details?: [{ label, value }], note?, attachments?: [{ name, url, thumbnail? }], icon?, tone? }. The sentence reads \"&lt;actor&gt; &lt;verb&gt; &lt;target&gt; &lt;suffix&gt;\" with actor and target in bold; use text instead of verb/target for free text. time: \"YYYY-MM-DD HH:mm:ss\" (UTC, as ServiceNow stores it), ISO, or epoch ms — other text is shown as typed. Values may be Table-API cells { value, display_value }. Bind a Data Resource to it.",
+        "fieldType": "json",
+        "label": "Items",
+        "name": "items",
+        "typeMetadata": {
+            "schema": {
+                "additionalProperties": true,
+                "properties": {},
+                "type": "object"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": {},
+        "description": "Bind any item shape without a transform: { \"actor\": \"sys_created_by\", \"time\": \"sys_created_on\", \"text\": \"value\", \"kind\": \"element\" }. Keys: id, kind, actor, actorImage, verb, target, suffix, text, time, details, note, attachments, icon, tone. Unmapped keys use their own name.",
+        "fieldType": "json",
+        "label": "Field map",
+        "name": "fieldMap",
+        "typeMetadata": {
+            "schema": {
+                "additionalProperties": true,
+                "properties": {},
+                "type": "object"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": {},
+        "description": "Override or add event kinds: { \"door\": { \"icon\": \"building-outline\", \"tone\": \"info\" } }. Built-in kinds: created · updated · status · comment · note · attachment · approval_requested · approved · rejected · completed · badge_issued · badge_lost · badge_suspended · badge_reactivated · access_granted · access_revoked · access_denied · door · training · visitor · notification · viewed (anything else → a clock). tone = info | positive | warning | high | critical | moderate | low (theme alert palette). An item's own icon / tone wins.",
+        "fieldType": "json",
+        "label": "Kind styles",
+        "name": "kinds",
+        "typeMetadata": {
+            "schema": {
+                "additionalProperties": true,
+                "properties": {},
+                "type": "object"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "relative",
+        "description": "relative (19m ago · Yesterday · 3d ago, then the date) · datetime (Aug 08, 2024, 11:00 AM) · time (11:00 AM — pair with Group by day).",
+        "fieldType": "choice",
+        "label": "Time display",
+        "name": "timeDisplay",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Relative",
+                    "value": "relative"
+                },
+                {
+                    "label": "Date and time",
+                    "value": "datetime"
+                },
+                {
+                    "label": "Time only",
+                    "value": "time"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "relative",
+                    "datetime",
+                    "time"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Day headers: Today · Yesterday · Mon, Sep 21, 2026.",
+        "fieldType": "boolean",
+        "label": "Group by day",
+        "name": "groupByDay",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "desc",
+        "description": "Newest first (desc) or oldest first (asc). Items without a readable time keep their order, at the end.",
+        "fieldType": "choice",
+        "label": "Order",
+        "name": "order",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Newest first",
+                    "value": "desc"
+                },
+                {
+                    "label": "Oldest first",
+                    "value": "asc"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "desc",
+                    "asc"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "now-avatar (initials, or actor_image) before the actor's name.",
+        "fieldType": "boolean",
+        "label": "Show avatars",
+        "name": "showAvatars",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "The vertical line joining the event icons.",
+        "fieldType": "boolean",
+        "label": "Show connector line",
+        "name": "showConnector",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "comfortable",
+        "description": "Spacing between events.",
+        "fieldType": "choice",
+        "label": "Density",
+        "name": "density",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Comfortable",
+                    "value": "comfortable"
+                },
+                {
+                    "label": "Compact",
+                    "value": "compact"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "comfortable",
+                    "compact"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "card",
+        "description": "card = inside a now-card; plain = no card (e.g. inside a side panel that already has one).",
+        "fieldType": "choice",
+        "label": "Container",
+        "name": "container",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Card",
+                    "value": "card"
+                },
+                {
+                    "label": "Plain",
+                    "value": "plain"
+                }
+            ],
+            "schema": {
+                "enum": [
+                    "card",
+                    "plain"
+                ],
+                "type": "string"
+            }
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 0,
+        "description": "Show only the first N events, with a Show more (count) button for the rest. 0 = show all.",
+        "fieldType": "number",
+        "label": "Initial count",
+        "name": "initialCount",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "Show more",
+        "description": "Label of the Show more button (the hidden count is appended).",
+        "fieldType": "string",
+        "label": "Show more label",
+        "name": "showMoreLabel",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Make each event focusable and clickable (fires Item clicked).",
+        "fieldType": "boolean",
+        "label": "Clickable events",
+        "name": "clickable",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Clicking an attachment opens its url in a new tab (Attachment clicked fires either way).",
+        "fieldType": "boolean",
+        "label": "Open attachments",
+        "name": "openAttachments",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "No activity yet.",
+        "description": "Shown when there are no items.",
+        "fieldType": "string",
+        "label": "Empty message",
+        "name": "emptyMessage",
+        "valueType": "string"
+    }
+]</props>
+        <required_sys_props/>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-soori-library-activity-feed">9c1893b23d2652d197e0aeb2a53f5107</root_component>
+        <root_component_config>{"title":"@context/title","showHeader":"@context/showHeader","showClose":"@context/showClose","items":"@context/items","fieldMap":"@context/fieldMap","kinds":"@context/kinds","timeDisplay":"@context/timeDisplay","groupByDay":"@context/groupByDay","order":"@context/order","showAvatars":"@context/showAvatars","showConnector":"@context/showConnector","density":"@context/density","container":"@context/container","initialCount":"@context/initialCount","showMoreLabel":"@context/showMoreLabel","clickable":"@context/clickable","openAttachments":"@context/openAttachments","emptyMessage":"@context/emptyMessage"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 18:29:05</sys_created_on>
+        <sys_id>b25ca14619afadc69254bd22709dd38c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Activity Feed</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_macroponent_b25ca14619afadc69254bd22709dd38c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 18:29:05</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=b25ca14619afadc69254bd22709dd38c"/>
+</record_update>

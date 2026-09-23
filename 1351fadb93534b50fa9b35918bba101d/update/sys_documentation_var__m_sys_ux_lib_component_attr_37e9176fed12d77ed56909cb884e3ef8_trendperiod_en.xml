@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="trendPeriod" label="Trend period" language="en" table="var__m_sys_ux_lib_component_attr_37e9176fed12d77ed56909cb884e3ef8">
+    <sys_documentation element="trendPeriod" label="Trend period / caption" language="en" table="var__m_sys_ux_lib_component_attr_37e9176fed12d77ed56909cb884e3ef8">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>trendPeriod</element>
             <help/>
             <hint/>
-            <label>Trend period</label>
+            <label>Trend period / caption</label>
             <language>en</language>
             <name>var__m_sys_ux_lib_component_attr_37e9176fed12d77ed56909cb884e3ef8</name>
-            <plural>Trend period</plural>
+            <plural>Trend period / caption</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2026-09-23 12:30:32</sys_created_on>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Trend period</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Trend period / caption</sys_name>
             <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
             <sys_policy/>
             <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
             <sys_update_name>sys_documentation_var__m_sys_ux_lib_component_attr_37e9176fed12d77ed56909cb884e3ef8_trendPeriod_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-23 12:30:32</sys_updated_on>
+            <sys_updated_on>2026-09-23 19:06:21</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component_attr">
+    <sys_ux_lib_component_attr action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Items</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value>{items=[{id=j9, kind=approval_requested, actor=Priya Raghunathan, verb=requested, target=Comms Room L3 extension, time=2026-09-22 09:30:00, details=[{label=Request, value=REQ0104893 · extend to 31 Dec}, {label=Pending approval, value=Ravi Shah · Network Services}]}, {id=j8, kind=badge_issued, actor=Badging Office, verb=provisioned, target=Apple Watch credential, suffix=(MC-88947), time=2026-09-22 16:40:00}, {id=j7, kind=note, actor=Marcus Chen, verb=added a note to, target=Server Room B2 review, time=2026-09-21 14:05:00, note=Priya still supports the B2 storage migration until December — keep the access, please complete Server Room Protocol by 30 Sep.}, {id=j6, kind=rejected, actor=DC Operations, verb=rejected, target=Data Centre Hall A renewal, time=2026-09-11 09:02:00, details=[{label=Reason, value=Data Centre Safety Induction expired on 20 Jun 2026}]}, {id=j5, kind=badge_lost, actor=Priya Raghunathan, verb=reported, target=badge B-002119, suffix=as lost, time=2026-09-10 11:20:00, attachments=[{name=Lost badge report.pdf, url=}]}, {id=j4, kind=access_revoked, actor=Access Control, verb=deactivated, target=badge B-002119, time=2026-09-10 11:21:00}, {id=j3, kind=training, actor=Priya Raghunathan, verb=completed, target=Privacy &amp; Data Handling, time=2026-05-11 15:05:00}, {id=j2, kind=access_granted, actor=Lena Fischer, verb=approved, target=L12 Engineering, suffix=access, time=2022-03-14 08:40:00}, {id=j1, kind=created, actor=Workday, verb=created the cardholder, target=Priya Raghunathan, time=2022-03-14 08:00:00}]}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>items</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Items</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="x-soori-library-activity-feed">9c1893b23d2652d197e0aeb2a53f5107</model>
+        <model_id>9c1893b23d2652d197e0aeb2a53f5107</model_id>
+        <model_table/>
+        <name>var__m_sys_ux_lib_component_attr_9c1893b23d2652d197e0aeb2a53f5107</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_ux_lib_component_attr</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 18:28:45</sys_created_on>
+        <sys_id>ba19169de2bacfd7a1a9c82f196cab4b</sys_id>
+        <sys_name>Items</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_lib_component_attr_ba19169de2bacfd7a1a9c82f196cab4b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 18:28:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_ux_lib_component_attr>
+</record_update>

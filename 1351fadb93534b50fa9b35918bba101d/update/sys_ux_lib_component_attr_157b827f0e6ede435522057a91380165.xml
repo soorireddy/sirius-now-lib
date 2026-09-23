@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Icon tone</column_label>
+        <column_label>iconTone</column_label>
         <comments/>
         <create_roles/>
         <default_value>info</default_value>
@@ -67,7 +67,7 @@
         <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
         <sys_update_name>sys_ux_lib_component_attr_157b827f0e6ede435522057a91380165</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-23 12:30:20</sys_updated_on>
+        <sys_updated_on>2026-09-23 19:06:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

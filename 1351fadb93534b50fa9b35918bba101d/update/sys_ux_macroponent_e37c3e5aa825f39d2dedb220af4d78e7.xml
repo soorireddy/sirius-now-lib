@@ -154,8 +154,16 @@
         "valueType": "string"
     },
     {
+        "defaultValue": true,
+        "description": "Show the trend pill (↑ 12%). Off hides only the pill — the caption (Trend period) still shows. Use it for counts where a percentage means nothing.",
+        "fieldType": "boolean",
+        "label": "Show trend",
+        "name": "showTrend",
+        "valueType": "string"
+    },
+    {
         "defaultValue": "-4.2",
-        "description": "Change vs the previous period. The sign sets the arrow direction (auto); the magnitude is shown in a Horizon highlighted value. Leave empty to hide the trend.",
+        "description": "Change vs the previous period. The sign sets the arrow (auto); the magnitude is shown in the pill. Empty or not a number → no pill (the caption still shows). To hide the pill regardless, turn off Show trend.",
         "fieldType": "string",
         "label": "Trend value",
         "name": "trendValue",
@@ -200,9 +208,9 @@
     },
     {
         "defaultValue": "MoM",
-        "description": "Caption beside the pill, e.g. MoM, YoY, vs last week.",
+        "description": "Text beside the pill (MoM, vs yesterday) — or, with the pill hidden, a caption under the value (Card + phone). Shown whenever it is set.",
         "fieldType": "string",
-        "label": "Trend period",
+        "label": "Trend period / caption",
         "name": "trendPeriod",
         "valueType": "string"
     },
@@ -258,7 +266,7 @@
         <required_sys_props/>
         <required_translations>[ ]</required_translations>
         <root_component display_value="x-soori-library-metric-card">37e9176fed12d77ed56909cb884e3ef8</root_component>
-        <root_component_config>{"heading":"@context/heading","icon":"@context/icon","iconTone":"@context/iconTone","value":"@context/value","format":"@context/format","decimals":"@context/decimals","currencySymbol":"@context/currencySymbol","trendValue":"@context/trendValue","trendDirection":"@context/trendDirection","trendPeriod":"@context/trendPeriod","trendPositiveIsGood":"@context/trendPositiveIsGood","iconAlign":"@context/iconAlign","clickable":"@context/clickable"}</root_component_config>
+        <root_component_config>{"heading":"@context/heading","icon":"@context/icon","iconTone":"@context/iconTone","value":"@context/value","format":"@context/format","decimals":"@context/decimals","currencySymbol":"@context/currencySymbol","showTrend":"@context/showTrend","trendValue":"@context/trendValue","trendDirection":"@context/trendDirection","trendPeriod":"@context/trendPeriod","trendPositiveIsGood":"@context/trendPositiveIsGood","iconAlign":"@context/iconAlign","clickable":"@context/clickable"}</root_component_config>
         <root_component_definition>{"availableSlots":[]}</root_component_definition>
         <schema_version>1.0.0</schema_version>
         <state_persistence_config/>
@@ -268,14 +276,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-23 12:30:39</sys_created_on>
         <sys_id>e37c3e5aa825f39d2dedb220af4d78e7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Dashboard Metric Card</sys_name>
         <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
         <sys_policy/>
         <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
         <sys_update_name>sys_ux_macroponent_e37c3e5aa825f39d2dedb220af4d78e7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-23 12:30:39</sys_updated_on>
+        <sys_updated_on>2026-09-23 19:06:25</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=e37c3e5aa825f39d2dedb220af4d78e7"/>
 </record_update>

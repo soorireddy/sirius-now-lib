@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>An attachment thumbnail or name was clicked. Payload: { id, name, url, sysId }.</description>
+        <event_name>ACTIVITY_FEED_ATTACHMENT_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>Attachment clicked</label>
+        <props>[
+    {
+        "description": "Event the attachment belongs to.",
+        "fieldType": "string",
+        "label": "Event id",
+        "name": "id",
+        "valueType": "string"
+    },
+    {
+        "description": "File name.",
+        "fieldType": "string",
+        "label": "Name",
+        "name": "name",
+        "valueType": "string"
+    },
+    {
+        "description": "Attachment url.",
+        "fieldType": "string",
+        "label": "URL",
+        "name": "url",
+        "valueType": "string"
+    },
+    {
+        "description": "Attachment sys_id, if given.",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 18:29:04</sys_created_on>
+        <sys_id>2afa797abef9ae9a28d0b0be639d460a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attachment clicked</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_event_2afa797abef9ae9a28d0b0be639d460a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 18:29:04</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=2afa797abef9ae9a28d0b0be639d460a"/>
+</record_update>

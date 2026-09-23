@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>A chronological activity / audit feed: a titled card over rows of clock icon, timestamp, actor and description. An entry can carry a status to highlight the row (e.g. a green 'Policy bound' row). Display-only.</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-soori-library-activity-timeline.svg">6b1171a181ed0c9e0ec6556e84c493ee</image_icon>
+        <internal_component>false</internal_component>
+        <label>Activity Timeline</label>
+        <macroponent display_value="Activity Timeline">2172195c83025f8d32e5409bdb9ba2b8</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 18:08:06</sys_created_on>
+        <sys_id>2029ec90f3ffddb051c873f512266f8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Activity Timeline</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_2029ec90f3ffddb051c873f512266f8b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 18:08:06</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=2029ec90f3ffddb051c873f512266f8b"/>
+</record_update>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>primitives</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <keyboard_shortcuts>{}</keyboard_shortcuts>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Activity Timeline</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "Activity",
+        "description": "Heading shown in the card's top bar, e.g. \"Activity\". Leave blank to hide the header.",
+        "fieldType": "string",
+        "label": "Title",
+        "name": "title",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": {
+            "entries": [
+                {
+                    "actor": "M. Chen (UW)",
+                    "description": "Policy bound — Binder BND-2025-00312 issued. Policy POL-2025-00884 effective 01 Feb 2025.",
+                    "icon": "check-circle-outline",
+                    "id": "evt-4",
+                    "status": "success",
+                    "timestamp": "15 Jan 2025, 10:14"
+                },
+                {
+                    "actor": "J. Harrington",
+                    "description": "Broker accepted quote and confirmed bind intent",
+                    "icon": "clock-outline",
+                    "id": "evt-3",
+                    "status": "none",
+                    "timestamp": "14 Jan 2025, 09:41"
+                },
+                {
+                    "actor": "M. Chen (UW)",
+                    "description": "Quote presented to Lockton — final pricing confirmed",
+                    "icon": "clock-outline",
+                    "id": "evt-2",
+                    "status": "none",
+                    "timestamp": "13 Jan 2025, 17:03"
+                },
+                {
+                    "actor": "M. Chen (UW)",
+                    "description": "Draft quote created — awaiting pricing sign-off",
+                    "icon": "clock-outline",
+                    "id": "evt-1",
+                    "status": "none",
+                    "timestamp": "10 Jan 2025, 11:22"
+                }
+            ]
+        },
+        "description": "The rows. An object { \"entries\": [ ... ] } (a bare array also works at runtime). Each entry carries all fields: { id, timestamp, actor, description, icon, status }. status ∈ success | info | warning | critical (or a key you define in Status colors); success = green left accent + faint tint + green text. Use status \"none\" (or \"\") for a plain row.",
+        "fieldType": "json",
+        "label": "Entries (JSON)",
+        "name": "entries",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "clock-outline",
+        "description": "now-icon name shown at the start of every row (a per-entry icon field overrides it). Default: clock-outline.",
+        "fieldType": "string",
+        "label": "Default row icon",
+        "name": "defaultIcon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Show the icon at the start of each row. Turn off for a timestamp-only feed.",
+        "fieldType": "boolean",
+        "label": "Show leading icon",
+        "name": "showIcon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "154px",
+        "description": "Width of the fixed left (timestamp) column — any CSS length, e.g. 154px, 12rem. Keeps descriptions aligned.",
+        "fieldType": "string",
+        "label": "Timestamp column width",
+        "name": "timeColumnWidth",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Field-mapping: the entry key to read for the timestamp. Leave blank to use `timestamp`. Lets the component bind to any record shape (e.g. `date`, `sys_created_on`) without pre-transforming the data.",
+        "fieldType": "string",
+        "label": "Timestamp field",
+        "name": "timestampField",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Field-mapping: the entry key to read for the actor. Leave blank to use `actor` (e.g. map to `user`, `updated_by`).",
+        "fieldType": "string",
+        "label": "Actor field",
+        "name": "actorField",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Field-mapping: the entry key to read for the description. Leave blank to use `description` (e.g. map to `text`, `message`).",
+        "fieldType": "string",
+        "label": "Description field",
+        "name": "descriptionField",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Field-mapping: the entry key to read for the row status. Leave blank to use `status` (e.g. map to `state`, `kind`).",
+        "fieldType": "string",
+        "label": "Status field",
+        "name": "statusField",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Field-mapping: the entry key to read for a per-row icon. Leave blank to use `icon`.",
+        "fieldType": "string",
+        "label": "Icon field",
+        "name": "iconField",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": {
+            "bound": "#1f9d57",
+            "lapsed": "#d92d20",
+            "pending": "#d9772e"
+        },
+        "description": "Map of custom status value → color, e.g. { \"bound\": \"#1f9d57\", \"lapsed\": \"#d92d20\" }. A matched status colours the row's left accent and text. Built-in statuses (success/info/warning/critical) also work without an entry here. Leave {} if you only use the built-in statuses.",
+        "fieldType": "json",
+        "label": "Status colors (JSON)",
+        "name": "statusColors",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "No activity to display.",
+        "description": "Text shown when there are no entries.",
+        "fieldType": "string",
+        "label": "Empty message",
+        "name": "emptyMessage",
+        "valueType": "string"
+    }
+]</props>
+        <required_sys_props/>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-soori-library-activity-timeline">fc43479957c5d1d522f3179270637b84</root_component>
+        <root_component_config>{"title":"@context/title","entries":"@context/entries","defaultIcon":"@context/defaultIcon","showIcon":"@context/showIcon","timeColumnWidth":"@context/timeColumnWidth","timestampField":"@context/timestampField","actorField":"@context/actorField","descriptionField":"@context/descriptionField","statusField":"@context/statusField","iconField":"@context/iconField","statusColors":"@context/statusColors","emptyMessage":"@context/emptyMessage"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 18:08:05</sys_created_on>
+        <sys_id>2172195c83025f8d32e5409bdb9ba2b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Activity Timeline</sys_name>
+        <sys_package display_value="@Sirius/Components" source="x_soori_library">1351fadb93534b50fa9b35918bba101d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="@Sirius/Components">1351fadb93534b50fa9b35918bba101d</sys_scope>
+        <sys_update_name>sys_ux_macroponent_2172195c83025f8d32e5409bdb9ba2b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 18:08:05</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=2172195c83025f8d32e5409bdb9ba2b8"/>
+</record_update>
